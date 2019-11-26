@@ -1,0 +1,19 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(224, 225, 221);
+}
+
+#header {
+    background-color: #031e2f;
+    height: 160px;
+}
+
+#content {
+    
+}
+
+#footer {
+    background-color: rgb(108, 111, 112);
+    height: 160px;
+}
