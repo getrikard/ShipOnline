@@ -9,8 +9,21 @@ body {
     height: 160px;
 }
 
+#logoText {
+    position: absolute;
+    width: 175px;
+    height: 42px;
+    left: 1133px;
+    top: 80px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
 #content {
-    
 }
 
 #footer {
