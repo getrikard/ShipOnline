@@ -1,3 +1,12 @@
+.mainContent {
+    display: grid;
+    grid-template: 'header header header' 
+                   'leftSide content rightSide'
+                   'footerBar footerBar footerBar';
+
+}
+
+
 body {
     padding: 0;
     margin: 0;
@@ -5,28 +14,40 @@ body {
 }
 
 #header {
+    grid-area: header;
     background-color: #031e2f;
     height: 160px;
+    width: 100%;
 }
-
 #logoText {
-    position: absolute;
-    width: 175px;
-    height: 42px;
-    left: 1133px;
-    top: 80px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
-    line-height: 42px;
     color: #FFFFFF;
 }
 
-#content {
+#leftSide {
+    grid-area: leftSide;
+    border-color: blue;
 }
 
-#footer {
+#content {
+    grid-area: content;
+    border-color: blue;
+    text-align: center;
+    padding: 70px;
+}
+
+#rightSide {
+    grid-area: rightSide;
+    border-color: blue;
+    height: 250px;
+}
+
+#footerBar {
+    grid-area: footerBar;
     background-color: rgb(108, 111, 112);
     height: 160px;
+    width: 100%;
 }
