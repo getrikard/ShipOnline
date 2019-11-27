@@ -30,6 +30,10 @@ body {
     padding: 10px;
 }
 
+.inputUser {
+    margin-top: 60px;
+}
+
 #leftSide {
     grid-area: leftSide;
     border-color: blue;
