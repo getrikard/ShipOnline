@@ -1,11 +1,9 @@
 .mainContent {
     display: grid;
-    grid-template: 'header header header' 
-                   'leftSide content rightSide'
-                   'footerBar footerBar footerBar';
-
+    grid-template: 'header header header' 'leftSide content rightSide' 'footerBar footerBar footerBar';
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
 }
-
 
 body {
     padding: 0;
@@ -20,11 +18,20 @@ body {
     width: 100%;
 }
 #logoText {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
+    font-family: 'High Tower Text';
     font-size: 36px;
     color: #FFFFFF;
+    float: right;
+    padding-top: 50px;
+}
+
+.dropDown {
+    float: right;
+    padding: 10px;
+}
+
+.inputUser {
+    margin-top: 60px;
 }
 
 #leftSide {
@@ -50,4 +57,10 @@ body {
     background-color: rgb(108, 111, 112);
     height: 160px;
     width: 100%;
+}
+
+#footerInfo {
+    color: white;
+    text-align: center;
+    font-size: 12px;
 }
