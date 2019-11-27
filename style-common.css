@@ -51,3 +51,8 @@ body {
     height: 160px;
     width: 100%;
 }
+
+#footerInfo {
+    color: white;
+    text-align: center;
+}
