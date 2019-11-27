@@ -18,14 +18,17 @@ body {
     width: 100%;
 }
 #logoText {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
+    font-family: 'High Tower Text';
     font-size: 36px;
     color: #FFFFFF;
     float: right;
+    padding-top: 50px;
 }
 
+.dropDown {
+    float: right;
+    padding: 10px;
+}
 
 #leftSide {
     grid-area: leftSide;
@@ -55,4 +58,5 @@ body {
 #footerInfo {
     color: white;
     text-align: center;
+    font-size: 12px;
 }
