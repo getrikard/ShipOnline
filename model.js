@@ -25,7 +25,7 @@ let model = {
                 communications: [
                     {
                         type: "phone",
-                        number: 000,
+                        number: "000",
                         department: "fmsdfs"
                     }
                 ],
@@ -40,11 +40,11 @@ let model = {
                 companyNo: [
                     {
                         type: "IMO",
-                        number: 00
+                        number: "00",
                     },
                     {
                         type: "Enterprise",
-                        number: 0345
+                        number: "0345",
                     }
                 ]
             }
@@ -56,7 +56,7 @@ let model = {
                 stilling: "",
                 department: "",
                 privateAdress: "",
-                tlf: 0,
+                tlf: "0",
                 picture: "img.png"
             }
         ],
