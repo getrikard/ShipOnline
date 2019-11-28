@@ -1,6 +1,5 @@
 // JavaScript source code
-const getCompany = () => {
+const getCompanyPage = (tracer) => {
     console.log('Hello there, this page is under maintenance');
-    //content.innerHTML = model.view.currentContent;
-    // model.data.companies[0].name
+    show(company);
 }
