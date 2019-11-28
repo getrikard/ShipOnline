@@ -1,7 +1,10 @@
 .mainContent {
     display: grid;
-    grid-template: 'header header header' 'leftSide content rightSide' 'footerBar footerBar footerBar';
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template: 'header header header' 
+                   'topMenu topMenu topMenu'
+                   'leftSide content rightSide'
+                   'footerBar footerBar footerBar';
+    grid-template-rows: 1fr 2fr 5fr 1fr;
     grid-template-columns: 1fr 5fr 1fr;
 }
 
@@ -33,6 +36,22 @@ body {
 .inputUser {
     margin-top: 60px;
 }
+#topMenu {
+    grid-area: topMenu;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+    #topMenu span {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    #topMenu span.active {
+        background-color: #6BAA86;
+    }
 
 #leftSide {
     grid-area: leftSide;
@@ -41,14 +60,12 @@ body {
 
 #content {
     grid-area: content;
-    border-color: blue;
     text-align: center;
     padding: 70px;
 }
 
 #rightSide {
     grid-area: rightSide;
-    border-color: blue;
     height: 250px;
 }
 
