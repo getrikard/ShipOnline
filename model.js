@@ -4,7 +4,7 @@ let model = {
     },
     data: {
         username: "OleIversen",
-        currentCompany: "Color Line",
+        currentCompanyID: 0,
         companies: [
             {
                 isFavorite: true,
