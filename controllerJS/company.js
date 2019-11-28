@@ -1,6 +1,5 @@
 // JavaScript source code
-const getCompany = () => {
+const getCompanyPage = (tracer) => {
     console.log('Hello there, this page is under maintenance');
-    content.innerHTML = `<h3>Hello World</h3>`
-    show();
+    show(company);
 }
