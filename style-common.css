@@ -54,16 +54,23 @@ body {
     #topMenu span.active {
         background-color: #6BAA86;
     }
+        #topMenu span:hover {
+            background-color: #6BAA86;
+        }
 
 #leftSide {
     grid-area: leftSide;
 }
     #leftSide div {
+        width: fit-content;  /* It works */
         padding-top: 15px;
         margin-left: 50px;
         border-radius: 3px;
         font-size: 24px;
     }
+        #leftSide div:hover {
+            background-color: #6BAA86;
+        }
 
 #content {
     grid-area: content;
