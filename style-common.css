@@ -51,9 +51,15 @@ text-align:center;
 .search {
     margin-left: 5px;
     height: 25px;
-    width: 250px;
+    width: 300px;
     background-color: #031e2f;
     border: none;
+    border-bottom: 1px solid #152e3e;
+    
+}
+
+.fa fa-search {
+    color: #576369;
 }
 
 
