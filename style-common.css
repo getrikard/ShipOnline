@@ -34,8 +34,18 @@ body {
 }
 
 .inputUser {
-    margin-top: 60px;
+    margin-top: 110px;
+    background-color: #1c3544;
+    border: none;
+    height: 25px;
+    margin-left: 4px;
 }
+
+::placeholder {
+color: white;
+text-align:center;
+}
+
 #topMenu {
     grid-area: topMenu;
     width: 100%;
