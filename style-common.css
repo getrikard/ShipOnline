@@ -48,6 +48,15 @@ color: white;
 text-align:center;
 }
 
+.search {
+    margin-left: 5px;
+    height: 25px;
+    width: 250px;
+    background-color: #031e2f;
+    border: none;
+}
+
+
 #topMenu {
     grid-area: topMenu;
     width: 100%;
