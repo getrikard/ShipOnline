@@ -110,6 +110,7 @@ text-align:center;
 }
     #leftSide div {
         width: fit-content;  /* It works */
+        padding: 5px 5px 5px 5px;
         margin-left: 50px;
         margin-bottom: 20px;
         border-radius: 3px;
