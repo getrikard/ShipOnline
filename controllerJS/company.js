@@ -1,5 +1,6 @@
 // JavaScript source code
 const getCompanyPage = () => {
-    console.log('Hello there, this page is under maintenance');
+    let htmlCompany = `${model.data.username}`;
+    model.view.currentContent = htmlCompany;
     show();
 }
