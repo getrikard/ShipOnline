@@ -8,7 +8,7 @@
     <title>Ship Online</title>
     <link rel="stylesheet" href="style-common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +23,8 @@
             <input class="inputUser" type="password" placeholder="************" />
             <input class="inputUser" type="text" placeholder="MYShipOnline" />
             <input class="inputUser" type="text" placeholder="SPSHIPBASE" />
-            <input class="search" type="text" placeholder="Search..">
+            <input class="search" type="text" placeholder="Search.." onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Search...'">
             <i class="fa fa-search" style=color:#576369;></i>
             <div id="logoText"><b>Ship</b>Online</div>
         </div>
@@ -45,9 +46,6 @@
             <div>Documents/Notes</div>
             <div>Fleet</div>
             <div>History</div>
-        </div>
-        <div id="content">
-            <div></div>
         </div>
         <div id="rightSide"></div>
         <div id="footerBar">

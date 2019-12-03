@@ -71,7 +71,7 @@ let model = {
                 fishID: "V-555",
                 flag: "NOR",
                 role: "MO",
-                company: "fgghh",
+                companyID: 0,
                 type: "fishing"
             }
         ]
