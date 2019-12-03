@@ -35,6 +35,8 @@ body {
 }
 
 .inputUser {
+    color: white;
+    text-align: center;
     margin-top: 110px;
     background-color: #1c3544;
     border: none;
@@ -171,6 +173,9 @@ body {
     text-decoration: underline;
 }
 
+
+
+/* for tableview */
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
