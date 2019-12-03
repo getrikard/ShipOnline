@@ -155,3 +155,18 @@ body {
     font-size: 1.2em;
     font-weight: bolder;
 }
+
+.topLineInContent {
+    padding: 10px;
+    text-align: right;
+    font-size: 1.3em;
+}
+
+.topLineInContent a {
+    text-decoration: none;
+    color: black;
+}
+
+.topLineInContent a:hover {
+    text-decoration: underline;
+}

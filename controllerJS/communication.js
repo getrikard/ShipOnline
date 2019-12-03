@@ -1,5 +1,5 @@
 function communication() {
-    let html = `<div>
+    let html = `<div class="topLineInContent">
         <a href="javascript:addCommunication">Add communication</a>
     </div>
     ${getCompanyAndCountryHTML()}`;
