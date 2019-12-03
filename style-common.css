@@ -110,8 +110,8 @@ text-align:center;
 }
     #leftSide div {
         width: fit-content;  /* It works */
-        padding-top: 15px;
         margin-left: 50px;
+        margin-bottom: 15px;
         border-radius: 3px;
         font-size: 24px;
     }
