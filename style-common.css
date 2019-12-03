@@ -1,9 +1,6 @@
 .mainContent {
     display: grid;
-    grid-template: 'header header header' 
-                   'topMenu topMenu topMenu'
-                   'leftSide content rightSide'
-                   'footerBar footerBar footerBar';
+    grid-template: 'header header header' 'topMenu topMenu topMenu' 'leftSide content rightSide' 'footerBar footerBar footerBar';
     grid-template-rows: 1fr 1fr 12fr 1fr;
     grid-template-columns: 1fr 4fr 1fr;
     font-family: 'Muli', sans-serif;
@@ -23,15 +20,12 @@ body {
     width: 100%;
 }
 
-
 #logoText {
     font-family: 'Muli', sans-serif;
     font-size: 36px;
     color: #FFFFFF;
     float: right;
     padding-top: 100px;
-    
-    
 }
 
 .dropDown {
@@ -49,8 +43,8 @@ body {
 }
 
 ::placeholder {
-color: white;
-text-align:center;
+    color: white;
+    text-align: center;
 }
 
 .search {
@@ -60,18 +54,16 @@ text-align:center;
     background-color: #031e2f;
     border: none;
     border-bottom: 1px solid #152e3e;
-    
 }
 
 .search:focus {
     color: white;
     padding-left: 5px;
-    outline:none;
-
+    outline: none;
 }
 
 .search:not(:focus) {
-    color:white;
+    color: white;
     padding-left: 5px;
 }
 
@@ -79,7 +71,6 @@ text-align:center;
     color: #576369;
     margin-left: 10px;
 }
-
 
 #topMenu {
     grid-area: topMenu;
@@ -91,44 +82,49 @@ text-align:center;
     color: #1c3544;
     text-align: center;
 }
-    #topMenu span {
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-right: 10px;
-        border-radius: 3px;
-        cursor: pointer;
-    }
-    #topMenu span.active {
-        background-color: #6BAA86;
-    }
-        #topMenu span:hover {
-            background-color: #6BAA86;
-        }
+
+#topMenu span {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#topMenu span.active {
+    background-color: #6BAA86;
+}
+
+#topMenu span:hover {
+    background-color: #6BAA86;
+}
 
 #leftSide {
     grid-area: leftSide;
 }
-    #leftSide div {
-        width: fit-content;  /* It works */
-        padding: 5px 5px 5px 5px;
-        margin-left: 50px;
-        margin-bottom: 20px;
-        border-radius: 3px;
-        font-size: 24px;
-    }
-        #leftSide div:hover {
-            background-color: #1c3544;
-            color:white;
-            cursor: pointer;
 
-        }
+#leftSide div {
+    width: fit-content;
+    /* It works */
+    padding: 5px 5px 5px 5px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-size: 24px;
+}
+
+#leftSide div:hover {
+    background-color: #1c3544;
+    color: white;
+    cursor: pointer;
+}
 
 #content {
     grid-area: content;
     text-align: center;
-    padding: 70px;
+    padding: 10px;
     margin-left: 30px;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
 }
 
 #rightSide {
@@ -141,11 +137,21 @@ text-align:center;
     background-color: rgb(108, 111, 112);
     height: 160px;
     width: 100%;
-    
 }
 
 #footerInfo {
     color: white;
     text-align: center;
     font-size: 12px;
+}
+
+.countryInfoDiv {
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    text-align: left;
+    background-color: white;
+    font-size: 1.2em;
+    font-weight: bolder;
 }
