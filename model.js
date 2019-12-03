@@ -8,18 +8,25 @@ let model = {
         companies: [
             {
                 isFavorite: true,
-                name: "",
+                name: "Ågrimsen Holding A/S",
+                categories: [
+                    "Shipmanagement"
+                ],
                 adresses: [
                     {
                         type: "visiting",
-                        adress: ""
+                        adress: "Bakkenvegen 2",
+                        place: "Bekjarvik",
+                        postal: "5398"
                     },
                     {
                         type: "postbox",
-                        adress: ""
+                        adress: "P.O.Box 103",
+                        place: "Bekjarvik",
+                        postal: "5398"
                     }
                 ],
-                place: "",
+                place: "BEKKJARVIK",
                 country: "NOR",
                 groups: [],
                 communications: [
@@ -32,10 +39,6 @@ let model = {
                 departments: [
                     "fdsf",
                     "fsdfss"
-                ],
-                categories: [
-                    "fsdgfdfg",
-                    "asdsf"
                 ],
                 companyNo: [
                     {
