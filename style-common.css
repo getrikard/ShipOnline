@@ -111,12 +111,13 @@ text-align:center;
     #leftSide div {
         width: fit-content;  /* It works */
         margin-left: 50px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         border-radius: 3px;
         font-size: 24px;
     }
         #leftSide div:hover {
-            background-color: #6BAA86;
+            background-color: #1c3544;
+            color:white;
             cursor: pointer;
 
         }
