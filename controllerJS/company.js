@@ -1,5 +1,5 @@
 // JavaScript source code
-const getCompanyPage = (tracer) => {
+const getCompanyPage = () => {
     console.log('Hello there, this page is under maintenance');
-    show(company);
+    show();
 }
