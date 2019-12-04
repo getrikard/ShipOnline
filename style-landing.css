@@ -1,6 +1,6 @@
 ﻿.mainContentWrapper {
     background-color: #E0E1DD;
-    padding-bottom: 50px;
+    padding-bottom: 250px;
 }
 
 .mainContent {
@@ -19,6 +19,9 @@
     margin-left: 15px;
     margin-top: 100px;
     font-size: 1.3em;
+}
+.inputWrapper {
+    margin-left: 50px;
 }
 
 body {
