@@ -1,0 +1,193 @@
+﻿.mainContentWrapper {
+}
+
+.mainContent {
+    display: grid;
+    grid-template: 'leftSide content';
+    grid-template-columns: 1fr 4fr;
+    font-family: 'Muli', sans-serif;
+    font-weight: 500;
+    width: 960px;
+    margin: auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    grid-area: header;
+    background-color: #031e2f;
+    height: 160px;
+    width: 100%;
+}
+
+#logoText {
+    font-family: 'Muli', sans-serif;
+    font-size: 36px;
+    color: #FFFFFF;
+    float: right;
+    padding-top: 100px;
+}
+
+.dropDown {
+    float: right;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.inputUser {
+    color: white;
+    text-align: center;
+    margin-top: 110px;
+    background-color: #1c3544;
+    border: none;
+    height: 25px;
+    margin-left: 4px;
+}
+
+::placeholder {
+    color: white;
+    text-align: center;
+}
+
+.search {
+    margin-left: 5px;
+    height: 25px;
+    width: 280px;
+    background-color: #031e2f;
+    border: none;
+    border-bottom: 1px solid #152e3e;
+}
+
+    .search:focus {
+        color: white;
+        padding-left: 5px;
+        outline: none;
+    }
+
+    .search:not(:focus) {
+        color: white;
+        padding-left: 5px;
+    }
+
+.fa fa-search {
+    color: #576369;
+    margin-left: 10px;
+}
+
+#topMenu {
+    grid-area: topMenu;
+    width: 100%;
+    /* margin-top: 15px;
+    margin-bottom: 50px; */
+    padding: 20px;
+    font-size: 28px;
+    color: #1c3544;
+    text-align: center;
+}
+
+    #topMenu span {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+        #topMenu span.active {
+            background-color: #6BAA86;
+        }
+
+        #topMenu span:hover {
+            background-color: #6BAA86;
+        }
+
+#leftSide {
+    grid-area: leftSide;
+}
+
+    #leftSide div {
+        width: fit-content;
+        /* It works */
+        padding: 5px 5px 5px 5px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        font-size: 1.2em;
+    }
+
+        #leftSide div:hover {
+            background-color: #1c3544;
+            color: white;
+            cursor: pointer;
+        }
+
+#content {
+    grid-area: content;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+#rightSide {
+    grid-area: rightSide;
+    height: 250px;
+}
+
+#footerBar {
+    grid-area: footerBar;
+    background-color: rgb(108, 111, 112);
+    height: 160px;
+    width: 100%;
+}
+
+#footerInfo {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.countryInfoDiv {
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    text-align: left;
+    background-color: white;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.topLineInContent {
+    padding: 10px;
+    text-align: right;
+    font-size: 1.3em;
+}
+
+    .topLineInContent a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .topLineInContent a:hover {
+            text-decoration: underline;
+        }
+
+/* for tableview */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
