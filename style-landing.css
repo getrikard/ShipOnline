@@ -1,6 +1,6 @@
 ﻿.mainContentWrapper {
     background-color: #E0E1DD;
-    padding-bottom: 50px;
+    padding-bottom: 502px;
 }
 
 .mainContent {
@@ -146,17 +146,6 @@ body {
     text-align: center;
 }
 
-.countryInfoDiv {
-    padding: 10px;
-    padding-left: 40px;
-    border-radius: 3px;
-    margin-bottom: 3px;
-    text-align: left;
-    background-color: white;
-    font-size: 1.2em;
-    font-weight: bolder;
-}
-
 .topLineInContent {
     padding: 10px;
     text-align: right;
@@ -170,21 +159,3 @@ body {
         .topLineInContent a:hover {
             text-decoration: underline;
         }
-
-/* for tableview */
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
