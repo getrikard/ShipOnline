@@ -24,7 +24,10 @@ body {
     grid-area: header;
     background-color: #031e2f;
     height: 160px;
-    width: 100%;
+}
+
+.inputWrapper {
+    margin-left: 50px;
 }
 
 #logoText {
