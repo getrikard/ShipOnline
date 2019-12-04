@@ -1,6 +1,7 @@
 let model = {
     view: {
-        currentContent: ""
+        currentContent: "",
+        mainContent: ""
     },
     data: {
         username: "OleIversen",
