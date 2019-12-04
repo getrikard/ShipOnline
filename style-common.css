@@ -1,18 +1,23 @@
-.mainContentWrapper {}
+.mainContentWrapper {
+    background-color: #E0E1DD;
+    padding-bottom: 50px;
+}
 
 .mainContent {
     display: grid;
     grid-template: 'leftSide content';
     grid-template-columns: 1fr 4fr;
-    font-family: 'Muli', sans-serif;
     font-weight: 500;
     width: 960px;
+    max-width: 100%;
     margin: auto;
 }
 
 body {
     padding: 0;
     margin: 0;
+    background-color: #6c6f70;
+    font-family: 'Muli', sans-serif;
 }
 
 #header {
@@ -23,7 +28,6 @@ body {
 }
 
 #logoText {
-    font-family: 'Muli', sans-serif;
     font-size: 36px;
     color: #FFFFFF;
     float: right;
@@ -77,12 +81,8 @@ body {
 }
 
 #topMenu {
-    grid-area: topMenu;
-    width: 100%;
-    /* margin-top: 15px;
-    margin-bottom: 50px; */
     padding: 20px;
-    font-size: 28px;
+    font-size: 1.5em;
     color: #1c3544;
     text-align: center;
 }
@@ -137,14 +137,12 @@ body {
 #footerBar {
     grid-area: footerBar;
     background-color: rgb(108, 111, 112);
-    height: 160px;
     width: 100%;
 }
 
 #footerInfo {
     color: white;
     text-align: center;
-    font-size: 12px;
 }
 
 .countryInfoDiv {
