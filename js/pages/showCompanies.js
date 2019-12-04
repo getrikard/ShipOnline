@@ -3,8 +3,7 @@ function showCompanies() {
         ` <div class="topLineInContent">
         <a href="javascript:showAddCompany()">Add Company</a>
         </div>
-
-    <table>
+    <table class>
   <tr>
     <th>Name</th>
     <th>Catagory</th>
@@ -12,16 +11,15 @@ function showCompanies() {
     <th>Country</th>
     <th>My Company</th>
   </tr>`;
-
-    for (let i = 0; i < model.data.companies.length; i++  ) {
+    for (let i = 0; i < model.data.companies.length; i++) {
         let company = model.data.companies[i];
         htmlCompany += `
         <tr onclick="showCompany(${i})">
         <td>${company.name}</td>
         <td>${company.categories.join(', ')}</td>
-        <td>Oslo</td>
-        <td>NOR</td>
-        <td>*</td>
+        <td>${company.place}</td>
+        <td>${company.country}</td>
+        <td>${company.isFavorite || ''}</td>
   </tr>`
     };
 
