@@ -1,9 +1,8 @@
-// JavaScript source code
 function showCompanies() {
     let htmlCompany =
         ` <div class="topLineInContent">
         <a href="javascript:showAddCompany()">Add Company</a>
-    </div>
+        </div>
 
     <table>
   <tr>
@@ -17,12 +16,12 @@ function showCompanies() {
     for (let i = 0; i < model.data.companies.length; i++  ) {
         let company = model.data.companies[i];
         htmlCompany += `
-  <tr onclick="showCompany(${i})">
-    <td>${company.name}</td>
-    <td>${company.categories.join(', ')}</td>
-    <td>Oslo</td>
-    <td>NOR</td>
-    <td>*</td>
+        <tr onclick="showCompany(${i})">
+        <td>${company.name}</td>
+        <td>${company.categories.join(', ')}</td>
+        <td>Oslo</td>
+        <td>NOR</td>
+        <td>*</td>
   </tr>`
     };
 
