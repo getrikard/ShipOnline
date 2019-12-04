@@ -3,7 +3,7 @@
 
 .mainContent {
     display: grid;
-    grid-template: 'leftSide content';
+    grid-template: 'content content';
     grid-template-columns: 1fr 4fr;
     font-family: 'Muli', sans-serif;
     font-weight: 500;
@@ -104,25 +104,6 @@ body {
             background-color: #6BAA86;
         }
 
-#leftSide {
-    grid-area: leftSide;
-}
-
-    #leftSide div {
-        width: fit-content;
-        /* It works */
-        padding: 5px 5px 5px 5px;
-        margin-bottom: 10px;
-        border-radius: 3px;
-        font-size: 1.2em;
-    }
-
-        #leftSide div:hover {
-            background-color: #1c3544;
-            color: white;
-            cursor: pointer;
-        }
-
 #content {
     grid-area: content;
     text-align: center;
@@ -130,10 +111,6 @@ body {
     background-color: white;
 }
 
-#rightSide {
-    grid-area: rightSide;
-    height: 250px;
-}
 
 #footerBar {
     grid-area: footerBar;
@@ -146,17 +123,6 @@ body {
     color: white;
     text-align: center;
     font-size: 12px;
-}
-
-.countryInfoDiv {
-    padding: 10px;
-    padding-left: 40px;
-    border-radius: 3px;
-    margin-bottom: 3px;
-    text-align: left;
-    background-color: white;
-    font-size: 1.2em;
-    font-weight: bolder;
 }
 
 .topLineInContent {
@@ -173,21 +139,3 @@ body {
         .topLineInContent a:hover {
             text-decoration: underline;
         }
-
-/* for tableview */
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
