@@ -7,7 +7,6 @@
     display: grid;
     grid-template: 'leftSide content';
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 1fr;
     font-weight: 500;
     width: 960px;
     max-width: 100%;
