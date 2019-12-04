@@ -1,58 +1,28 @@
 // JavaScript source code
-const getCompanyPage = () => {
+function showCompanies() {
     let htmlCompany =
         `<table>
   <tr>
-    <th>Company</th>
+    <th>Name</th>
     <th>Catagory</th>
     <th>Place</th>
     <th>Country</th>
     <th>My Company</th>
-  </tr>
-  <tr>
-    <td>Color Line AS</td>
-    <td>SM</td>
-    <td>Oslo</td>
-    <td>NOR</td>
-    <td>*</td>
-  </tr>
-  <tr>
-    <td>Color Line AS</td>
-    <td>SM</td>
-    <td>Oslo</td>
-    <td>NOR</td>
-    <td>*</td>
-  </tr>
-  <tr>
-    <td>Color Line AS</td>
-    <td>SM</td>
-    <td>Oslo</td>
-    <td>NOR</td>
-    <td>*</td>
-  </tr>
-  <tr>
-    <td>Color Line AS</td>
-    <td>SM</td>
-    <td>Oslo</td>
-    <td>NOR</td>
-    <td>*</td>
-  </tr>
-  <tr>
-    <td>Color Line AS</td>
-    <td>SM</td>
-    <td>Oslo</td>
-    <td>NOR</td>
-    <td>*</td>
-  </tr>
-  <tr>
-    <td>Color Line AS</td>
-    <td>SM</td>
-    <td>Oslo</td>
-    <td>NOR</td>
-    <td>*</td>
-  </tr>
-</table>`;
+  </tr>`;
 
-    model.view.currentContent = htmlCompany;
+    for (company of model.data.companies) {
+        htmlCompany += `
+  <tr>
+    <td>${company.name}</td>
+    <td>${company.categories.join(', ')}</td>
+    <td>Oslo</td>
+    <td>NOR</td>
+    <td>*</td>
+  </tr>`
+    };
+
+    htmlCompany += `</table>`;
+
+    model.view.mainContent = htmlCompany;
     show();
 }
