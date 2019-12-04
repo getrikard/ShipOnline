@@ -27,7 +27,7 @@ body {
 }
 
 .inputWrapper {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 #logoText {
@@ -61,7 +61,7 @@ body {
 .search {
     margin-left: 5px;
     height: 25px;
-    width: 280px;
+    width: 230px;
     background-color: #031e2f;
     border: none;
     border-bottom: 1px solid #152e3e;
@@ -183,8 +183,8 @@ table {
 }
 
 td, th {
+    text-align: center;
     border: 1px solid #dddddd;
-    text-align: left;
     padding: 8px;
 }
 
