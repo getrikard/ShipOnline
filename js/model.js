@@ -11,7 +11,8 @@ let model = {
                 isFavorite: true,
                 name: "Ågrimsen Holding A/S",
                 categories: [
-                    "Shipmanagement"
+                    "Shipmanagement",
+                    "Ricaardoo",
                 ],
                 adresses: [
                     {
@@ -33,8 +34,8 @@ let model = {
                 communications: [
                     {
                         type: "phone",
-                        number: "000",
-                        department: "fmsdfs"
+                        number: "912280780",
+                        department: 007,
                     }
                 ],
                 departments: [
