@@ -118,6 +118,9 @@ body {
 .active {
     background-color: #6BAA86;
 }
+.disabled {
+    background-color: #6BAA86;
+}
 
 #topMenu span:hover {
     background-color: #6BAA86;

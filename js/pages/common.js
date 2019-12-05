@@ -4,11 +4,9 @@ let topMenuButtons = document.getElementsByClassName('topMenuButtons');
 
 function highlightActive(activeElement) {
     element = activeElement;
-    for (let i = 0; i < topMenuButtons.length; i++) {
-        if (i == i) {
-            activeElement.classList.toggle("active");
-        }
-    }
+
+    !activeElement.classList.contains("active") ? activeElement.classList.add("active")
+    : activeElement.classList.remove("active");
 }
 
 function getCompanyAndCountryHTML() {
