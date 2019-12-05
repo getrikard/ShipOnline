@@ -1,4 +1,4 @@
-function showCompanies() {
+﻿function showCompanies() {
     let htmlCompany =
         ` <div class="topLineInContent">
         <a href="javascript:showAddCompany()">Add Company</a>
@@ -19,7 +19,7 @@ function showCompanies() {
         <td>${company.categories.join(', ')}</td>
         <td>${company.place}</td>
         <td>${company.country}</td>
-        <td>${company.isFavorite || ''}</td>
+        <td>${company.isFavorite ? '⭐' : ''}</td>
   </tr>`
     };
 
