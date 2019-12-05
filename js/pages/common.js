@@ -1,4 +1,3 @@
-let companiesActive = document.getElementById("companiesActive");
 let topMenuButtons = document.getElementsByClassName('topMenuButtons');
 //companiesActive.classList.toggle("active");
 

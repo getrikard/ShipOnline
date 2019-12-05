@@ -196,6 +196,10 @@ body {
 
 /* for tableview */
 
+#addCompanyButton {
+    border-bottom: green 2px solid;
+}
+
 .clickAble {
     text-decoration: underline;
     font-weight: 600;

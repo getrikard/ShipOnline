@@ -1,7 +1,7 @@
 ﻿function showCompanies() {
     let htmlCompany =
         ` <div class="topLineInContent">
-        <a href="javascript:showAddCompany()">Add Company</a>
+        <a href="javascript:showAddCompany()" id="addCompanyButton">Add Company</a>
         </div>
     <table>
   <tr>
