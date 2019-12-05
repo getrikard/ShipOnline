@@ -1,9 +1,9 @@
-function showCompanies() {
+﻿function showCompanies() {
     let htmlCompany =
         ` <div class="topLineInContent">
         <a href="javascript:showAddCompany()">Add Company</a>
         </div>
-    <table class>
+    <table>
   <tr>
     <th>Name</th>
     <th>Catagory</th>
@@ -16,10 +16,10 @@ function showCompanies() {
         htmlCompany += `
         <tr onclick="showCompany(${i})">
         <td>${company.name}</td>
-        <td>${company.categories.join(', ')}</td>
+        <td>${company.categories}</td>
         <td>${company.place}</td>
         <td>${company.country}</td>
-        <td>${company.isFavorite || ''}</td>
+        <td>${company.isFavorite ? '⭐' : ''}</td>
   </tr>`
     };
 
