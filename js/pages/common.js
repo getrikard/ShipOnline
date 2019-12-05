@@ -3,10 +3,11 @@ let topMenuButtons = document.getElementsByClassName('topMenuButtons');
 //companiesActive.classList.toggle("active");
 
 function highlightActive(activeElement) {
-    element = activeElement;
-
-    !activeElement.classList.contains("active") ? activeElement.classList.add("active")
-    : activeElement.classList.remove("active");
+    for (element of topMenuButtons) {
+        element.classList.remove("active");
+    }
+    activeElement.classList.add("active");
+    // !activeElement.classList.contains("active") ? activeElement.classList.add("active") : activeElement.classList.remove("active");
 }
 
 function getCompanyAndCountryHTML() {
