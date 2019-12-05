@@ -115,7 +115,7 @@ body {
     cursor: pointer;
 }
 
-#topMenu span.active {
+.active {
     background-color: #6BAA86;
 }
 

@@ -1,3 +1,6 @@
+let companiesActive = document.getElementById("companiesActive");
+
+
 function getCompanyAndCountryHTML() {
     return `<div class="countryInfoDiv">
         MarineExpo
