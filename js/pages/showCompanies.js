@@ -22,7 +22,6 @@
         <td>${company.isFavorite ? '⭐' : ''}</td>
   </tr>`
     };
-    companiesActive.classList.toggle("active");
     htmlCompany += `</table>`;
 
     model.view.mainContent = htmlCompany;
