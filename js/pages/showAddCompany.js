@@ -40,17 +40,17 @@ function showAddCompany() {
             </tr>
         </table>
 
-        <button onclick="cancelCompanyToModel()">Cancel</button>
+        <button onclick="backToCompanies()">Cancel</button>
         <button onclick="addCompanyToModel()">Save</button>
     `;
-
+    document.getElementById('mainContent').style.display = 'block';
     model.view.mainContent = html;
     show();
 }
 
 function addCompanyToModel() {
     const name = document.getElementById('addNameInput').value;
-    const categories = document.getElementById('addCategoryInput').value.split(' ');
+    const categories = document.getElementById('addCategoryInput').value.split(',');
     const place = document.getElementById('addPlaceInput').value;
     const country = document.getElementById('addCountryInput').value;
     const company = {
@@ -61,11 +61,11 @@ function addCompanyToModel() {
         country: country
     };
     model.data.companies.push(company);
-    showCompanies();
-    show();
+    backToCompanies();
 }
 
-function cancelCompanyToModel() {
+function backToCompanies() {
     showCompanies();
+    document.getElementById('mainContent').style.display = 'grid';
     show();
 }
