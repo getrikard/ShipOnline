@@ -1,5 +1,5 @@
 function showAddCompany() {
-    let html = `
+    let html = ` <div id="content">
         <table>
             <tr>
                 <td>
@@ -42,6 +42,7 @@ function showAddCompany() {
 
         <button onclick="backToCompanies()">Cancel</button>
         <button onclick="addCompanyToModel()">Save</button>
+<div id="content">
     `;
     document.getElementById('mainContent').style.display = 'block';
     model.view.mainContent = html;

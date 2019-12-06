@@ -1,6 +1,8 @@
 function showLandingPage() {
-    model.view.mainContent = `
+    model.view.mainContent = `  <div id="content">
     <div class="mainContentWrapper">
-        </div>`;
+        <div> Here we'll display the big buttons </div>
+        </div>
+</div>`;
     show();
 }

@@ -1,6 +1,6 @@
 ﻿function showCompanies() {
-    let htmlCompany =
-        ` <div class="topLineInContent">
+    let htmlCompanies =
+        ` <div id="content"> <div class="topLineInContent">
         <a href="javascript:showAddCompany()" id="addCompanyButton">Add Company</a>
         </div>
     <table>
@@ -13,17 +13,17 @@
   </tr>`;
     for (let i = 0; i < model.data.companies.length; i++) {
         let company = model.data.companies[i];
-        htmlCompany += `
+        htmlCompanies += `
         <tr>
-        <td onclick="showCompany(${i})" class ="clickAble">${company.name}</td>
+        <td onclick="showCompany()" class ="clickAble">${company.name}</td>
         <td>${company.categories}</td>
         <td>${company.place}</td>
         <td>${company.country}</td>
         <td>${company.isFavorite ? '⭐' : ''}</td>
   </tr>`
     };
-    htmlCompany += `</table>`;
+    htmlCompanies += `</table> </div>`;
 
-    model.view.mainContent = htmlCompany;
+    model.view.mainContent = htmlCompanies;
     show();
 }

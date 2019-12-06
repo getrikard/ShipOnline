@@ -6,7 +6,6 @@ function highlightActive(activeElement) {
         element.classList.remove("active");
     }
     activeElement.classList.add("active");
-    // !activeElement.classList.contains("active") ? activeElement.classList.add("active") : activeElement.classList.remove("active");
 }
 
 function getCompanyAndCountryHTML() {
