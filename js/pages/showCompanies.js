@@ -14,8 +14,8 @@
     for (let i = 0; i < model.data.companies.length; i++) {
         let company = model.data.companies[i];
         htmlCompany += `
-        <tr onclick="showCompany(${i})">
-        <td class ="clickAble">${company.name}</td>
+        <tr>
+        <td onclick="showCompany(${i})" class ="clickAble">${company.name}</td>
         <td>${company.categories}</td>
         <td>${company.place}</td>
         <td>${company.country}</td>
