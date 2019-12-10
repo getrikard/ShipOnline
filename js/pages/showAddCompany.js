@@ -42,7 +42,7 @@ function showAddCompany() {
 
         <button onclick="backToCompanies()">Cancel</button>
         <button onclick="addCompanyToModel()">Save</button>
-<div id="content">
+    <div id="content">
     `;
     document.getElementById('mainContent').style.display = 'block';
     model.view.mainContent = html;
