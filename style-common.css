@@ -151,6 +151,7 @@ body {
     text-align: center;
     padding: 10px;
     background-color: white;
+    min-height: 300px;
 }
 
 #rightSide {
