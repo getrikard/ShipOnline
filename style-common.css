@@ -31,17 +31,17 @@ body {
     margin-top: 150px;
 }
 
-    #landingPage span {
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 50px;
-        font-size: 1.3em;
-        border-bottom: green 2px solid;
-    }
+#landingPage span {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 50px;
+    font-size: 1.3em;
+    border-bottom: green 2px solid;
+}
 
-        #landingPage span:hover {
-            background-color: #6BAA86;
-        }
+#landingPage span:hover {
+    background-color: #6BAA86;
+}
 
 .inputWrapper {
     margin-left: 40px;
@@ -84,16 +84,16 @@ body {
     border-bottom: 1px solid #152e3e;
 }
 
-    .search:focus {
-        color: white;
-        padding-left: 5px;
-        outline: none;
-    }
+.search:focus {
+    color: white;
+    padding-left: 5px;
+    outline: none;
+}
 
-    .search:not(:focus) {
-        color: white;
-        padding-left: 5px;
-    }
+.search:not(:focus) {
+    color: white;
+    padding-left: 5px;
+}
 
 .fa fa-search {
     color: #576369;
@@ -107,13 +107,13 @@ body {
     text-align: center;
 }
 
-    #topMenu span {
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-right: 10px;
-        border-radius: 3px;
-        cursor: pointer;
-    }
+#topMenu span {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
 .active {
     background-color: #6BAA86;
@@ -131,20 +131,20 @@ body {
     grid-area: leftSide;
 }
 
-    #leftSide div {
-        width: fit-content;
-        /* It works */
-        padding: 5px 5px 5px 5px;
-        margin-bottom: 10px;
-        border-radius: 3px;
-        font-size: 1.2em;
-    }
+#leftSide div {
+    width: fit-content;
+    /* It works */
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-size: 1.2em;
+}
 
-        #leftSide div:hover {
-            background-color: #1c3544;
-            color: white;
-            cursor: pointer;
-        }
+#leftSide div:hover {
+    background-color: #1c3544;
+    color: white;
+    cursor: pointer;
+}
 
 #content {
     grid-area: content;
@@ -187,14 +187,14 @@ body {
     font-size: 1.3em;
 }
 
-    .topLineInContent a {
-        text-decoration: none;
-        color: black;
-    }
+.topLineInContent a {
+    text-decoration: none;
+    color: black;
+}
 
-        .topLineInContent a:hover {
-            text-decoration: underline;
-        }
+.topLineInContent a:hover {
+    text-decoration: underline;
+}
 
 /* for tableview */
 
@@ -202,13 +202,13 @@ body {
     text-decoration: none;
     border-bottom: green 2px solid;
 }
-    #addCompanyButton:hover {
-        color: #6BAA86;
-    }
+
+#addCompanyButton:hover {
+    color: #6BAA86;
+}
 
 #companyButton {
     font-size: 0.8em;
-
 }
 
 .myCompanyTab {
@@ -217,18 +217,19 @@ body {
     border-radius: 25px;
 }
 
-    .myCompanyTab:hover {
-        color: #6BAA86;
-        cursor: pointer;
-    }
+.myCompanyTab:hover {
+    color: #6BAA86;
+    cursor: pointer;
+}
 
 .clickAble {
     font-weight: 600;
+    cursor: pointer;
 }
 
-    .clickAble:hover {
-        color: #6BAA86;
-    }
+.clickAble:hover {
+    color: #6BAA86;
+}
 
 table {
     font-family: arial, sans-serif;
@@ -246,36 +247,17 @@ td, th {
     margin-top: 100px;
 }
 
-#companiesIcon, #shipsIcon, #contractIcon {
+.landingbutton {
     background-color: #FFF;
-    position: absolute;
-    
+    margin: 40px;
+    display: inline-block;
+    cursor: pointer;
 }
 
-img {
+.landingbutton img {
     width: 120px;
-    border-right: rgb(141, 141, 141, 0.5) solid 2px;
-
 }
 
 img:hover {
     background-color: rgb(190, 190, 189);
-    
-}
-
-#companiesIcon {
-    margin: 40px 0;
-    
-}
-
-
-#shipsIcon {
-    margin: 40px 20%;
-    
-}
- 
-
-#contractIcon {
-    margin: 40px 40%;
-    
 }
