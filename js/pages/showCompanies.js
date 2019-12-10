@@ -10,7 +10,7 @@
     <th>Catagory</th>
     <th>Place</th>
     <th>Country</th>
-    <th onclick="showFavCompanies()">My Company</th>
+    <th class ="myCompanyTab" onclick="showFavCompanies()">My Company</th>
     <th>Groups</th>
   </tr>`;
     for (let i = 0; i < model.data.companies.length; i++) {
