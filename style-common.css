@@ -241,3 +241,41 @@ td, th {
     border-bottom: 1px solid #dddddd;
     padding: 8px;
 }
+
+.Landingpage {
+    margin-top: 100px;
+}
+
+#companiesIcon, #shipsIcon, #contractIcon {
+    background-color: #FFF;
+    position: absolute;
+    
+}
+
+img {
+    width: 120px;
+    border-right: rgb(141, 141, 141, 0.5) solid 2px;
+
+}
+
+img:hover {
+    background-color: rgb(190, 190, 189);
+    
+}
+
+#companiesIcon {
+    margin: 40px 0;
+    
+}
+
+
+#shipsIcon {
+    margin: 40px 20%;
+    
+}
+ 
+
+#contractIcon {
+    margin: 40px 40%;
+    
+}
