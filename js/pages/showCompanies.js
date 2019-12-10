@@ -20,7 +20,7 @@
         <td>${company.place}</td>
         <td>${company.country}</td>
         <td>${company.isFavorite ? '⭐' : ''}</td>
-  </tr>`
+  </tr>`;
     };
     htmlCompanies += `</table> </div>`;
 
