@@ -15,7 +15,7 @@
         let company = model.data.companies[i];
         htmlCompanies += `
         <tr>
-        <td onclick="showCompany()" class ="clickAble">${company.name}</td>
+        <td onclick="showCompany(${i}); console.log(${i})" class ="clickAble">${company.name}</td>
         <td>${company.categories}</td>
         <td>${company.place}</td>
         <td>${company.country}</td>
