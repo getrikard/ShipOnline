@@ -205,6 +205,11 @@ body {
         color: #6BAA86;
     }
 
+#companyButton {
+    font-size: 0.8em;
+
+}
+
 .clickAble {
     font-weight: 600;
 }
