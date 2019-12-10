@@ -10,6 +10,7 @@
     <th>Place</th>
     <th>Country</th>
     <th>My Company</th>
+    <th>Groups</th>
   </tr>`;
     for (let i = 0; i < model.data.companies.length; i++) {
         let company = model.data.companies[i];
@@ -20,6 +21,7 @@
         <td>${company.place}</td>
         <td>${company.country}</td>
         <td>${company.isFavorite ? '⭐' : ''}</td>
+        <td></td>
   </tr>`;
     };
     htmlCompanies += `</table> </div>`;
