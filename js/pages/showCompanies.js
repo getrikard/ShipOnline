@@ -10,7 +10,7 @@
     <th>Catagory</th>
     <th>Place</th>
     <th>Country</th>
-    <th>My Company</th>
+    <th class ="myCompanyTab" onclick="showFavCompanies()">My Company</th>
     <th>Groups</th>
   </tr>`;
     for (let i = 0; i < model.data.companies.length; i++) {
@@ -21,7 +21,7 @@
         <td>${company.categories}</td>
         <td>${company.place}</td>
         <td>${company.country}</td>
-        <td onclick="showFavCompanies()">${company.isFavorite ? '⭐' : ''}</td>
+        <td>${company.isFavorite ? '⭐' : ''}</td>
         <td></td>
   </tr>`;
     };

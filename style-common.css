@@ -210,6 +210,16 @@ body {
 
 }
 
+.myCompanyTab {
+    border-bottom: 1px #6BAA86 solid;
+    font-style: italic;
+    border-radius: 25px;
+}
+
+    .myCompanyTab:hover {
+        color: #6BAA86;
+    }
+
 .clickAble {
     font-weight: 600;
 }
