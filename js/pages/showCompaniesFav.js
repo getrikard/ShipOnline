@@ -29,6 +29,7 @@ function showFavCompanies() {
     };
 
     model.view.mainContentIsGrid = false;
+    model.view.showTopNavigation = true;
     model.view.mainContent = htmlCompaniesFav;
     show();
   }

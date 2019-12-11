@@ -29,6 +29,7 @@
   htmlContacts += `</table> </div>`;
 
   model.view.mainContentIsGrid = false;
+  model.view.showTopNavigation = true;
   model.view.mainContent = htmlContacts;
   show();
 };

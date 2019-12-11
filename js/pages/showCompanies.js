@@ -29,6 +29,7 @@
   htmlCompanies += `</table> </div>`;
 
   model.view.mainContentIsGrid = false;
+  model.view.showTopNavigation = true;
   model.view.mainContent = htmlCompanies;
   show();
 };

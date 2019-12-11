@@ -45,6 +45,7 @@ function showAddCompany() {
     <div id="content">
     `;
     model.view.mainContentIsGrid = false;
+    model.view.showTopNavigation = true;
     model.view.mainContent = html;
     show();
 }

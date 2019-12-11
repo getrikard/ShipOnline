@@ -3,6 +3,8 @@ let model = {
         currentContent: "",
         mainContent: "",
         mainContentIsGrid: false,
+        showTopNavigation: true,
+        topNavigationActive: 0,
     },
     data: {
         username: "OleIversen",
