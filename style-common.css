@@ -224,6 +224,10 @@ body {
     cursor: pointer;
 }
 
+#centerTdFavorite {
+    text-align: center;
+}
+
 .clickAble {
     font-weight: 600;
     cursor: pointer;

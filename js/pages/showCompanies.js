@@ -21,7 +21,7 @@
         <td>${company.categories}</td>
         <td>${company.place[0].toUpperCase() + company.place.substring(1).toLowerCase()}</td>
         <td>${company.country}</td>
-        <td>${company.isFavorite ? '⭐' : ''}</td>
+        <td id="centerTdFavorite">${company.isFavorite ? '⭐' : ''}</td>
         <td></td>
   </tr>`;
   };

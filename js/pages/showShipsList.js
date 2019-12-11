@@ -21,7 +21,7 @@
         <td>${company.categories}</td>
         <td>${company.place}</td>
         <td>${company.country}</td>
-        <td>${company.isFavorite ? '⭐' : ''}</td>
+        <td id="centerTdFavorite">${company.isFavorite ? '⭐' : ''}</td>
         <td></td>
   </tr>`;
   };
