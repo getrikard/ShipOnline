@@ -19,7 +19,7 @@
         <tr>
         <td onclick="showCompany(${i})" class ="clickAble">${company.name}</td>
         <td>${company.categories}</td>
-        <td>${company.place}</td>
+        <td>${company.place[0].toUpperCase() + company.place.substring(1).toLowerCase()}</td>
         <td>${company.country}</td>
         <td>${company.isFavorite ? '⭐' : ''}</td>
         <td></td>
