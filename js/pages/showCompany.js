@@ -1,6 +1,7 @@
 ﻿let companyData = model.data;
+let chosenCompany;
 
-function showCompany() {
+function showCompany(element) {
     let htmlShowCompany = `
             <div id="leftSide">
                 <div class ="active" onclick="showCompany()">Company</div>
@@ -17,19 +18,23 @@ function showCompany() {
             <div id="content">       
 	            	<table>
 						<tr>
-					    	<th> ${companyData.companies[1].name} <br> ${companyData.companies[1].country} </th>
+					    	<th> ${companyData.companies[element].name} <br> ${companyData.companies[element].country} </th>
 					    </tr>
 
 					  <tr>
 					    <td> visit adress </td>
-					    <td>  </td>
+					    <td>
+					    	${companyData.companies[element].adresses[0].adress}  
+					    	${companyData.companies[element].adresses[0].postal}
+					    	${companyData.companies[element].adresses[0].place}
+					     </td>
 					  </tr>
 					  <tr>
 					    <td> P.O BOX </td>
 					    <td> b </td>
 					  </tr>
 					  <tr>
-					    <td> Invoice  </td>
+					    <td> Invoice  </td> 
 					    <td> c  </td>
 					  </tr>
 					  <tr>
@@ -42,6 +47,8 @@ function showCompany() {
 					  </tr>
 					</table>
             <div>
+
+
 
 
 

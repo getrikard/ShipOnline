@@ -17,7 +17,7 @@
     let company = model.data.companies[i];
     htmlCompanies += `
         <tr>
-        <td onclick="showCompany(${i}); chosenCompany = ${i}; console.log(chosenCompany)" class ="clickAble">${company.name}</td>
+        <td onclick="showCompany(${i})" class ="clickAble">${company.name}</td>
         <td>${company.categories}</td>
         <td>${company.place}</td>
         <td>${company.country}</td>
@@ -27,7 +27,6 @@
   };
 
   htmlCompanies += `</table> </div>`;
-
   model.view.mainContentIsGrid = false;
   model.view.mainContent = htmlCompanies;
   show();
