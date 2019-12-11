@@ -11,10 +11,12 @@ function show() {
     content.innerHTML = model.view.mainContent;
     content.style.display = model.view.mainContentIsGrid ? 'grid' : 'block';
 
-    for (let i = 0; i < topMenuButtons.length; i++) {
-        element = topMenuButtons[i];
-        element.classList.remove("active");
-    }
     topNav.innerHTML = model.view.showTopNavigation ? topNavHtml : '';
-    topMenuButtons[model.view.topNavigationActive].classList.add("active");
+    if (model.view.showTopNavigation) {
+        for (let i = 0; i < topMenuButtons.length; i++) {
+            element = topMenuButtons[i];
+            element.classList.remove("active");
+        }
+        topMenuButtons[model.view.topNavigationActive].classList.add("active");
+    }
 }
