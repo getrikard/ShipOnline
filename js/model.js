@@ -8,6 +8,13 @@ let model = {
     },
     data: {
         username: "OleIversen",
+        currentUser: 0,
+        users: [
+            {
+                name: "OleIversen",
+                rightToChange: true
+            }
+        ],
         currentCompanyID: 0,
         companies: [
             {
@@ -33,6 +40,7 @@ let model = {
                 place: "BEKKJARVIK",
                 country: "NOR",
                 groups: [],
+                phonePrefix: "+47",
                 communications: [
                     {
                         type: "phone",
@@ -196,7 +204,7 @@ let model = {
         contacts: [
             {
                 name: "",
-                company: "",
+                companys: [],
                 stilling: "",
                 department: "",
                 privateAdress: "",
@@ -215,7 +223,12 @@ let model = {
                 fishID: "V-555",
                 flag: "NOR",
                 role: "MO",
-                companyID: 0,
+                companies: [
+                    {
+                        type: "",
+                        companyID: 0,
+                    }
+                ],
                 type: "fishing"
             }
         ]
