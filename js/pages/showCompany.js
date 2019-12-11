@@ -13,13 +13,15 @@
 		</div>
 		<div id="content">
 
-		<div>    </div>
 		<table>
   <tr>
-    <th> company name <br> NOR</th>  </tr>
+    <th> company name  <br> NOR</th>
+
+  </tr>
+
   <tr>
-    <td>a </td>
-    <td>a </td>
+    <td> a </td>
+    <td> a </td>
   </tr>
   <tr>
     <td> b </td>
