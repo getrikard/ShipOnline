@@ -248,6 +248,10 @@ td, th {
     padding: 8px;
 }
 
+th {
+    text-align: center;
+}
+
 .LandingPage {
     /* margin-top: 100px; */
     /* min-height: 400px; */
