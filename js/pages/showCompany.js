@@ -1,4 +1,6 @@
-﻿function showCompany() {
+﻿let companyData = model.data;
+
+function showCompany() {
     let htmlShowCompany = `
             <div id="leftSide">
                 <div class ="active" onclick="showCompany()">Company</div>
@@ -12,34 +14,33 @@
                 <div>History</div>
             </div>
             
-            <div id="content">
-            	<table>
-					<tr>
-				    	<th> company name  <br> NOR</th>
-				    </tr>
+            <div id="content">       
+	            	<table>
+						<tr>
+					    	<th> ${companyData.companies[1].name} <br> ${companyData.companies[1].country} </th>
+					    </tr>
 
-				  <tr>
-				    <td> a </td>
-				    <td> a </td>
-				  </tr>
-				  <tr>
-				    <td> b </td>
-				    <td> b </td>
-				  </tr>
-				  <tr>
-				    <td> c  </td>
-				    <td> c  </td>
-				  </tr>
-				  <tr>
-				    <td> d </td>
-				    <td> d </td>
-				  </tr>
-				  <tr>
-				    <td> e </td>
-				    <td> e </td>
-				  </tr>
-				</table>
-
+					  <tr>
+					    <td> visit adress </td>
+					    <td>  </td>
+					  </tr>
+					  <tr>
+					    <td> P.O BOX </td>
+					    <td> b </td>
+					  </tr>
+					  <tr>
+					    <td> Invoice  </td>
+					    <td> c  </td>
+					  </tr>
+					  <tr>
+					    <td> Phone </td>
+					    <td> d </td>
+					  </tr>
+					  <tr>
+					    <td> Email </td>
+					    <td> e </td>
+					  </tr>
+					</table>
             <div>
 
 
@@ -48,7 +49,7 @@
 
           	`;
 
-    let companyData = model.data.companies;
+
     model.view.mainContentIsGrid = true;
     model.view.mainContent = htmlShowCompany;
     show();
