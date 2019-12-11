@@ -6,17 +6,17 @@ function showLandingPage() {
             <div class="landingbutton" onclick="showCompanies()">
                 <img src="IMG/company.png" alt="picture">
                 <br>
-                <strong>Companies</strong>
+                <strong style="color: #325986">Companies</strong>
             </div>
             <div class="landingbutton" onclick="showShipsList()">
                 <img src="IMG/Ship icon blue.png" alt="picture">
                 <br>
-                <strong>Ships</strong>
+                <strong style="color: #325986">Ships</strong>
             </div>
             <div class="landingbutton" onclick="showContactsList()">
                 <img  src="IMG/contact.png" alt="picture">
                 <br>
-                <strong>Contacts</strong>
+                <strong style="color: #325986">Contacts</strong>
             </div>
         </div>
     </div>`;

@@ -17,7 +17,9 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #6c6f70;
+    /* Hvis vi har footer er det denne vi skal bruke (rett under her) */
+    /* background-color: #6c6f70; */
+    background-color: #E0E1DD;
     font-family: 'Muli', sans-serif;
 }
 
@@ -236,7 +238,6 @@ body {
 }
 
 table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
@@ -247,8 +248,9 @@ td, th {
     padding: 8px;
 }
 
-.Landingpage {
-    margin-top: 100px;
+.LandingPage {
+    /* margin-top: 100px; */
+    /* min-height: 400px; */
 }
 
 .landingbutton {
