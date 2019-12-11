@@ -2,18 +2,8 @@
 let chosenCompany;
 
 function showCompany(element) {
-    let htmlShowCompany = `
-            <div id="leftSide">
-                <div class ="active" onclick="showCompany()">Company</div>
-                <div>Address</div>
-                <div onclick="communication()">Communication</div>
-                <div>Contacts</div>
-                <div>Category</div>
-                <div>Company ID no</div>
-                <div>Documents/Notes</div>
-                <div>Fleet</div>
-                <div>History</div>
-            </div>
+	let htmlShowCompany = `
+            ${getLeftBarHTML()}
             
             <div id="content">       
 	            	<table>
@@ -57,7 +47,7 @@ function showCompany(element) {
           	`;
 
 
-    model.view.mainContentIsGrid = true;
-    model.view.mainContent = htmlShowCompany;
-    show();
+	model.view.mainContentIsGrid = true;
+	model.view.mainContent = htmlShowCompany;
+	show();
 }
