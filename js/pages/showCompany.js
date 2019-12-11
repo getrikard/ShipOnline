@@ -13,9 +13,16 @@
             </div>
             <div id="content">
 
-            <div>The page where selected company will be displayed </div>
+            <div>    </div>
+    <table>
+  <tr>
+  <td> s </td>
+
+   </div>
             </div>`;
 
     model.view.mainContent = htmlShowCompany;
     show();
 }
+
+
