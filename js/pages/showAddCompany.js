@@ -44,7 +44,7 @@ function showAddCompany() {
         <button onclick="addCompanyToModel()">Save</button>
     <div id="content">
     `;
-    document.getElementById('mainContent').style.display = 'block';
+    model.view.mainContentIsGrid = false;
     model.view.mainContent = html;
     show();
 }
@@ -67,6 +67,5 @@ function addCompanyToModel() {
 
 function backToCompanies() {
     showCompanies();
-    document.getElementById('mainContent').style.display = 'grid';
     show();
 }

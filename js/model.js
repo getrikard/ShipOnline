@@ -2,6 +2,7 @@ let model = {
     view: {
         currentContent: "",
         mainContent: "",
+        mainContentIsGrid: false,
     },
     data: {
         username: "OleIversen",
