@@ -1,6 +1,6 @@
 ﻿function showContactsList() {
-    let htmlContacts =
-        ` <div id="content"> <div class="topLineInContent">
+  let htmlContacts =
+    ` <div id="content"> <div class="topLineInContent">
         <span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
         <a href="javascript:showAddCompany()">Add Company</a>
         </div>
@@ -13,9 +13,9 @@
     <th class ="myCompanyTab" onclick="showFavCompanies()">VIP</th>
     <th>Groups</th>
   </tr>`;
-    for (let i = 0; i < model.data.contacts.length; i++) {
-        let contacts = model.data.contacts[i];
-        htmlContacts += `
+  for (let i = 0; i < model.data.contacts.length; i++) {
+    let contacts = model.data.contacts[i];
+    htmlContacts += `
         <tr>
         <td class ="clickAble">Elvis Presley</td>
         <td>Wife</td>
@@ -24,10 +24,11 @@
         <td>⭐</td>
         <td>Intern</td>
   </tr>`;
-    };
+  };
 
-    htmlContacts += `</table> </div>`;
+  htmlContacts += `</table> </div>`;
 
-    model.view.mainContent = htmlContacts;
-    show();
+  model.view.mainContentIsGrid = false;
+  model.view.mainContent = htmlContacts;
+  show();
 };

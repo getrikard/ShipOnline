@@ -1,6 +1,6 @@
 ﻿function showCompanies() {
-    let htmlCompanies =
-        ` <div id="content"> <div class="topLineInContent">
+  let htmlCompanies =
+    ` <div id="content"> <div class="topLineInContent">
         <span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
         <a href="javascript:showAddCompany()">Add Company</a>
         </div>
@@ -13,9 +13,9 @@
     <th class ="myCompanyTab" onclick="showFavCompanies()">My Company</th>
     <th>Groups</th>
   </tr>`;
-    for (let i = 0; i < model.data.companies.length; i++) {
-        let company = model.data.companies[i];
-        htmlCompanies += `
+  for (let i = 0; i < model.data.companies.length; i++) {
+    let company = model.data.companies[i];
+    htmlCompanies += `
         <tr>
         <td onclick="showCompany(${i}); console.log(${i})" class ="clickAble">${company.name}</td>
         <td>${company.categories}</td>
@@ -24,10 +24,11 @@
         <td>${company.isFavorite ? '⭐' : ''}</td>
         <td></td>
   </tr>`;
-    };
+  };
 
-    htmlCompanies += `</table> </div>`;
+  htmlCompanies += `</table> </div>`;
 
-    model.view.mainContent = htmlCompanies;
-    show();
+  model.view.mainContentIsGrid = false;
+  model.view.mainContent = htmlCompanies;
+  show();
 };
