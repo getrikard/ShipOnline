@@ -1,12 +1,9 @@
-let topMenuButtons = document.getElementsByClassName('topMenuButtons');
+
 //companiesActive.classList.toggle("active");
 
-function highlightActive(activeElement) {
-    for (element of topMenuButtons) {
-        element.classList.remove("active");
-    }
-    activeElement.classList.add("active");
-}
+// function highlightActive(id) {
+//     model.view.topNavigationActive = id;
+// }
 
 function getCompanyAndCountryHTML() {
     return `<div class="countryInfoDiv">

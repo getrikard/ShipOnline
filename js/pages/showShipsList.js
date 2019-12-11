@@ -29,6 +29,8 @@
   htmlShips += `</table> </div>`;
 
   model.view.mainContentIsGrid = false;
+  model.view.showTopNavigation = true;
+  model.view.topNavigationActive = 1; // 1 = ships
   model.view.mainContent = htmlShips;
   show();
 };
