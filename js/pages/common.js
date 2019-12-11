@@ -1,9 +1,9 @@
 
 //companiesActive.classList.toggle("active");
 
-function highlightActive(id) {
-    model.view.topNavigationActive = id;
-}
+// function highlightActive(id) {
+//     model.view.topNavigationActive = id;
+// }
 
 function getCompanyAndCountryHTML() {
     return `<div class="countryInfoDiv">

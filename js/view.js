@@ -2,9 +2,9 @@ let content = document.getElementById('mainContent');
 let topMenuButtons = document.getElementsByClassName('topMenuButtons');
 let topNav = document.getElementById('topMenu');
 let topNavHtml = `
-    <span class="topMenuButtons" onclick="highlightActive(0); showCompanies();">Companies</span>
-    <span class="topMenuButtons" onclick="highlightActive(1); showShipsList();">Ships</span>
-    <span class="topMenuButtons" onclick="highlightActive(2); showContactsList();">Contacts</span>`;
+    <span class="topMenuButtons" onclick="showCompanies();">Companies</span>
+    <span class="topMenuButtons" onclick="showShipsList();">Ships</span>
+    <span class="topMenuButtons" onclick="showContactsList();">Contacts</span>`;
 
 showLandingPage();
 function show() {
