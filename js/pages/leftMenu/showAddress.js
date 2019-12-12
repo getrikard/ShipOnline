@@ -44,7 +44,9 @@
                 <span>Cancel</span>
             </div>
             ${getInnerFooter()}
-          	`;
+            ${getInnerAddOrSave()}
+            </div>    
+            `;
 
 
 

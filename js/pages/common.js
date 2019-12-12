@@ -28,3 +28,7 @@ function getInnerFooter() {
         <span>info@company.com www.companysite.com</span>
     </div>`;
 }
+
+function getInnerAddOrSave() {
+    return `<div id="saveCancelCompany"> <span>Save</span> <span>Cancel</span> <span>Add to MY Company</span></div>`;
+}

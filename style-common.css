@@ -285,3 +285,18 @@ th {
     font-size: 24px;
     color: #589199;
 }
+
+#saveCancelCompany {
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 490px;
+}
+
+    #saveCancelCompany span {
+        border: black 1px solid;
+        border-radius: 5%;
+    }
+
+        #saveCancelCompany span:hover {
+            background-color: #6BAA86;
+        }
