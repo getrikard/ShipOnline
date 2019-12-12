@@ -245,3 +245,17 @@ th {
 .landingbutton img:hover {
     background-color: rgb(235, 233, 233, 0.5);
 }
+
+.addressType {
+    text-align: left;
+    margin-top: 25px;
+    font-size: 14px;
+    color: green;
+    border-bottom: solid green 2px;
+    width: fit-content;
+}
+
+.showCompanyDiv {
+    text-align: left;
+    border-bottom: solid black 1px;
+}
