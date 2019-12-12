@@ -20,3 +20,11 @@ function getLeftBarHTML() {
         <div class="leftSideButtons" onclick="showHistory()">History</div>
     </div>`
 }
+
+function getInnerFooter() {
+    return `<div class="blueDiv">
+        <span id="bottomBarCompanySpan">Company</span>
+        <span>number +47 99999</span>
+        <span>info@company.com www.companysite.com</span>
+    </div>`;
+}
