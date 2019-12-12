@@ -3,7 +3,7 @@
 			${getLeftBarHTML()}
 			
             <div id="content">
-        <span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
+        <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
         <a href="javascript:showAddCompany()">Add Company</a>
 				<table>
 					<tr>
@@ -35,14 +35,14 @@
                     <td>Nation: Norway</td>
                     </tr>
 				</table>
-            <div>
 
-
-
-
-
-
-
+            <div class="changeAddNewBottomBar">
+                <span>Web</span>
+                <span>Change</span>
+                <span>Save</span>
+                <span>Add New</span>
+                <span>Cancel</span>
+            </div>
           	`;
 
 

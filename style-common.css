@@ -250,8 +250,21 @@ th {
 .addressType {
     text-align: left;
     margin-top: 25px;
+    margin-left: 5px;
     font-size: 14px;
     color: green;
     border-bottom: solid green 2px;
     width: fit-content;
 }
+.changeAddNewBottomBar {
+    margin-top: 25px;
+    text-decoration: underline;
+}
+.changeAddNewBottomBar span {
+    margin-left: 5%;
+}
+    .changeAddNewBottomBar span:hover {
+        cursor: pointer;
+        font-weight: bolder;
+        color: green;
+    }
