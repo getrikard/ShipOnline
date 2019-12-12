@@ -268,3 +268,19 @@ th {
         font-weight: bolder;
         color: green;
     }
+.blueDiv {
+    margin-top: 10px;
+    background-color: #99BFC2;
+    height: 100px;
+    line-height: 100px;
+}
+
+.blueDiv span {
+    color: black;
+    font-size: 14px;
+}
+
+#bottomBarCompanySpan {
+    font-size: 24px;
+    color: #589199;
+}
