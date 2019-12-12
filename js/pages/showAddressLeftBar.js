@@ -1,22 +1,23 @@
-function showAddressLeftBar() {
+﻿function showAddressLeftBar() {
         let htmlShowAddressLeftBar = `
 			${getLeftBarHTML()}
 			
             <div id="content">
+        <span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
+        <a href="javascript:showAddCompany()">Add Company</a>
 				<table>
 					<tr>
-						<th colspan="2">${companyData.companies[model.data.currentCompanyID].name}</th>
+						<div class ="showCompanyDiv">${companyData.companies[model.data.currentCompanyID].name}<div>
 					</tr>
 					<tr>
-						<th colspan="2">${companyData.companies[model.data.currentCompanyID].country}</th>
+						<div class ="showCompanyDiv">${companyData.companies[model.data.currentCompanyID].country}<div>
 					</tr>
                 </table>
                 <div class="addressType">Visiting address</div>
                 <table>
 					<tr>
-					<td></td>
-					<td>
-						</td>
+					<td>h</td>
+					<td>h</td>
 					</tr>
 					<tr>
 					<td></td>
