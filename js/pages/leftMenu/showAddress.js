@@ -43,7 +43,7 @@
                 <span>Add New</span>
                 <span>Cancel</span>
             </div>
-            <div class="blueDiv"><span id="bottomBarCompanySpan">Company</span> <span>number +47 99999</span> <span>info@company.com www.companysite.com</span></div>
+            ${getInnerFooter()}
           	`;
 
 
