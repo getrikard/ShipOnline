@@ -29,6 +29,6 @@
 
 
         model.view.mainContentIsGrid = true;
-    model.view.mainContent = showCommunicationHTML;
+        model.view.mainContent = showCommunicationHTML;
         show();
 }
