@@ -179,7 +179,8 @@ body {
 }
 
 .topLineInContent a:hover {
-    text-decoration: underline;
+    border-bottom: #6BAA86 solid 2px;
+    
 }
 
 /* for tableview */
