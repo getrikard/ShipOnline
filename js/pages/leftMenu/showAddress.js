@@ -43,8 +43,8 @@
                 <span>Add New</span>
                 <span>Cancel</span>
             </div>
-            ${getInnerFooter()}
             ${getInnerAddOrSave()}
+            ${getInnerFooter()}
             </div>    
             `;
 
