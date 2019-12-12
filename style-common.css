@@ -184,15 +184,6 @@ body {
 
 /* for tableview */
 
-#addCompanyButton {
-    text-decoration: none;
-    border-bottom: green 2px solid;
-}
-
-#addCompanyButton:hover {
-    color: #6BAA86;
-}
-
 #companyButton {
     font-size: 0.8em;
 }
