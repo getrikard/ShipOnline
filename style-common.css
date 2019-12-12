@@ -254,3 +254,11 @@ th {
 .landingbutton img:hover {
     background-color: rgb(235, 233, 233, 0.5);
 }
+
+.addressType {
+    float: left;
+    margin-top: 25px;
+    font-size: 14px;
+    color: green;
+    border-bottom: solid green 2px;
+}

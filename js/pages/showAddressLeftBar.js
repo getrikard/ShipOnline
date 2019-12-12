@@ -8,9 +8,11 @@ function showAddressLeftBar() {
 						<th colspan="2">${companyData.companies[model.data.currentCompanyID].name}</th>
 					</tr>
 					<tr>
-						<th colspan="2"></th>
+						<th colspan="2">${companyData.companies[model.data.currentCompanyID].country}</th>
 					</tr>
-
+                </table>
+                <div class="addressType">Visiting address</div>
+                <table>
 					<tr>
 					<td></td>
 					<td>
