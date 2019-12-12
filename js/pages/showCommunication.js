@@ -13,26 +13,8 @@
 						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
 					</tr>
                 </table>
-                <div class="addressType">Visiting address</div><br>
                 <table>
 					<tr>
-					<td>Address here</td>
-					</tr>
-					<tr>
-					<td>Address here</td>
-					</tr>
-					<tr>
-					<td>Address here</td> 
-					</tr>
-					<tr>
-					<td>Postal Code: 4020</td>
-					<td>Place: Anywhere</td>
-					</tr>
-					<tr>
-					<td>Country/State:</td>
-					</tr>
-                    <tr>
-                    <td>Nation: Norway</td>
                     </tr>
 				</table>
 
