@@ -1,11 +1,12 @@
-function showAddressLeftBar() {
+
+function showAddressLeftBar(element) {
         let htmlShowAddressLeftBar = `
 			${getLeftBarHTML()}
 			
             <div id="content">
 				<table>
 					<tr>
-						<th colspan="2"></th>
+						<th colspan="2">${companyData.companies[2].name}</th>
 					</tr>
 					<tr>
 						<th colspan="2"></th>
