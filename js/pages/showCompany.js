@@ -1,6 +1,4 @@
 ﻿let companyData = model.data;
-let chosenCompany;
-
 function showCompany(element) {
 	let htmlShowCompany = `
 			${getLeftBarHTML()}
@@ -51,6 +49,7 @@ function showCompany(element) {
 
 
 	model.view.mainContentIsGrid = true;
-	model.view.mainContent = htmlShowCompany;
+    model.view.mainContent = htmlShowCompany;
+    model.data.currentCompanyID = element;
 	show();
 }

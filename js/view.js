@@ -2,6 +2,7 @@ let content = document.getElementById('mainContent');
 let topMenuButtons = document.getElementsByClassName('topMenuButtons');
 let topNav = document.getElementById('topMenu');
 let leftMenuButtons = document.getElementsByClassName('leftSideButtons');
+
 let topNavHtml = `
     <span class="topMenuButtons" onclick="showCompanies();">Companies</span>
     <span class="topMenuButtons" onclick="showShipsList();">Ships</span>
