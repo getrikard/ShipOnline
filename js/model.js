@@ -40,7 +40,7 @@ let model = {
                 place: "BEKKJARVIK",
                 country: "NOR",
                 groups: [],
-                phonePrefix: "+47",
+                phonePrefix: "47",
                 communications: [
                     {
                         type: "phone",

@@ -1,4 +1,5 @@
 ﻿function showCommunication() {
+    let company = model.data.companies[model.data.currentCompanyID];
     let showCommunicationHTML = `
         ${getLeftBarHTML()}
         
@@ -15,6 +16,7 @@
             </table>
             <table>
                 <tr>
+                    <td>+${company.phonePrefix} ${company.communications[0].number}</td>
                 </tr>
             </table>
 
@@ -24,9 +26,14 @@
                 <span>Save</span>
                 <span>Add New</span>
                 <span>Cancel</span>
-            </div>`;
+            </div>
+
+            ${getInnerFooter()}
+        </div>`;
 
     model.view.mainContentIsGrid = true;
+    model.view.showTopNavigation = true;
+    model.view.topNavigationActive = 0; // 0 = companies
     model.view.mainContent = showCommunicationHTML;
     show();
 }
