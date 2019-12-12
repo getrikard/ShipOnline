@@ -7,10 +7,10 @@
         <a href="javascript:showAddCompany()">Add Company</a>
 				<table>
 					<tr>
-						<div class ="showCompanyDiv">${companyData.companies[model.data.currentCompanyID].name}<div>
+						<th>${companyData.companies[model.data.currentCompanyID].name}<th>
 					</tr>
 					<tr>
-						<div class ="showCompanyDiv">${companyData.companies[model.data.currentCompanyID].country}<div>
+						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
 					</tr>
                 </table>
                 <div class="addressType">Visiting address</div>
