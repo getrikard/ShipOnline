@@ -13,7 +13,6 @@
 						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
 					</tr>
                 </table>
-                <div class="addressType">Visiting address</div><br>
                 <table>
 					<tr>
                     </tr>
