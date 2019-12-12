@@ -14,8 +14,8 @@
     <th>Groups</th>
   </tr>`;
   for (let i = 0; i < model.data.companies.length; i++) {
-      let company = model.data.companies[i];
-      model.data.currentCompanyID = i;
+    let company = model.data.companies[i];
+    model.data.currentCompanyID = i;
     htmlCompanies += `
         <tr>
         <td onclick="showCompany(${i})" class ="clickAble">${company.name}</td>

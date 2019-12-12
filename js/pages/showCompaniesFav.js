@@ -3,7 +3,7 @@ function showFavCompanies() {
   let htmlCompaniesFav =
     ` <div id="content"> <div class="topLineInContent">
         <span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
-        <a href="javascript:showAddCompany()" id="addCompanyButton">Add Company</a>
+        <a href="javascript:showAddCompany()">Add Company</a>
         </div>
     <table>
   <tr>
