@@ -1,5 +1,5 @@
-﻿function showAddressLeftBar() {
-        let htmlShowAddressLeftBar = `
+﻿function showContact() {
+        let showContactHTML = `
 			${getLeftBarHTML()}
 			
             <div id="content">
@@ -47,6 +47,6 @@
 
 
         model.view.mainContentIsGrid = true;
-        model.view.mainContent = htmlShowAddressLeftBar;
+    model.view.mainContent = showContactHTML;
         show();
 }
