@@ -13,28 +13,27 @@
 						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
 					</tr>
                 </table>
-                <div class="addressType">Visiting address</div>
+                <div class="addressType">Visiting address</div><br>
                 <table>
 					<tr>
-					<td>h</td>
-					<td>h</td>
+					<td>Address here</td>
 					</tr>
 					<tr>
-					<td></td>
-					<td></td>
+					<td>Address here</td>
 					</tr>
 					<tr>
-					<td></td> 
-					<td></td>
+					<td>Address here</td> 
 					</tr>
 					<tr>
-					<td></td>
-					<td></td>
+					<td>Postal Code: 4020</td>
+					<td>Place: Anywhere</td>
 					</tr>
 					<tr>
-					<td></td>
-					<td></td>
+					<td>Country/State:</td>
 					</tr>
+                    <tr>
+                    <td>Nation: Norway</td>
+                    </tr>
 				</table>
             <div>
 
