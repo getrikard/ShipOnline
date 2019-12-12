@@ -1,12 +1,11 @@
-
-function showAddressLeftBar(element) {
+function showAddressLeftBar() {
         let htmlShowAddressLeftBar = `
 			${getLeftBarHTML()}
 			
             <div id="content">
 				<table>
 					<tr>
-						<th colspan="2">${companyData.companies[2].name}</th>
+						<th colspan="2">${companyData.companies[model.data.currentCompanyID].name}</th>
 					</tr>
 					<tr>
 						<th colspan="2"></th>
@@ -46,6 +45,6 @@ function showAddressLeftBar(element) {
 
 
         model.view.mainContentIsGrid = true;
-    model.view.mainContent = htmlShowAddressLeftBar;
+        model.view.mainContent = htmlShowAddressLeftBar;
         show();
 }
