@@ -44,7 +44,9 @@
                 <span>Cancel</span>
             </div>
             ${getInnerFooter()}
-          	`;
+                        <div id="saveCancelCompany"> <span>Save</span> <span>Cancel</span> <span>Add to MY Company</span></div> 
+            </div>    
+            `;
 
 
 
