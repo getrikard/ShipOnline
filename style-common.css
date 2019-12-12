@@ -269,10 +269,11 @@ th {
         color: green;
     }
 .blueDiv {
-    margin-top: 10px;
     background-color: #99BFC2;
     height: 100px;
     line-height: 100px;
+    margin: -10px;
+    margin-top: 10px;
 }
 
 .blueDiv span {
