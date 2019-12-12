@@ -29,22 +29,6 @@ body {
     height: 160px;
 }
 
-#landingPage {
-    margin-top: 150px;
-}
-
-#landingPage span {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 50px;
-    font-size: 1.3em;
-    border-bottom: green 2px solid;
-}
-
-#landingPage span:hover {
-    background-color: #6BAA86;
-}
-
 .inputWrapper {
     margin-left: 40px;
 }
@@ -254,11 +238,6 @@ td, th {
 
 th {
     text-align: left;
-}
-
-.LandingPage {
-    /* margin-top: 100px; */
-    /* min-height: 400px; */
 }
 
 .landingbutton {
