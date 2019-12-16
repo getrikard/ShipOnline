@@ -9,12 +9,8 @@
 					<tr>
 						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
 					</tr>
-                <div class="addressType" > Visiting address</div> <br>
-                </table>  <table>`;
-
-
-
-
+                <table>
+                    <div class="addressType" > Visiting address</div> <br>`;
 
     let addressOfCompany = model.data.companies[model.data.currentCompanyID].adresses
              addressOfCompany.map((num) => {

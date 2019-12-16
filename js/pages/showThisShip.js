@@ -34,4 +34,3 @@
     model.view.mainContent = showSelectedHTML;
     show();
 };
-    //return `<tr class="showSelectedShip">${model.data.fleet[id].name}</tr>`;
