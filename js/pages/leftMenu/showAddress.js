@@ -11,29 +11,24 @@
 						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
 					</tr>
                 <div class="addressType" > Visiting address</div> <br>
-                </table>`;
+                </table>  <table>`;
 
-    //model.data.companies[0].adresses
-        for (let i = 0; i < model.data.companies.length; i++) {
-            let company = model.data.companies[i];
-            model.data.currentCompanyID = i;
-            htmlShowAddress +=`
-                <table>
+    let addressOfCompany = model.data.companies[0].adresses
+             addressOfCompany.map((num) => {
+                 htmlShowAddress += `
                     <tr>
-                        <td>Address here</td >
+                        <td>Address: ${num.adress}</td>
                     </tr>
                     <tr>
-                        <td>Postal Code: 4020</td>
-                        <td>Place: Anywhere</td>
+                        <td>Postal Code: ${num.postal}</td>
                     </tr>
                     <tr>
-                        <td>Country/State:</td>
+                        <td>Place: ${num.place}</td>
                     </tr>
                     <tr>
-                        <td>Nation: Norway</td>
-                    </tr>
+                        <td>Country/State: ${num.country || ''}</td>
                     </tr>`;
-        }
+             });
 
         htmlShowAddress += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
 
