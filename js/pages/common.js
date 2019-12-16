@@ -35,6 +35,19 @@ function getInnerFooter() {
     </div>`;
 }
 
+function getShipsTable() {
+    return `    
+<table>
+    <tr>
+    <th>Ship Name:</th>
+    <th>GT</th>
+    <th>MDWT</th>
+    <th>Built</th>
+    <th>Callsign</th>
+    <th>Fish ID</th>
+    <th>Flag</th>`;
+};
+
 function getInnerAddOrSave() {
     return `<div id="saveCancelCompany"> <span>Save</span> <span>Cancel</span> <span>Add to MY Company</span></div>`;
 }

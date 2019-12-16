@@ -4,15 +4,7 @@
         <span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
         <a href="javascript:showAddCompany()">Add Ships</a>
         </div>
-    <table>
-  <tr>
-    <th>Ship Name:</th>
-    <th>GT</th>
-    <th>MDWT</th>
-    <th>Built</th>
-    <th>Callsign</th>
-    <th>Fish ID</th>
-    <th>Flag</th>
+${getShipsTable()}
     <th class ="myCompanyTab" onclick="showShipsFav()">My Ship</th>
   </tr>`;
 
