@@ -6,21 +6,26 @@
         </div>
     <table>
   <tr>
-    <th>Name of ship</th>
-    <th>Type</th>
-    <th>Location</th>
-    <th>Fishing ID</th>
+    <th>Ship Name:</th>
+    <th>GT</th>
+    <th>MDWT</th>
+    <th>Built</th>
+    <th>Callsign</th>
+    <th>Fish ID</th>
+    <th>Flag</th>
     <th class ="myCompanyTab" onclick="showFavCompanies()">My Ship</th>
-    <th>Groups</th>
   </tr>`;
 
-    let showShips = model.data.companies;
+    let showShips = model.data.fleet;
     showShips.map((num) => {
         htmlShips += `<tr>
             <td onclick="" class="clickAble">${num.name}</td>
-            <td>${num.categories}</td>
-            <td>${num.place}</td>
-            <td>${num.country}</td>
+            <td>${num.GT}</td>
+            <td>${num.MDWT}</td>
+            <td>${num.built}</td>
+            <td>${num.callsign}</td>
+            <td>${num.type == 'fishing' ? num.callsign : ''}</td>
+            <td>${num.flag}</td>
             <td id="centerTdFavorite">${num.isFavorite ? '⭐' : ''}</td>
             <td></td>
         </tr>`;

@@ -210,17 +210,17 @@ let model = {
                 privateAdress: "",
                 tlf: "0",
                 picture: "img.png"
-            }
+            },
         ],
         fleet: [
             {
-                isFavorite: true,
-                name: "fsd",
-                GT: 123,
-                MDWT: 11,
-                built: 1999,
-                callsign: "SKO",
-                fishID: "V-555",
+                name: "Anne Catharina",
+                isFavorite: false,
+                GT: 702,
+                MDWT: '',
+                built: 1985,
+                callsign: "LM9999",
+                fishID: "V-L205",
                 flag: "NOR",
                 role: "MO",
                 companies: [
@@ -230,6 +230,78 @@ let model = {
                     }
                 ],
                 type: "fishing"
+            },
+                        {
+                name: "Embla",
+                isFavorite: false,
+                GT: 2506,
+                MDWT: 3480,
+                built: 2005,
+                callsign: "LANT7",
+                fishID: "V-555",
+                flag: "NIS",
+                role: "MO",
+                companies: [
+                    {
+                        type: "",
+                        companyID: 0,
+                    }
+                ],
+                type: "typeOf"
+            },
+                        {
+                name: "Froya",
+                isFavorite: true,
+                GT: 2506,
+                MDWT: 3486,
+                built: 2005,
+                callsign: "LANS7",
+                fishID: "",
+                flag: "NIS",
+                role: "MO",
+                companies: [
+                    {
+                        type: "",
+                        companyID: 0,
+                    }
+                ],
+                type: "typeOf"
+            },
+                        {
+                name: "Gerda",
+                isFavorite: false,
+                GT: 2474,
+                MDWT: 3450,
+                built: 2004,
+                callsign: "LATH7",
+                fishID: "",
+                flag: "NIS",
+                role: "MO",
+                companies: [
+                    {
+                        type: "",
+                        companyID: 0,
+                    }
+                ],
+                type: "typeOf"
+            },
+                        {
+                name: "Iduna",
+                isFavorite: true,
+                GT: 2198,
+                MDWT: 2645,
+                built: 1975,
+                callsign: "LAZB4",
+                fishID: "",
+                flag: "NIS",
+                role: "MO",
+                companies: [
+                    {
+                        type: "",
+                        companyID: 0,
+                    }
+                ],
+                type: "typeOf"
             }
         ]
     }
