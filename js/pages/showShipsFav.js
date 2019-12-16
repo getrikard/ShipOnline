@@ -2,17 +2,16 @@
 function showShipsFav() {
     let htmlShipsFav =
         ` <div id="content"> <div class="topLineInContent">
-        <span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
-        <a href="javascript:showAddCompany()">Add Ships</a>
-        </div>
+${getShipButton()}
 ${getShipsTable()}
     <th class ="myCompanyTab" onclick="showShipsList()">My Ship</th>
+    <br><br>
   </tr>`;
 
     let showFavShips = model.data.fleet;
     showFavShips.map((num, id) => {
         if (showFavShips[id].isFavorite) htmlShipsFav += `<tr>
-            <td onclick="" class="clickAble">${num.name}</td>
+            <td class="clickAble">${num.name}</td>
             <td>${num.GT}</td>
             <td>${num.MDWT}</td>
             <td>${num.built}</td>

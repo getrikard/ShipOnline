@@ -1,17 +1,16 @@
 ﻿function showShipsList() {
   let htmlShips =
     ` <div id="content"> <div class="topLineInContent">
-        <span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
-        <a href="javascript:showAddCompany()">Add Ships</a>
-        </div>
+        ${getShipButton()}
 ${getShipsTable()}
     <th class ="myCompanyTab" onclick="showShipsFav()">My Ship</th>
+    <br><br>
   </tr>`;
 
     let showShips = model.data.fleet;
-    showShips.map((num) => {
+    showShips.map((num, id) => {
         htmlShips += `<tr>
-            <td onclick="" class="clickAble">${num.name}</td>
+            <td onclick="showThisShip(${id})" class="clickAble">${num.name}</td>
             <td>${num.GT}</td>
             <td>${num.MDWT}</td>
             <td>${num.built}</td>

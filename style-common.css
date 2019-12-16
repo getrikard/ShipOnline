@@ -300,3 +300,13 @@ th {
         #saveCancelCompany span:hover {
             background-color: #6BAA86;
         }
+
+.selectedShipName {
+    float: left;
+    font-size: 32px;
+    border-bottom: solid green 2px;
+}
+.selectedShipNumber {
+    float: left;
+    font-weight: bold;
+}

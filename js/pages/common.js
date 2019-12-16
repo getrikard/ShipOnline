@@ -12,6 +12,11 @@ function getCompanyButton() {
         <a href = "javascript:showAddCompany()"> Add Company</a>
             <table>`;
 }
+function getShipButton() {
+    return `<span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
+        <a href="javascript:showAddCompany()">Add Ships</a>
+        </div>`;
+}
 
 function getLeftBarHTML() {
     return `<div id="leftSide">
