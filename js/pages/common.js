@@ -1,10 +1,16 @@
-function getCompanyAndCountryHTML() {
+﻿function getCompanyAndCountryHTML() {
     return `<div class="countryInfoDiv">
         MarineExpo
     </div>
     <div class="countryInfoDiv">
         NOR Norway
     </div>`;
+}
+
+function getCompanyButton() {
+    return `<span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
+        <a href = "javascript:showAddCompany()"> Add Company</a>
+            <table>`;
 }
 
 function getLeftBarHTML() {

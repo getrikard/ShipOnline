@@ -3,9 +3,7 @@
 			${getLeftBarHTML()}
 			
             <div id="content">
-        <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-        <a href="javascript:showAddCompany()">Add Company</a>
-				<table>
+                ${getCompanyButton()}
 					<tr>
 						<th>${companyData.companies[model.data.currentCompanyID].name}<th>
 					</tr>
