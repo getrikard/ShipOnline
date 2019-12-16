@@ -13,18 +13,18 @@
     <th class ="myCompanyTab" onclick="showFavCompanies()">My Ship</th>
     <th>Groups</th>
   </tr>`;
-  for (let i = 0; i < model.data.companies.length; i++) {
-    let company = model.data.companies[i];
-    htmlShips += `
-        <tr>
-        <td onclick="showCompany(${i}); console.log(${i})" class ="clickAble">${company.name}</td>
-        <td>${company.categories}</td>
-        <td>${company.place}</td>
-        <td>${company.country}</td>
-        <td id="centerTdFavorite">${company.isFavorite ? '⭐' : ''}</td>
-        <td></td>
-  </tr>`;
-  };
+
+    let showShips = model.data.companies;
+    showShips.map((num) => {
+        htmlShips += `<tr>
+            <td onclick="" class="clickAble">${num.name}</td>
+            <td>${num.categories}</td>
+            <td>${num.place}</td>
+            <td>${num.country}</td>
+            <td id="centerTdFavorite">${num.isFavorite ? '⭐' : ''}</td>
+            <td></td>
+        </tr>`;
+    });
 
   htmlShips += `</table> </div>`;
 
