@@ -33,14 +33,7 @@
                     <td>Nation: Norway</td>
                     </tr>
 				</table>
-
-            <div class="changeAddNewBottomBar">
-                <span>Web</span>
-                <span>Change</span>
-                <span>Save</span>
-                <span>Add New</span>
-                <span>Cancel</span>
-            </div>
+            ${getInnerChangeOrSave()}
             ${getInnerAddOrSave()}
             ${getInnerFooter()}
             </div>    
