@@ -1,13 +1,13 @@
 ﻿function showThisShip(id) {
-    let thisCompanyNumber = model.data.companies[id];
+    let thisCompanyNumber = model.data.fleet[id].shipIMO;
     let showSelectedHTML =
-        ` <div id="content"> <div class="topLineInContent">
+        ` 
+    <div class="selectedShipName"><span>${model.data.fleet[id].name}</span></div>
+    <div class="selectedShipNumber"><span>${thisCompanyNumber}</span></div>
+    <div id="content"> <div class="topLineInContent">
         ${getShipButton()}
         ${getShipsTable()}
-    <th class ="myCompanyTab" onclick="showShipsFav()">My Ship</th>
-    <span class="selectedShipName">${model.data.fleet[id].name}</span>
-<br><br><br>
-    <div class="selectedShipNumber"><span>${thisCompanyNumber.companyNo[0].type}</span>  <span>${thisCompanyNumber.companyNo[0].number}</span></div>
+    <th class ="myCompanyTab centerTdFavorite" onclick="showShipsFav()">My Ship</th>
 <br><br>
   </tr>`;
 
@@ -21,7 +21,7 @@
             <td>${num.callsign}</td>
             <td>${num.type == 'fishing' ? num.callsign : ''}</td>
             <td>${num.flag}</td>
-            <td id="centerTdFavorite">${num.isFavorite ? '⭐' : ''}</td>
+            <td class="centerTdFavorite">${num.isFavorite ? '⭐' : ''}</td>
             <td></td>
         </tr>`;
     });

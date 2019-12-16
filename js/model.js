@@ -216,6 +216,7 @@ let model = {
             {
                 name: "Anne Catharina",
                 isFavorite: false,
+                shipIMO: 'IMO 8134956',
                 GT: 702,
                 MDWT: '',
                 built: 1985,
@@ -234,6 +235,7 @@ let model = {
                         {
                 name: "Embla",
                 isFavorite: false,
+                shipIMO: 'IMO 6437812',
                 GT: 2506,
                 MDWT: 3480,
                 built: 2005,
@@ -252,6 +254,7 @@ let model = {
                         {
                 name: "Froya",
                 isFavorite: true,
+                shipIMO: 'IMO 2639478',
                 GT: 2506,
                 MDWT: 3486,
                 built: 2005,
@@ -270,6 +273,7 @@ let model = {
                         {
                 name: "Gerda",
                 isFavorite: false,
+                shipIMO: 'IMO 5267183',
                 GT: 2474,
                 MDWT: 3450,
                 built: 2004,
@@ -288,6 +292,7 @@ let model = {
                         {
                 name: "Iduna",
                 isFavorite: true,
+                shipIMO: 'IMO 8293561',
                 GT: 2198,
                 MDWT: 2645,
                 built: 1975,

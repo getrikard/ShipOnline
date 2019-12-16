@@ -10,7 +10,7 @@
     <th>Catagory</th>
     <th>Place</th>
     <th>Country</th>
-    <th class ="myCompanyTab" onclick="showFavCompanies()">My Company</th>
+    <th class ="myCompanyTab centerTdFavorite" onclick="showFavCompanies()">My Company</th>
     <th>Groups</th>
   </tr>`;
   for (let i = 0; i < model.data.companies.length; i++) {
@@ -22,7 +22,7 @@
         <td>${company.categories}</td>
         <td>${company.place[0].toUpperCase() + company.place.substring(1).toLowerCase()}</td>
         <td>${company.country}</td>
-        <td id="centerTdFavorite">${company.isFavorite ? '⭐' : ''}</td>
+        <td class="centerTdFavorite">${company.isFavorite ? '⭐' : ''}</td>
         <td></td>
   </tr>`;
   };

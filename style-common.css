@@ -200,7 +200,7 @@ body {
     cursor: pointer;
 }
 
-#centerTdFavorite {
+.centerTdFavorite {
     text-align: center;
 }
 
@@ -302,11 +302,17 @@ th {
         }
 
 .selectedShipName {
-    float: left;
     font-size: 32px;
-    border-bottom: solid green 2px;
+    background-color: white;
+    margin-bottom: 3px;
+    padding: 8px 8px;
 }
 .selectedShipNumber {
-    float: left;
     font-weight: bold;
+    background-color: white;
+    margin-bottom: 3px;
+    padding: 8px 8px;
+}
+.selectedShipName span {
+    border-bottom: solid green 2px;
 }

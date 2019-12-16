@@ -3,7 +3,7 @@
     ` <div id="content"> <div class="topLineInContent">
         ${getShipButton()}
 ${getShipsTable()}
-    <th class ="myCompanyTab" onclick="showShipsFav()">My Ship</th>
+    <th class ="myCompanyTab centerTdFavorite" onclick="showShipsFav()">My Ship</th>
     <br><br>
   </tr>`;
 
@@ -17,7 +17,7 @@ ${getShipsTable()}
             <td>${num.callsign}</td>
             <td>${num.type == 'fishing' ? num.fishID : ''}</td>
             <td>${num.flag}</td>
-            <td id="centerTdFavorite">${num.isFavorite ? '⭐' : ''}</td>
+            <td class="centerTdFavorite">${num.isFavorite ? '⭐' : ''}</td>
             <td></td>
         </tr>`;
     });
