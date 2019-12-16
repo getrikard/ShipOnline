@@ -13,7 +13,7 @@
                 <div class="addressType" > Visiting address</div> <br>
                 </table>  <table>`;
 
-    let addressOfCompany = model.data.companies[0].adresses
+    let addressOfCompany = model.data.companies[model.data.currentCompanyID].adresses
              addressOfCompany.map((num) => {
                  htmlShowAddress += `
                     <tr>
