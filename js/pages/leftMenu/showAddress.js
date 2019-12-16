@@ -1,7 +1,6 @@
 ﻿function showAddress() {
     let htmlShowAddress = `
 			${getLeftBarHTML()}
-			
             <div id="content">
                 ${getCompanyButton()}
 					<tr>
@@ -13,23 +12,22 @@
                 <div class="addressType" > Visiting address</div> <br>
                 </table>  <table>`;
 
+
+
+
+
     let addressOfCompany = model.data.companies[model.data.currentCompanyID].adresses
              addressOfCompany.map((num) => {
                  htmlShowAddress += `
                     <tr>
-                        <td>Address: ${num.adress}</td>
-                    </tr>
-                    <tr>
+                        <td>Address: ${num.adress} </td>
                         <td>Postal Code: ${num.postal}</td>
                     </tr>
                     <tr>
                         <td>Place: ${num.place}</td>
-                    </tr>
-                    <tr>
-                        <td>Country/State: ${num.country || ''}</td>
+                        <td>Place: ${num.country || ''}</td>
                     </tr>`;
-             });
-
+    });
         htmlShowAddress += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
 
         model.view.mainContentIsGrid = true;
