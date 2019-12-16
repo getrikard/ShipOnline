@@ -38,6 +38,9 @@ function getInnerFooter() {
 function getInnerAddOrSave() {
     return `<div id="saveCancelCompany"> <span>Save</span> <span>Cancel</span> <span>Add to MY Company</span></div>`;
 }
+function getInnerAddOrSaveShip() {
+    return `<div id="saveCancelCompany"> <span>Save</span> <span>Cancel</span> <span>Add to MY Ship</span></div>`;
+}
 function getInnerChangeOrSave() {
     return ` <div class="changeAddNewBottomBar">
                 <span>Web</span>
