@@ -15,7 +15,7 @@ ${getShipsTable()}
             <td>${num.MDWT}</td>
             <td>${num.built}</td>
             <td>${num.callsign}</td>
-            <td>${num.type == 'fishing' ? num.callsign : ''}</td>
+            <td>${num.type == 'fishing' ? num.fishID : ''}</td>
             <td>${num.flag}</td>
             <td id="centerTdFavorite">${num.isFavorite ? '⭐' : ''}</td>
             <td></td>
