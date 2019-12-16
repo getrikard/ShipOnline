@@ -1,5 +1,5 @@
 ﻿function showAddress() {
-        let htmlShowAddress = `
+    let htmlShowAddress = `
 			${getLeftBarHTML()}
 			
             <div id="content">
@@ -10,38 +10,34 @@
 					<tr>
 						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
 					</tr>
-                </table>
-                <div class="addressType">Visiting address</div><br>
+                <div class="addressType" > Visiting address</div> <br>
+                </table>`;
+
+    //model.data.companies[0].adresses
+        for (let i = 0; i < model.data.companies.length; i++) {
+            let company = model.data.companies[i];
+            model.data.currentCompanyID = i;
+            htmlShowAddress +=`
                 <table>
-					<tr>
-					<td>Address here</td>
-					</tr>
-					<tr>
-					<td>Address here</td>
-					</tr>
-					<tr>
-					<td>Address here</td> 
-					</tr>
-					<tr>
-					<td>Postal Code: 4020</td>
-					<td>Place: Anywhere</td>
-					</tr>
-					<tr>
-					<td>Country/State:</td>
-					</tr>
                     <tr>
-                    <td>Nation: Norway</td>
+                        <td>Address here</td >
                     </tr>
-				</table>
-            ${getInnerChangeOrSave()}
-            ${getInnerAddOrSave()}
-            ${getInnerFooter()}
-            </div>    
-            `;
+                    <tr>
+                        <td>Postal Code: 4020</td>
+                        <td>Place: Anywhere</td>
+                    </tr>
+                    <tr>
+                        <td>Country/State:</td>
+                    </tr>
+                    <tr>
+                        <td>Nation: Norway</td>
+                    </tr>
+                    </tr>`;
+        }
 
-
+        htmlShowAddress += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
 
         model.view.mainContentIsGrid = true;
         model.view.mainContent = htmlShowAddress;
         show();
-}
+    }
