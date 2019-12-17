@@ -259,6 +259,7 @@ th {
 .changeAddNewBottomBar {
     margin-top: 25px;
     text-decoration: underline;
+    text-align: right;
 }
 
 .changeAddNewBottomBar span {
