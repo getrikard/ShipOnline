@@ -46,11 +46,13 @@ let model = {
                         type: "phone",
                         number: "55 08 40 00",
                         department: 0,
+                        notes: "",
                     },
                     {
-                        type: "phone",
-                        number: "55 08 40 02",
+                        type: "email",
+                        number: "reno@halstensen.no",
                         department: 1,
+                        notes: "",
                     }
                 ],
                 departments: [
@@ -91,16 +93,26 @@ let model = {
                 place: "ULSTEINVIK",
                 country: "NOR",
                 groups: [],
+                phonePrefix: "47",
                 communications: [
                     {
                         type: "phone",
                         number: "70 00 86 00",
-                        department: 103,
+                        department: 1,
+                        notes: "",
                     },
+                    {
+                        type: "web",
+                        number: "www.ios-as.no",
+                        department: 2,
+                        notes: "",
+                    }
                 ],
                 departments: [
-                    "Whales R Us",
-                    "Kraken Unleashed"
+                    "",
+                    "Commerce",
+                    "PR",
+                    "HR",
                 ],
                 companyNo: [
                     {
@@ -137,16 +149,37 @@ let model = {
                 place: "HAUGESUND",
                 country: "NOR",
                 groups: [],
+                phonePrefix: "47",
                 communications: [
                     {
-                        type: "Email",
+                        type: "email",
                         number: "post@ostensjo.no",
-                        department: 483,
-                    }
+                        department: 0,
+                        notes: "",
+                    },
+                    {
+                        type: "phone",
+                        number: "44 33 22 88",
+                        department: 0,
+                        notes: "",
+                    },
+                    {
+                        type: "phone",
+                        number: "44 33 22 75",
+                        department: 2,
+                        notes: "",
+                    },
+                    {
+                        type: "fax",
+                        number: "44 33 22 76",
+                        department: 1,
+                        notes: "",
+                    },
                 ],
                 departments: [
-                    "fdsf",
-                    "fsdfss"
+                    "",
+                    "Sales",
+                    "Accounting"
                 ],
                 companyNo: [
                     {
@@ -182,16 +215,17 @@ let model = {
                 place: "HIRTSHALS",
                 country: "DNK",
                 groups: [],
+                phonePrefix: "47",
                 communications: [
                     {
                         type: "phone",
                         number: "98 97 70 92",
-                        department: 207,
+                        department: 0,
+                        notes: "",
                     }
                 ],
                 departments: [
-                    "fdsf",
-                    "fsdfss"
+                    ""
                 ],
                 companyNo: [
                     {

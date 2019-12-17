@@ -15,13 +15,25 @@
                 </tr>
             </table>
 
-            <table>`;
+            <table>
+                <tr>
+                    <th>Department</th>
+                    <th></th>
+                    <th>Notes</th>
+                </tr>`;
 
     for (comm of company.communications) {
         showCommunicationHTML += `<tr>
-            <td>+${company.phonePrefix} ${comm.number}</td>
             <td>
-                Department: ${company.departments[comm.department]}
+                ${company.departments[comm.department]}
+            </td>
+            <td>
+                ${comm.type}: 
+                ${comm.type === 'phone' || comm.type === 'fax' ? '+<strong>' + company.phonePrefix + '</strong>' : ''}
+                ${comm.number}
+            </td>
+            <td>
+                ${comm.notes}
             </td>
         </tr>`
     }
@@ -29,9 +41,9 @@
     showCommunicationHTML += `</table>
             <div class="changeAddNewBottomBar">
                 <span>Change</span>
-                <span>Save</span>
+                <!--<span>Save</span>
                 <span>Add New</span>
-                <span>Cancel</span>
+                <span>Cancel</span>-->
             </div>
 
             ${getInnerFooter()}
