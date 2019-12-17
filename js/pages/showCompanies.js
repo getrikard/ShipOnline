@@ -31,6 +31,7 @@
   model.view.mainContentIsGrid = false;
   model.view.showTopNavigation = true;
   model.view.topNavigationActive = 0; // 0 = companies
+  model.view.showLeftNavigation = false;
   model.view.mainContent = htmlCompanies;
   show();
 };

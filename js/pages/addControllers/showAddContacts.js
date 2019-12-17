@@ -48,6 +48,7 @@ function showAddContacts() {
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;
     model.view.topNavigationActive = 2; // 0 = companies
+    model.view.showLeftNavigation = false;
     model.view.mainContent = htmlAddNewContact;
     show();
 }

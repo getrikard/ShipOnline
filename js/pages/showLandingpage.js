@@ -1,6 +1,4 @@
 function showLandingPage() {
-    model.view.mainContentIsGrid = false;
-    model.view.showTopNavigation = false;
     model.view.mainContent = `<div id="content">
         <div class="LandingPage">
             <div class="landingbutton" onclick="showCompanies()">
@@ -20,6 +18,10 @@ function showLandingPage() {
             </div>
         </div>
     </div>`;
-    show();
 
+    model.view.mainContentIsGrid = false;
+    model.view.showTopNavigation = false;
+    model.view.showLeftNavigation = false;
+
+    show();
 }

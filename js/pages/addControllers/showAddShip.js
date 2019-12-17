@@ -59,6 +59,7 @@ function showAddShip() {
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;
     model.view.topNavigationActive = 1; // 0 = companies
+    model.view.showLeftNavigation = false;
     model.view.mainContent = htmlAddNewShip;
     show();
 }
