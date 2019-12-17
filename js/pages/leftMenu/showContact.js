@@ -70,6 +70,7 @@
             </div>
           	`;
 
+    showContactHTML += `${getInnerFooter()}`;
 
     model.view.mainContentIsGrid = true;
     model.view.mainContent = showContactHTML;
