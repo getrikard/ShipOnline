@@ -21,7 +21,7 @@ let model = {
                 isFavorite: true,
                 name: "Halstensen Holding A/S",
                 categories: [
-                    "Ship Management",
+                    "Ship Management", "Car Transporter", "Freight", "Leisure",
                 ],
                 adresses: [
                     {
@@ -74,7 +74,7 @@ let model = {
                 isFavorite: false,
                 name: "Island Offshore Shipping A/S",
                 categories: [
-                    "Pirating",
+                    "Pirating", "Cargo", "Cruiser",
                 ],
                 adresses: [
                     {
@@ -130,7 +130,7 @@ let model = {
                 isFavorite: false,
                 name: "Østensjø Rederi A/S",
                 categories: [
-                    "Ship Retailer",
+                    "Ship Retailer", "Ship Management", "Party Boat"
                 ],
                 adresses: [
                     {
@@ -196,7 +196,7 @@ let model = {
                 isFavorite: true,
                 name: "Woller, Jan Milton",
                 categories: [
-                    "Ship Decorator",
+                    "Ship Decorator", "Ship Interior Design", "Filler",
                 ],
                 adresses: [
                     {

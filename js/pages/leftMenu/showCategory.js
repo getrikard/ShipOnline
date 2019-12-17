@@ -8,15 +8,15 @@ function showCategory() {
 					</tr>
                 <tr>
                     <th>${companyData.companies[model.data.currentCompanyID].country}<th>
-					</tr>
-                        <table> <td><b>Category:</b></td><tr>`;
+					</tr></table>
+                        <table><br>
+                            <td><b>Category:</b></td></table><table><td>`;
 
     let categoryOfCompany = model.data.companies[model.data.currentCompanyID].categories;
                 categoryOfCompany.map((num) => {
-                 htmlShowCategory += `
-                        <td>${num}</td>`;
+                 htmlShowCategory += `${num}<br>`;
                 });
-    htmlShowCategory += `</tr> </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+    htmlShowCategory += `</tr></td></table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
                 
 model.view.mainContentIsGrid = true;
 model.view.mainContent = htmlShowCategory;
