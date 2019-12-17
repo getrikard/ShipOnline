@@ -2,7 +2,27 @@ function showDocuments() {
     let htmlShowDocuments = `
 			${getLeftBarHTML()}
             <div id="content">
-                ${getCompanyButton()} <td>DOCUMENTS CONTENT</td>`;
+                ${getCompanyButton()}
+                <table>
+					<tr>
+						<th>${companyData.companies[model.data.currentCompanyID].name}<th>
+					</tr>
+					<tr>
+						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
+					</tr>
+                </table>
+                <table>
+                    <tr style="font-weight: bold";><td>Document Name:</td><td>Date:</td></tr>
+                    <tr style="font-weight: bold";><td>Subject:</td><td>Project:</td></tr>
+                    <tr><td>Type:</td><td>Person:</td>
+                    <tr><td>Updated by:</td></tr>
+                    </table>
+                    <table>
+                    <tr><td>Sharing:</td></tr>
+                    <tr><td>Groups:</td></tr>
+                    <tr><td>Link to document:</td></tr>
+                </table>
+                `;
 
     htmlShowDocuments += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
 
