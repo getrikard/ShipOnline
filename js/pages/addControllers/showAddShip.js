@@ -83,6 +83,8 @@ function addShipToModel() {
         fishID: fishId,
         flag: flag,
     };
-    model.data.fleet.push(ship);
+    if (ship.name !== '') {
+        model.data.fleet.push(ship);
+    } else return;
     showShipsList();
 }
