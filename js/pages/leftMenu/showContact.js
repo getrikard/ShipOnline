@@ -32,14 +32,14 @@
                     <tr><td>History:</td></tr>
                 </table>
                 
-                <div id="sideWrap">
+                
                 <div class="rightContact">
                 Stillings Type:
                 </div>
                 <div class="leftContact">
                 Department Type:
                 </div>
-                </div>
+                
                
             <div class="changeAddNewBottomBar">
                 <span>Web</span>
