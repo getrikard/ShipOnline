@@ -14,51 +14,22 @@
 					</tr>
                 </table>
                 <table>
-                    <tr>
-                    <td>Martin Andersen</td>
-                    <td>Company:</td>
-                    </tr>
-                    <tr>
-                    <td>Communication:</td>
-                    </tr>
-                    <tr>
-                    <td>Sharing:</td>
-                    <td>Groups:</td>
-                    </tr>
-                    <tr>
-                    <td>Private Adress:</td>
-                    <td>Place:</td>
-                    </tr>
-                    <tr>
-                    <td>Private Communication:</td>
-                    </tr>
-                    <tr>
-                    <td>Education:</td>
-                    </tr>
-                    <tr>
-                    <td>Sertificate:</td>
-                    </tr>
-                    <tr>
-                    <td>Member:</td>
-                    </tr>
-                    <tr>
-                    <td>Vessels:</td>
-                    </tr>
-                    <tr>
-                    <td>Next of kind:</td>
-                    </tr>
-                    <tr>
-                    <td>Notes / Documents:</td>
-                    </tr>
-                    <tr>
-                    <td>Images:</td>
-                    </tr>
-                    <tr>
-                    <td>Calender:</td>
-                    </tr>
-                    <tr>
-                    <td>History:</td>
-                    </tr>
+                    <tr><td>Martin Andersen</td>
+                    <td>Company:</td></tr>
+                    <tr><td>Communication:</td></tr>
+                    <tr><td>Sharing:</td>
+                    <td>Groups:</td></tr>
+                    <tr><td>Private Adress:</td><td>Place:</td></tr>
+                    <tr><td>Private Communication:</td></tr>
+                    <tr><td>Education:</td></tr>
+                    <tr><td>Sertificate:</td></tr>
+                    <tr><td>Member:</td></tr>
+                    <tr><td>Vessels:</td></tr>
+                    <tr><td>Next of kind:</td></tr>
+                    <tr><td>Notes / Documents:</td></tr>
+                    <tr><td>Images:</td></tr>
+                    <tr><td>Calender:</td></tr>
+                    <tr><td>History:</td></tr>
                 </table>
                 
                 <div id="sideWrap">
