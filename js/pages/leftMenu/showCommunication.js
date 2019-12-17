@@ -5,7 +5,7 @@
         
         <div id="content">
             <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-            <a href="javascript:showAddCompany()">Add Company</a>
+            <a href="javascript:showAddCommunication()">Add Communication</a>
             <table>
                 <tr>
                     <th>${companyData.companies[model.data.currentCompanyID].name}<th>
@@ -14,14 +14,20 @@
                     <th>${companyData.companies[model.data.currentCompanyID].country}<th>
                 </tr>
             </table>
-            <table>
-                <tr>
-                    <td>+${company.phonePrefix} ${company.communications[0].number}</td>
-                </tr>
-            </table>
 
+            <table>`;
+
+    for (comm of company.communications) {
+        showCommunicationHTML += `<tr>
+            <td>+${company.phonePrefix} ${comm.number}</td>
+            <td>
+                Department: ${company.departments[comm.department]}
+            </td>
+        </tr>`
+    }
+
+    showCommunicationHTML += `</table>
             <div class="changeAddNewBottomBar">
-                <span>Web</span>
                 <span>Change</span>
                 <span>Save</span>
                 <span>Add New</span>
@@ -29,7 +35,7 @@
             </div>
 
             ${getInnerFooter()}
-        </div>`;
+        </div > `;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;
