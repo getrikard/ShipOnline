@@ -231,6 +231,27 @@ th {
     text-align: left;
 }
 
+#sideWrap {
+    margin-left: 700px;
+    text-align: inline-block;
+    width: 300px;
+}
+
+.rightContact {
+    float: right;
+    background-color: red;
+    width: 150px;
+    height: 100px;
+}
+
+.leftContact {
+    float: left;
+    background-color: red;
+    width: 150px;
+    height: 100px;
+}
+
+
 .landingbutton {
     background-color: #FFF;
     margin: 40px;
