@@ -1,5 +1,5 @@
 function showAddShip() {
-    let html = ` <div id="content">
+    let htmlAddNewShip = ` <div id="content">
         <table>
             <tr>
                 <td>
@@ -59,7 +59,7 @@ function showAddShip() {
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;
     model.view.topNavigationActive = 1; // 0 = companies
-    model.view.mainContent = html;
+    model.view.mainContent = htmlAddNewShip;
     show();
 }
 
