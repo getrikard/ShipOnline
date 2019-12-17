@@ -69,5 +69,4 @@ function addCompanyToModel() {
 
 function backToCompanies() {
     showCompanies();
-    show();
 }
