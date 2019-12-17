@@ -243,15 +243,15 @@ let model = {
         contacts: [
             {
                 name: "Elvis Presley",
-                companys: [],
+                companys: [0, 2],
                 relation: "Idol",
                 email: "ElvisP@outlook.com",
                 groups: "Heaven",
-                stilling: "",
+                stilling: ["CEO", "Cook"],
                 department: "",
                 privateAdress: "",
                 number: "91140237",
-                picture: "img.png",
+                picture: "elvis.png",
                 isFavorite: true,
             },
         ],
