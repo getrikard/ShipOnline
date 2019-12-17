@@ -33,6 +33,7 @@
   model.view.mainContentIsGrid = false;
   model.view.showTopNavigation = true;
   model.view.topNavigationActive = 2; // 2 = contacts
+  model.view.showLeftNavigation = false;
   model.view.mainContent = htmlContacts;
   show();
 };

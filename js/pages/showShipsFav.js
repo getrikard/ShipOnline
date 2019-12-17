@@ -28,6 +28,7 @@ ${getShipsTable()}
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;
     model.view.topNavigationActive = 1; // 1 = ships
+    model.view.showLeftNavigation = false;
     model.view.mainContent = htmlShipsFav;
     show();
 };
