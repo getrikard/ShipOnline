@@ -180,7 +180,6 @@ body {
 
 .topLineInContent a:hover {
     border-bottom: #6BAA86 solid 2px;
-    
 }
 
 /* for tableview */
@@ -256,18 +255,22 @@ th {
     border-bottom: solid green 2px;
     width: fit-content;
 }
+
 .changeAddNewBottomBar {
     margin-top: 25px;
     text-decoration: underline;
 }
+
 .changeAddNewBottomBar span {
     margin-left: 5%;
 }
-    .changeAddNewBottomBar span:hover {
-        cursor: pointer;
-        font-weight: bolder;
-        color: green;
-    }
+
+.changeAddNewBottomBar span:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    color: green;
+}
+
 .blueDiv {
     background-color: #99BFC2;
     height: 50px;
@@ -292,14 +295,14 @@ th {
     margin-left: 490px;
 }
 
-    #saveCancelCompany span {
-        border: black 1px solid;
-        border-radius: 5%;
-    }
+#saveCancelCompany span {
+    border: black 1px solid;
+    border-radius: 5%;
+}
 
-        #saveCancelCompany span:hover {
-            background-color: #6BAA86;
-        }
+#saveCancelCompany span:hover {
+    background-color: #6BAA86;
+}
 
 .selectedShipName {
     font-size: 32px;
@@ -307,12 +310,14 @@ th {
     margin-bottom: 3px;
     padding: 8px 8px;
 }
+
 .selectedShipNumber {
     font-weight: bold;
     background-color: white;
     margin-bottom: 3px;
     padding: 8px 8px;
 }
+
 .selectedShipName span {
     border-bottom: solid green 2px;
 }
