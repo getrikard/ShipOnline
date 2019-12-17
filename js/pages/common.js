@@ -15,7 +15,7 @@ function getCompanyButton() {
 }
 function getShipButton() {
     return `<span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
-        <a href="javascript:showAddShips()">Add Ships</a>
+        <a href="javascript:showAddShip()">Add Ships</a>
         </div>`;
 }
 
