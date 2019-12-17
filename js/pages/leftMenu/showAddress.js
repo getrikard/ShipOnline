@@ -15,13 +15,11 @@
     let addressOfCompany = model.data.companies[model.data.currentCompanyID].adresses
              addressOfCompany.map((num) => {
                  htmlShowAddress += `
+                    <td><b>Place</b>: ${num.place}</td>
+                    <td><b>Country</b>: ${num.country || ''}</td>          
                     <tr>
-                        <td>Address: ${num.adress} </td>
-                        <td>Postal Code: ${num.postal}</td>
-                    </tr>
-                    <tr>
-                        <td>Place: ${num.place}</td>
-                        <td>Place: ${num.country || ''}</td>
+                        <td><b>Address</b>: ${num.adress} </td>
+                        <td><b>Postal Code</b>: ${num.postal}</td>
                     </tr>`;
     });
         htmlShowAddress += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
