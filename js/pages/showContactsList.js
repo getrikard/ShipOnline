@@ -17,12 +17,12 @@
     let contacts = model.data.contacts[i];
     htmlContacts += `
         <tr>
-        <td class ="clickAble">Elvis Presley</td>
-        <td>Wife</td>
-        <td>113</td>
-        <td>Elvispresley@gmail.com</td>
-        <td>⭐</td>
-        <td>Intern</td>
+        <td class ="clickAble">${contacts.name}</td>
+        <td>${contacts.relation}</td>
+        <td>${contacts.number}</td>
+        <td>${contacts.email}</td>
+        <td>${contacts.isFavorite ? '⭐' : ''}</td>
+        <td>${contacts.groups}</td>
   </tr>`;
   };
 

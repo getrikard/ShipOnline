@@ -208,13 +208,17 @@ let model = {
         ],
         contacts: [
             {
-                name: "",
+                name: "Elvis Presley",
                 companys: [],
+                relation: "Idol",
+                email: "ElvisP@outlook.com",
+                groups: "Heaven",
                 stilling: "",
                 department: "",
                 privateAdress: "",
-                tlf: "0",
-                picture: "img.png"
+                number: "91140237",
+                picture: "img.png",
+                isFavorite: true,
             },
         ],
         fleet: [
