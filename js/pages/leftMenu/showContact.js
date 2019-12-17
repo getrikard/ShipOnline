@@ -33,12 +33,12 @@
                 </table>
                 
                 
-                <div class="rightContact">
+                <!-- <div class="rightContact">
                 Stillings Type:
                 </div>
                 <div class="leftContact">
                 Department Type:
-                </div>
+                </div> -->
                 
                
             <div class="changeAddNewBottomBar">

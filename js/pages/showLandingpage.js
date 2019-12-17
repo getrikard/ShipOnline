@@ -11,7 +11,7 @@ function showLandingPage() {
             <div class="landingbutton" onclick="showShipsList()">
                 <img src="IMG/Ship icon blue.png" alt="picture">
                 <br>
-                <strong style="color: #325986">Ships</strong>
+                <strong style="color: #325986">Vessels</strong>
             </div>
             <div class="landingbutton" onclick="showContactsList()">
                 <img  src="IMG/contact.png" alt="picture">

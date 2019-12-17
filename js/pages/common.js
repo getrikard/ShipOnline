@@ -14,8 +14,8 @@ function getCompanyButton() {
             <table>`;
 }
 function getShipButton() {
-    return `<span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
-        <a href="javascript:showAddShip()">Add Ships</a>
+    return `<span id="companyButton"><b>SP</b>SHIPBASE Vessels ➡ </span>
+        <a href="javascript:showAddShip()">Add Vessel</a>
         </div>`;
 }
 
