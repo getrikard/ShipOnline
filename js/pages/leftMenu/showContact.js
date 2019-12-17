@@ -59,8 +59,17 @@
                     <tr>
                     <td>History:</td>
                     </tr>
-				</table>
-
+                </table>
+                
+                <div id="sideWrap">
+                <div class="rightContact">
+                Stillings Type:
+                </div>
+                <div class="leftContact">
+                Department Type:
+                </div>
+                </div>
+               
             <div class="changeAddNewBottomBar">
                 <span>Web</span>
                 <span>Change</span>
