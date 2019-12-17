@@ -231,12 +231,6 @@ th {
     text-align: left;
 }
 
-#sideWrap {
-    margin-left: 700px;
-    text-align: inline-block;
-    width: 300px;
-}
-
 .rightContact {
     float: right;
     background-color: red;
@@ -245,7 +239,7 @@ th {
 }
 
 .leftContact {
-    float: left;
+    float: right;
     background-color: red;
     width: 150px;
     height: 100px;
