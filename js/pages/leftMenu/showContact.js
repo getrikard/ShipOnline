@@ -53,6 +53,10 @@
     showContactHTML += `${getInnerFooter()}`;
 
     model.view.mainContentIsGrid = true;
+    model.view.showTopNavigation = true;
+    model.view.topNavigationActive = 0; // 0 = companies
+    model.view.showLeftNavigation = true;
+    model.view.leftNavigationActive = 3; // 3 = contacts
     model.view.mainContent = showContactHTML;
     show();
 }
