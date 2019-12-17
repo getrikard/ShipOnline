@@ -247,7 +247,7 @@ let model = {
                 relation: "Idol",
                 email: "ElvisP@outlook.com",
                 groups: "Heaven",
-                stilling: "",
+                stilling: ["CEO", "Cook"],
                 department: "",
                 privateAdress: "",
                 number: "91140237",

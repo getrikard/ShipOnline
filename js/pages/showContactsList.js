@@ -22,7 +22,7 @@
         <td>${contacts.relation}</td>
         <td>${contacts.number}</td>
         <td>${contacts.email}</td>
-        <td>${contacts.companys.map(id => model.data.companies[id].name).join(',<br>')}</td>
+        <td>${contacts.companys.map(id => model.data.companies[id].name + '(' + contacts.stilling[id] + ')').join('<br>')}</td>
         <td>${contacts.isFavorite ? '⭐' : ''}</td>
         <td>${contacts.groups}</td>
   </tr>`;
