@@ -52,6 +52,8 @@
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;
     model.view.topNavigationActive = 0; // 0 = companies
+    model.view.showLeftNavigation = true;
+    model.view.leftNavigationActive = 2; // 2 = communication
     model.view.mainContent = showCommunicationHTML;
     show();
 }

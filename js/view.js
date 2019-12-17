@@ -1,5 +1,6 @@
 let content = document.getElementById('mainContent');
 let topMenuButtons = document.getElementsByClassName('topMenuButtons');
+let leftSideButtons = document.getElementsByClassName('leftSideButtons');
 let topNav = document.getElementById('topMenu');
 let leftMenuButtons = document.getElementsByClassName('leftSideButtons');
 
@@ -20,5 +21,13 @@ function show() {
             element.classList.remove("active");
         }
         topMenuButtons[model.view.topNavigationActive].classList.add("active");
+    }
+
+    if (model.view.showLeftNavigation) {
+        for (let i = 0; i < leftSideButtons.length; i++) {
+            element = leftSideButtons[i];
+            element.classList.remove("active-left");
+        }
+        leftSideButtons[model.view.leftNavigationActive].classList.add("active-left");
     }
 }

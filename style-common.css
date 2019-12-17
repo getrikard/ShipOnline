@@ -105,6 +105,11 @@ body {
     background-color: #6BAA86;
 }
 
+.active-left {
+    background-color: #1c3544;
+    color: white;
+}
+
 .disabled {
     background-color: #6BAA86;
 }

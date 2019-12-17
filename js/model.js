@@ -5,6 +5,8 @@ let model = {
         mainContentIsGrid: false,
         showTopNavigation: true,
         topNavigationActive: 0,
+        showLeftNavigation: true,
+        leftNavigationActive: 0,
     },
     data: {
         username: "OleIversen",
