@@ -1,9 +1,10 @@
 ﻿function getCompanyAndCountryHTML() {
-    return `<div class="countryInfoDiv">
-        MarineExpo
+    let company = model.data.companies[model.data.currentCompanyID];
+    return `<div class="countryInfoDiv" style="margin-bottom: 30px">
+        ${company.name}
     </div>
     <div class="countryInfoDiv">
-        NOR Norway
+        ${company.country}
     </div>`;
 }
 
