@@ -342,3 +342,8 @@ th {
 .selectedShipName span {
     border-bottom: solid green 2px;
 }
+
+.stillings-text {
+    /* font-size: 0.8em; */
+    /* font-variant: small-caps; */
+}

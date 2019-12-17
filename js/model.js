@@ -245,7 +245,16 @@ let model = {
         contacts: [
             {
                 name: "Elvis Presley",
-                companys: [0, 2],
+                companys: [
+                    {
+                        compID: 0,
+                        stilling: "CEO",
+                    },
+                    {
+                        compID: 2,
+                        stilling: "Cook",
+                    }
+                ],
                 relation: "Idol",
                 email: "ElvisP@outlook.com",
                 groups: "Heaven",
