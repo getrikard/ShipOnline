@@ -35,7 +35,7 @@ function showAddCompany() {
             </tr>
         </table>
 
-        <button onclick="backToCompanies()">Cancel</button>
+        <button onclick="showCompanies()">Cancel</button>
         <button onclick="addCompanyToModel()">Save</button>
     <div id="content">
     `;
@@ -64,9 +64,5 @@ function addCompanyToModel() {
         country: country
     };
     model.data.companies.push(company);
-    backToCompanies();
-}
-
-function backToCompanies() {
     showCompanies();
 }
