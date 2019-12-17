@@ -68,3 +68,12 @@ function getInnerChangeOrSave() {
                 <span>Cancel</span>
             </div>`;
 }
+
+function getCountryDropDownList() {
+    return `<select id="addCountryInput">
+        <option>NOR</option>
+        <option>SWE</option>
+        <option>DNK</option>
+        <option>GER</option>
+    </select>`;
+}

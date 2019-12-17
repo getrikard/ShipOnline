@@ -30,12 +30,7 @@ function showAddCompany() {
                     Country:
                 </td>
                 <td>
-                    <select id="addCountryInput">
-                        <option>NOR</option>
-                        <option>SWE</option>
-                        <option>DNK</option>
-                        <option>GER</option>
-                    </select>
+                    ${getCountryDropDownList()}
                 </td>
             </tr>
         </table>
@@ -56,6 +51,11 @@ function addCompanyToModel() {
     const categories = document.getElementById('addCategoryInput').value.split(',');
     const place = document.getElementById('addPlaceInput').value;
     const country = document.getElementById('addCountryInput').value;
+
+    if (name === '' || categories === '' || place === '') {
+        return;
+    }
+
     const company = {
         isFavorite: false,
         name: name,
