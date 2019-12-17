@@ -45,7 +45,12 @@ let model = {
                     {
                         type: "phone",
                         number: "55 08 40 00",
-                        department: 912280780,
+                        department: 0,
+                    },
+                    {
+                        type: "phone",
+                        number: "55 08 40 02",
+                        department: 1,
                     }
                 ],
                 departments: [
@@ -232,7 +237,7 @@ let model = {
                 ],
                 type: "fishing"
             },
-                        {
+            {
                 name: "Embla",
                 isFavorite: false,
                 shipIMO: 'IMO 6437812',
@@ -251,7 +256,7 @@ let model = {
                 ],
                 type: "typeOf"
             },
-                        {
+            {
                 name: "Froya",
                 isFavorite: true,
                 shipIMO: 'IMO 2639478',
@@ -270,7 +275,7 @@ let model = {
                 ],
                 type: "typeOf"
             },
-                        {
+            {
                 name: "Gerda",
                 isFavorite: false,
                 shipIMO: 'IMO 5267183',
@@ -289,7 +294,7 @@ let model = {
                 ],
                 type: "typeOf"
             },
-                        {
+            {
                 name: "Iduna",
                 isFavorite: true,
                 shipIMO: 'IMO 8293561',
