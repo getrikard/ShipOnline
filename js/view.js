@@ -5,7 +5,7 @@ let leftMenuButtons = document.getElementsByClassName('leftSideButtons');
 
 let topNavHtml = `
     <span class="topMenuButtons" onclick="showCompanies();">Companies</span>
-    <span class="topMenuButtons" onclick="showShipsList();">Ships</span>
+    <span class="topMenuButtons" onclick="showShipsList();">Vessels</span>
     <span class="topMenuButtons" onclick="showContactsList();">Contacts</span>`;
 
 showLandingPage();
