@@ -64,11 +64,11 @@ let model = {
                 companyNo: [
                     {
                         type: "IMO",
-                        number: "00",
+                        number: "9751445",
                     },
                     {
                         type: "Enterprise",
-                        number: "0345",
+                        number: "328259",
                     }
                 ]
             },
@@ -119,11 +119,11 @@ let model = {
                 companyNo: [
                     {
                         type: "IMO",
-                        number: "00",
+                        number: "1479931",
                     },
                     {
                         type: "Enterprise",
-                        number: "0345",
+                        number: "03451",
                     }
                 ]
             },
@@ -232,12 +232,16 @@ let model = {
                 companyNo: [
                     {
                         type: "IMO",
-                        number: "00",
+                        number: "3579772",
                     },
                     {
                         type: "Enterprise",
-                        number: "0345",
-                    }
+                        number: "030074",
+                    },
+                    {
+                        type: "custom",
+                        number: '',
+                    },
                 ]
             },
 
