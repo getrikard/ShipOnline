@@ -20,16 +20,20 @@ function showCompanyIdNo() {
                     <tr>
                     </tr>`;
     });
-    htmlShowCompanyIdNo += `<td>Add new: <br></td>
-                            <td><input type="text" placeholdert="SPShipBase"></td>
-                            <td><div>Save</div></td>`;
-    htmlShowCompanyIdNo += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
-            
-                model.view.mainContentIsGrid = true;
-                model.view.showTopNavigation = true;
-                model.view.topNavigationActive = 0; // 0 = companies
-                model.view.showLeftNavigation = true;
-                model.view.leftNavigationActive = 5; // 5 = compID
-                model.view.mainContent = htmlShowCompanyIdNo;
-                show();
+    htmlShowCompanyIdNo += ` </table>
+       <div class="changeAddNewBottomBar">
+        <span>Web</span>
+        <span>Change</span>
+        <span>Save</span>
+        <span onclick="showAddNewCompanyID()">Add New</span>
+        <span>Cancel</span>
+        </div> ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+
+    model.view.mainContentIsGrid = true;
+    model.view.showTopNavigation = true;
+    model.view.topNavigationActive = 0; // 0 = companies
+    model.view.showLeftNavigation = true;
+    model.view.leftNavigationActive = 5; // 5 = compID
+    model.view.mainContent = htmlShowCompanyIdNo;
+    show();
 }

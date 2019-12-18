@@ -350,7 +350,12 @@ th {
     border-bottom: green solid 3px;
 }
 
-/*.stillings-text {
-    font-size: 0.8em; 
-    font-variant: small-caps; 
-}*/
+.stillings-text {
+    font-size: 0.8em;
+    font-variant: small-caps;
+}
+
+.companiesContact:hover {
+    cursor: pointer;
+    border-bottom: green solid 3px;
+}
