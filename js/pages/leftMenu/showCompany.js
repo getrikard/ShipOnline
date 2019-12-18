@@ -1,5 +1,4 @@
 ﻿let companyData = model.data;
-let selectedCompany;
 function showCompany() {
 	let element = model.data.currentCompanyID;
 	let htmlShowCompany = `
