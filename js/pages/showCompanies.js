@@ -18,7 +18,7 @@
     model.data.currentCompanyID = i;
     htmlCompanies += `
         <tr>
-        <td onclick="showCompany(${i})" class ="clickAble">${company.name}</td>
+        <td onclick="model.data.currentCompanyID = ${i};showCompany()" class ="clickAble">${company.name}</td>
         <td>${company.categories.join(', ')}</td>
         <td>${company.place[0].toUpperCase() + company.place.substring(1).toLowerCase()}</td>
         <td>${company.country}</td>

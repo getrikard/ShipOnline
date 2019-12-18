@@ -21,7 +21,7 @@ function getShipButton() {
 
 function getLeftBarHTML() {
     return `<div id="leftSide">
-        <div class="leftSideButtons" onclick="showCompany(${selectedCompany})">Company</div>
+        <div class="leftSideButtons" onclick="showCompany()">Company</div>
         <div class="leftSideButtons" onclick="showAddress()">Address</div>
         <div class="leftSideButtons" onclick="showCommunication()">Communication</div>
         <div class="leftSideButtons" onclick="showContact()">Contacts</div>

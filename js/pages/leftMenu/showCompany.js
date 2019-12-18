@@ -1,7 +1,7 @@
 ﻿let companyData = model.data;
 let selectedCompany;
-function showCompany(element) {
-	selectedCompany = element;
+function showCompany() {
+	let element = model.data.currentCompanyID;
 	let htmlShowCompany = `
 			${getLeftBarHTML()}
 			
@@ -57,6 +57,5 @@ function showCompany(element) {
     model.view.showLeftNavigation = true;
     model.view.leftNavigationActive = 0; // 0 = company
     model.view.mainContent = htmlShowCompany;
-    model.data.currentCompanyID = element;
 	show();
 }
