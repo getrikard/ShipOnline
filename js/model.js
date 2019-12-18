@@ -71,7 +71,7 @@ let model = {
                         number: "328259",
                     },
                     {
-                        type: "custom",
+                        type: "Custom",
                         number: '',
                     },
                 ]
@@ -130,7 +130,7 @@ let model = {
                         number: "03451",
                     },
                     {
-                        type: "custom",
+                        type: "Custom",
                         number: '',
                     },
 
@@ -202,7 +202,7 @@ let model = {
                         number: "980844072",
                     },
                     {
-                        type: "custom",
+                        type: "Custom",
                         number: '',
                     },
                 ]
