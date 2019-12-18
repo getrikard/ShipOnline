@@ -69,7 +69,11 @@ let model = {
                     {
                         type: "Enterprise",
                         number: "328259",
-                    }
+                    },
+                    {
+                        type: "custom",
+                        number: '',
+                    },
                 ]
             },
             {
@@ -124,7 +128,12 @@ let model = {
                     {
                         type: "Enterprise",
                         number: "03451",
-                    }
+                    },
+                    {
+                        type: "custom",
+                        number: '',
+                    },
+
                 ]
             },
 
@@ -191,7 +200,11 @@ let model = {
                     {
                         type: "Enterprise",
                         number: "980844072",
-                    }
+                    },
+                    {
+                        type: "custom",
+                        number: '',
+                    },
                 ]
             },
             {
@@ -239,7 +252,7 @@ let model = {
                         number: "030074",
                     },
                     {
-                        type: "custom",
+                        type: "Custom",
                         number: '',
                     },
                 ]
