@@ -12,15 +12,11 @@ function showDocuments() {
 					</tr>
                 </table>
                 <table>
-                    <tr style="font-weight: bold";><td>Document Name:</td><td>Date:</td></tr>
-                    <tr style="font-weight: bold";><td>Subject:</td><td>Project:</td></tr>
-                    <tr><td>Type:</td><td>Person:</td>
-                    <tr><td>Updated by:</td></tr>
-                    </table>
-                    <table>
-                    <tr><td>Sharing:</td></tr>
-                    <tr><td>Groups:</td></tr>
-                    <tr><td>Link to document:</td></tr>
+                    <tr style="font-weight: bold";><td>Document Name: Test</td><td>Date: 18/12/2019</td></tr>
+                    <tr style="font-weight: bold";><td>Subject: Internal Test</td><td>Project: ShipOnline </td></tr>
+                    <tr><td>Type: Plain text </td><td>Person: Creator</td></tr>
+                    <tr><td>Updated by: Creator</td><td>Sharing: Null</td></tr>
+                    <tr><td>Groups: Internal</td><td>Link to document: Null </td></tr>
                 </table>
                 `;
 

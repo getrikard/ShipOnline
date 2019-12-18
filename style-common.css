@@ -359,3 +359,8 @@ th {
     cursor: pointer;
     border-bottom: green solid 3px;
 }
+
+#tempStyle {
+    font-style: italic;
+    font-weight:100;
+}
