@@ -19,7 +19,10 @@ function showCompanyIdNo() {
                     <td><b>Number</b>: ${num.number}</td>          
                     <tr>
                     </tr>`;
-            });
+    });
+    htmlShowCompanyIdNo += `<td>Add new: <br></td>
+                            <td><input type="text" placeholdert="SPShipBase"></td>
+                            <td><div>Save</div></td>`;
     htmlShowCompanyIdNo += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
             
                 model.view.mainContentIsGrid = true;
