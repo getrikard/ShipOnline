@@ -38,16 +38,17 @@
         </tr>`
     }
 
-    showCommunicationHTML += `</table>
-            <div class="changeAddNewBottomBar">
-                <span>Change</span>
-                <!--<span>Save</span>
-                <span>Add New</span>
-                <span>Cancel</span>-->
-            </div>
+    showCommunicationHTML += `
+        </table>
+        <div class="changeAddNewBottomBar">
+            <span>Change</span>
+            <!--<span>Save</span>
+            <span>Add New</span>
+            <span>Cancel</span>-->
+        </div>
 
-            ${getInnerFooter()}
-        </div > `;
+        ${getInnerFooter()}
+    </div >`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;
