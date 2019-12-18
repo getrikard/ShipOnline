@@ -21,7 +21,7 @@ function getShipButton() {
 
 function getLeftBarHTML() {
     return `<div id="leftSide">
-        <div class="leftSideButtons" onclick="showCompany()">Company</div>
+        <div class="leftSideButtons" onclick="showCompany(${selectedCompany})">Company</div>
         <div class="leftSideButtons" onclick="showAddress()">Address</div>
         <div class="leftSideButtons" onclick="showCommunication()">Communication</div>
         <div class="leftSideButtons" onclick="showContact()">Contacts</div>
@@ -34,10 +34,27 @@ function getLeftBarHTML() {
 }
 
 function getInnerFooter() {
+    let company = model.data.companies[model.data.currentCompanyID];
+    let number, email, web;
+
+    // Sette variablene til sine verdier hvis de finnes i modellen.
+    for (comm of company.communications) {
+        if (comm.type === 'phone') {
+            number = comm.number;
+        }
+        else if (comm.type === 'email') {
+            email = comm.number;
+        }
+        else if (comm.type === 'web') {
+            web = comm.number;
+        }
+    }
+
     return `<div class="blueDiv">
-        <span id="bottomBarCompanySpan">Company</span>
-        <span>number +47 99999</span>
-        <span>info@company.com www.companysite.com</span>
+        <span id="bottomBarCompanySpan">${company.name}</span>
+        <span>${number !== undefined ? '+' + company.phonePrefix + ' ' + number : ''}</span>
+        <span>${email !== undefined ? email : ''}</span>
+        <span>${web !== undefined ? web : ''}</span>
     </div>`;
 }
 

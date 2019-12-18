@@ -2,7 +2,7 @@ function showCategory() {
     let htmlShowCategory = `
     ${ getLeftBarHTML() }
     <div id="content">
-        ${getCompanyButton()}
+        <table> <div id="addTopRight">Add Category</div>
         <tr>
             <th>${companyData.companies[model.data.currentCompanyID].name}<th>
 					</tr>

@@ -1,5 +1,7 @@
 ﻿let companyData = model.data;
+let selectedCompany;
 function showCompany(element) {
+	selectedCompany = element;
 	let htmlShowCompany = `
 			${getLeftBarHTML()}
 			
@@ -49,6 +51,10 @@ function showCompany(element) {
 
 
 	model.view.mainContentIsGrid = true;
+	model.view.showTopNavigation = true;
+    model.view.topNavigationActive = 0; // 0 = companies
+    model.view.showLeftNavigation = true;
+    model.view.leftNavigationActive = 0; // 0 = company
     model.view.mainContent = htmlShowCompany;
     model.data.currentCompanyID = element;
 	show();

@@ -1,35 +1,35 @@
 function showCompanyIdNo() {
-    let htmlShowCompanyIdNo = `
-			${getLeftBarHTML()}
-            <div id="content">
-                ${getCompanyButton()}
-                <table>
-					<tr>
-						<th>${companyData.companies[model.data.currentCompanyID].name}<th>
+    let htmlShowCompanyIdNo = `${getLeftBarHTML()
+}
+<div id="content">
+    <table> <div id ="addTopRight"> Add Company ID </div>
+    <tr>
+        <th>${companyData.companies[model.data.currentCompanyID].name}<th>
 					</tr>
-					<tr>
-						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
+            <tr>
+                <th>${companyData.companies[model.data.currentCompanyID].country}<th>
 					</tr>
-                </table>
-                <table>
-                    <tr style="font-weight: bold";><td>Company ID no:</td></tr>
-                    <tr><td>Type:</td><td>Number:</td>
-                    <tr><td>IMO:</td></tr>
-                    <tr><td>Enterprise:</td></tr>
-                    <tr><td>Custom:</td></tr>
-                </table>
-                <table>
-                <tr><td>Add new:</td></tr>
-                </table>
-                `;
-
+                    <table>
+                        <div class="addressType" > Sales Manager</div> <br>`;
+    
+        let idOfCompany = model.data.companies[model.data.currentCompanyID].companyNo
+    idOfCompany.map((num) => {
+        htmlShowCompanyIdNo += `
+                    <td><b>Type</b>: ${num.type}</td>
+                    <td><b>Number</b>: ${num.number}</td>          
+                    <tr>
+                    </tr>`;
+    });
+    htmlShowCompanyIdNo += `<td>Add new: <br></td>
+                            <td><input type="text" placeholdert="SPShipBase"></td>
+                            <td><div>Save</div></td>`;
     htmlShowCompanyIdNo += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
-
-    model.view.mainContentIsGrid = true;
-    model.view.showTopNavigation = true;
-    model.view.topNavigationActive = 0; // 0 = companies
-    model.view.showLeftNavigation = true;
-    model.view.leftNavigationActive = 5; // 5 = compID
-    model.view.mainContent = htmlShowCompanyIdNo;
-    show();
+            
+                model.view.mainContentIsGrid = true;
+                model.view.showTopNavigation = true;
+                model.view.topNavigationActive = 0; // 0 = companies
+                model.view.showLeftNavigation = true;
+                model.view.leftNavigationActive = 5; // 5 = compID
+                model.view.mainContent = htmlShowCompanyIdNo;
+                show();
 }
