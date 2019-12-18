@@ -1,5 +1,7 @@
 ﻿let companyData = model.data;
+let selectedCompany;
 function showCompany(element) {
+	selectedCompany = element;
 	let htmlShowCompany = `
 			${getLeftBarHTML()}
 			
