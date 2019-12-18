@@ -52,7 +52,7 @@ function getInnerFooter() {
 
     return `<div class="blueDiv">
         <span id="bottomBarCompanySpan">${company.name}</span>
-        <span>${number !== undefined ? company.phonePrefix + ' ' + number : ''}</span>
+        <span>${number !== undefined ? '+' + company.phonePrefix + ' ' + number : ''}</span>
         <span>${email !== undefined ? email : ''}</span>
         <span>${web !== undefined ? web : ''}</span>
     </div>`;
