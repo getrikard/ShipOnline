@@ -39,6 +39,7 @@ function showCompany(element) {
 					<td> e </td>
 					</tr>
 				</table>
+				${getInnerFooter()}
             <div>
 
 
