@@ -280,6 +280,7 @@ th {
     margin-top: 25px;
     text-decoration: underline;
     text-align: right;
+    margin-bottom: 85px;
 }
 
 .changeAddNewBottomBar span {
@@ -314,6 +315,7 @@ th {
     background-color: transparent;
     margin-top: 20px;
     margin-left: 490px;
+    margin-bottom: 25px;
 }
 
 #saveCancelCompany span {

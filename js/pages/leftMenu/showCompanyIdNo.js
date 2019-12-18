@@ -13,7 +13,7 @@ function showCompanyIdNo() {
                         <div class="addressType" > Sales Manager</div> <br>`;
     
         let idOfCompany = model.data.companies[model.data.currentCompanyID].companyNo
-    idOfCompany.map((num) => {
+        idOfCompany.map((num) => {
         htmlShowCompanyIdNo += `
                     <td><b>Type</b>: ${num.type}</td>
                     <td><b>Number</b>: ${num.number}</td>          
