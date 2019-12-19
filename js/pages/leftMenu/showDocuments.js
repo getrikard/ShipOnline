@@ -2,6 +2,7 @@ function showDocuments() {
     let htmlShowDocuments = `
 			${getLeftBarHTML()}
             <div id="content">
+                <div id ="addTopRight"> Add Document</div>
                 <table>
 					<tr>
 						<th>${companyData.companies[model.data.currentCompanyID].name}<th>
