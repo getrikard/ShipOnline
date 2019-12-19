@@ -2,7 +2,9 @@
     let htmlShowAddress = `
 			${getLeftBarHTML()}
             <div id="content">
-                ${getCompanyButton()}
+                <div class ="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
+                <a href = "javascript:showAddAddress()"> Add Address</a></div>
+                <table>
 					<tr>
 						<th>${companyData.companies[model.data.currentCompanyID].name}<th>
 					</tr>
