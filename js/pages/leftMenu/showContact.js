@@ -42,7 +42,6 @@
                 
                
             <div class="changeAddNewBottomBar">
-                <span>Web</span>
                 <span>Change</span>
                 <span>Save</span>
                 <span>Add New</span>
