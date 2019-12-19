@@ -286,6 +286,24 @@ let model = {
                 picture: "elvis.png",
                 isFavorite: true,
             },
+            {
+                name: "Adams William",
+                companys: [
+                    {
+                        compID: 0,
+                        stilling: "Captain",
+                    },
+                ],
+                relation: "Boss",
+                email: "Adams_William@outlook.com",
+                groups: "Seafolks",
+                stilling: ["Captain"],
+                department: "",
+                privateAdress: "",
+                number: "04728932",
+                picture: "adams.png",
+                isFavorite: false,
+            },
         ],
         fleet: [
             {
