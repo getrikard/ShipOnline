@@ -11,8 +11,6 @@
                     <table>
                         <div class="addressType" >Fleet</div>`;
 
-    //let fleetOfCompany = model.data.companies[model.data.currentCompanyID].fleet
-    //fleetOfCompany.map((num) => {
     htmlShowFleet += `${getShipsTable()}<th>Role</th> <th class ="myCompanyTab centerTdFavorite" onclick="showShipsFav()">My Ship</th>`;
 
     function getRandomNum() {
@@ -38,10 +36,6 @@
     <td></td>
     </tr>`;
     }
-    //});
-
-
-
 
     htmlShowFleet += ` </table>
        <div class="changeAddNewBottomBar">
