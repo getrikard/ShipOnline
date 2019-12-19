@@ -9,8 +9,8 @@
 }
 
 function getCompanyButton() {
-    return `<span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-        <a href = "javascript:showAddCompany()"> Add Company</a>
+    return `<div class ="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
+        <a href = "javascript:showAddCompany()"> Add Company</a></div>
             <table>`;
 }
 function getShipButton() {

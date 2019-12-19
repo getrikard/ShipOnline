@@ -40,9 +40,7 @@
                 Department Type:
                 </div> -->
                 
-               ${getInnerChangeOrSave()}
-
-              `;
+               ${getInnerChangeOrSave()}`;
 
 
 
