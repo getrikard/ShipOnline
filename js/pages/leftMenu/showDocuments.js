@@ -12,8 +12,8 @@ function showDocuments() {
 					</tr>
                 </table>
                 <table>
-                    <tr style="font-weight: bold";><td>Document Name: Test</td><td>Date: 18/12/2019</td></tr>
-                    <tr style="font-weight: bold";><td>Subject: Internal Test</td><td>Project: ShipOnline </td></tr>
+                    <tr><td>Document Name: Test</td><td>Date: 18/12/2019</td></tr>
+                    <tr><td>Subject: Internal Test</td><td>Project: ShipOnline </td></tr>
                     <tr><td>Type: Plain text </td><td>Person: Creator</td></tr>
                     <tr><td>Updated by: Creator</td><td>Sharing: Null</td></tr>
                     <tr><td>Groups: Internal</td><td>Link to document: Null </td></tr>
