@@ -353,6 +353,11 @@ th {
 .stillings-text {
     font-size: 0.8em;
     font-variant: small-caps;
+    font-style: italic;
+}
+
+.companiesContact {
+    font-weight: bold;
 }
 
 .companiesContact:hover {

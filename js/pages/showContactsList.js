@@ -15,17 +15,24 @@
     <th>Groups</th>
   </tr>`;
   for (let i = 0; i < model.data.contacts.length; i++) {
-      let contacts = model.data.contacts[i];
+    let contacts = model.data.contacts[i];
     htmlContacts += `
         <tr>
         <td class ="clickAble">${contacts.name}</td>
         <td>${contacts.relation}</td>
         <td>${contacts.number}</td>
         <td>${contacts.email}</td>
-        <td>${contacts.companys.map(comp =>
-            '<b>' +'<span class ="companiesContact" onclick="showCompany()">'+ model.data.companies[comp.compID].name +'</b>'+'</span>'+
-            '<i><span class="stillings-text">(' + comp.stilling + ')</i></span>').join('<br>'
-            )}
+        <td>${contacts.companys.map(function(comp) {
+          let id = model.data.companies[comp.compID].id;
+          let name = model.data.companies[comp.compID].name;
+          return `<span class="companiesContact" onclick="model.data.currentCompanyID = ${id};showCompany()">
+            ${name}
+          </span>
+          <span class="stillings-text">
+            (${comp.stilling})
+          </span>`;
+        }).join('<br>')}
+        
         <td>${contacts.isFavorite ? '⭐' : ''}</td>
         <td>${contacts.groups}</td>
   </tr>`;

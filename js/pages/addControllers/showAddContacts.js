@@ -68,6 +68,7 @@ function addContactsToModel() {
         number: number,
         email: email,
         groups: groups,
+        companys: [],
     };
     if (contact.name !== '' && contact.number !== '' && contact.groups !== '') {
         model.data.contacts.push(contact);

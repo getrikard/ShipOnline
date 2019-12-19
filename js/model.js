@@ -20,6 +20,7 @@ let model = {
         currentCompanyID: 0,
         companies: [
             {
+                id: 0,
                 isFavorite: true,
                 name: "Halstensen Holding A/S",
                 categories: [
@@ -77,6 +78,7 @@ let model = {
                 ]
             },
             {
+                id: 1,
                 isFavorite: false,
                 name: "Island Offshore Shipping A/S",
                 categories: [
@@ -138,6 +140,7 @@ let model = {
             },
 
             {
+                id: 2,
                 isFavorite: false,
                 name: "Østensjø Rederi A/S",
                 categories: [
@@ -208,6 +211,7 @@ let model = {
                 ]
             },
             {
+                id: 3,
                 isFavorite: true,
                 name: "Woller, Jan Milton",
                 categories: [
