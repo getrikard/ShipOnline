@@ -7,7 +7,6 @@
                     <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
                     <a href="javascript:showAddCompany()">Add Contact</a>
                 </div>
-            </div>
             <table>
                 <tr>
                     <th>${companyData.companies[model.data.currentCompanyID].name}<th>
