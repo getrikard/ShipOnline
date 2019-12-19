@@ -2,7 +2,6 @@ function showHistory() {
     let htmlShowHistory = `
 			${getLeftBarHTML()}
             <div id="content">
-                ${getCompanyButton()}
                 <table>
 					<tr>
 						<th>${companyData.companies[model.data.currentCompanyID].name}<th>
