@@ -290,7 +290,7 @@ let model = {
                 name: "Adams William",
                 companys: [
                     {
-                        compID: 0,
+                        compID: 3,
                         stilling: "Captain",
                     },
                 ],
