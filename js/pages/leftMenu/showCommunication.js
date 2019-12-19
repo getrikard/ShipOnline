@@ -4,8 +4,10 @@
         ${getLeftBarHTML()}
         
         <div id="content">
-            <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-            <a href="javascript:showAddCommunication()">Add Communication</a>
+            <div class="topLineInContent">
+                <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
+                <a href="javascript:showAddCommunication()">Add Communication</a>
+            </div>
             <table>
                 <tr>
                     <th>${companyData.companies[model.data.currentCompanyID].name}<th>

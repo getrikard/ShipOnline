@@ -2,7 +2,10 @@ function showCompanyIdNo() {
     let htmlShowCompanyIdNo = `${getLeftBarHTML()
 }
 <div id="content">
-    <table> <div id ="addTopRight"> Add Company ID </div>
+    <div class="topLineInContent">
+        <div id ="addTopRight"> Add Company ID </div>
+    </div>
+    <table>
     <tr>
         <th>${companyData.companies[model.data.currentCompanyID].name}<th>
 					</tr>
