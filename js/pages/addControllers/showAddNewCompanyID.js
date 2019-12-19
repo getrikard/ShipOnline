@@ -6,7 +6,11 @@ function showAddNewCompanyID() {
                     Type:
                 </td>
                 <td>
-                    <input type="text" id="addCompanyIdType">
+                 <select id="addTypeId">
+                    <option>IMO</option>
+                    <option>Enterprise</option>
+                    <option>Custom</option>
+                </select>
                 </td>
             </tr>
             <tr>
@@ -32,7 +36,7 @@ function showAddNewCompanyID() {
 }
 
 function addNewIdCompany() {
-    const companyIdType = document.getElementById('addCompanyIdType').value;
+    const companyIdType = document.getElementById('addTypeId').value;
     const companyIdNumber = document.getElementById('CompanyIdNumber').value;
 
     const companyId = {
