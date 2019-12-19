@@ -40,13 +40,8 @@
                 Department Type:
                 </div> -->
                 
-               
-            <div class="changeAddNewBottomBar">
-                <span>Change</span>
-                <span>Save</span>
-                <span>Add New</span>
-                <span>Cancel</span>
-            </div>
+               ${getInnerChangeOrSave()}
+
               `;
 
 
