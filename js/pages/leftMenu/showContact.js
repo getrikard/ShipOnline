@@ -5,7 +5,7 @@
             <div id="content">
                 <div class="topLineInContent">
                     <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-                    <a href="javascript:showAddCompany()">Add Contact</a>
+                    <div id="addTopRight">Add Contacts</div>
                 </div>
             <table>
                 <tr>

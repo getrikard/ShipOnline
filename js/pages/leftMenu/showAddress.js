@@ -2,8 +2,8 @@
     let htmlShowAddress = `
 			${getLeftBarHTML()}
             <div id="content">
-                <div class ="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-                <a href = "javascript:showAddAddress()"> Add Address</a></div>
+                <div class ="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡</span>
+                <div id="addTopRight" onclick="showAddAddress()">Add Address</div></div>
                 <table>
 					<tr>
 						<th>${companyData.companies[model.data.currentCompanyID].name}<th>
@@ -24,7 +24,7 @@
                         <td><b>Postal Code</b>: ${num.postal}</td>
                     </tr>`;
     });
-        htmlShowAddress += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+        htmlShowAddress += `</table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
 
         model.view.mainContentIsGrid = true;
         model.view.showTopNavigation = true;

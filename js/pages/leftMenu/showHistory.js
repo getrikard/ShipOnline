@@ -1,7 +1,10 @@
-function showHistory() {
+﻿function showHistory() {
     let htmlShowHistory = `
 			${getLeftBarHTML()}
             <div id="content">
+            <div class="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
+            <div id ="addTopRight"> Show History </div>
+            </div>
                 <table>
 					<tr>
 						<th>${companyData.companies[model.data.currentCompanyID].name}<th>

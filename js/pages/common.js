@@ -10,7 +10,7 @@
 
 function getShipButton() {
     return `<span id="companyButton"><b>SP</b>SHIPBASE Vessels ➡ </span>
-        <a href="javascript:showAddShip()">Add Vessel</a>
+        <a href="javascript:showAddShip();checkFunction();">Add Vessel</a>
         </div>`;
 }
 
@@ -67,17 +67,15 @@ function getShipsTable() {
 };
 
 function getInnerAddOrSave() {
-    return `<div id="saveCancelCompany"> <span>Save</span> <span>Cancel</span> <span>Add to MY Company</span></div>`;
+    return `<div id="saveCancelCompany"><span>Add to MY Company</span></div>`;
 }
-function getInnerAddOrSaveShip() {
-    return `<div id="saveCancelCompany"> <span>Save</span> <span>Cancel</span> <span>Add to MY Ship</span></div>`;
+function getInnerAddOrSaveShip() { //<span>Save</span> <span>Cancel</span> 
+    return `<div id="saveCancelCompany"><span>Add to MY Ship</span></div>`;
 }
-function getInnerChangeOrSave() { //<span>Web</span>
+function getInnerChangeOrSave() { //<span>Web</span>  <span>Save</span>  <span>Cancel</span>
     return ` <div class="changeAddNewBottomBar">
                 <span>Change</span>
-                <span>Save</span>
                 <span>Add New</span>
-                <span>Cancel</span>
             </div>`;
 }
 

@@ -1,8 +1,10 @@
-function showDocuments() {
+﻿function showDocuments() {
     let htmlShowDocuments = `
 			${getLeftBarHTML()}
             <div id="content">
+    <div class="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
                 <div id ="addTopRight"> Add Document</div>
+    </div>
                 <table>
 					<tr>
 						<th>${companyData.companies[model.data.currentCompanyID].name}<th>

@@ -1,7 +1,7 @@
 ﻿function showFleet() {
     let htmlShowFleet = `${getLeftBarHTML()}
 <div id="content">
-    <table> <div id ="addTopRight"> Show Fleet </div>
+    <table> <div class="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span> <div id ="addTopRight"> Show Fleet </div> </div> 
     <tr>
         <th>${companyData.companies[model.data.currentCompanyID].name}<th>
 					</tr>
@@ -37,14 +37,7 @@
     </tr>`;
     }
 
-    htmlShowFleet += ` </table>
-       <div class="changeAddNewBottomBar">
-        <span>Web</span>
-        <span>Change</span>
-        <span>Save</span>
-        <span onclick="showAddNewCompanyID()">Add New</span>
-        <span>Cancel</span>
-        </div> ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+    htmlShowFleet += `</table> ${getInnerChangeOrSave()} ${getInnerAddOrSaveShip()} ${getInnerFooter()}</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;

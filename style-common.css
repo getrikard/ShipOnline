@@ -175,7 +175,8 @@ body {
 .topLineInContent {
     padding: 10px;
     text-align: right;
-    font-size: 1.3em;
+    font-size: 22px;
+    font-style: italic;
 }
 
 .topLineInContent a {
@@ -312,16 +313,16 @@ th {
 }
 
 #saveCancelCompany {
-    background-color: transparent;
-    margin-top: 20px;
-    margin-left: 490px;
-    margin-bottom: 25px;
+    float: right;
+    background-color: #99BFC2;
+    width: fit-content;
 }
 
-#saveCancelCompany span {
-    border: black 1px solid;
-    border-radius: 5%;
-}
+    #saveCancelCompany span {
+        border: black 1px solid;
+        border-radius: 15%;
+        padding: 0 5px;
+    }
 
 #saveCancelCompany span:hover {
     background-color: #6BAA86;
@@ -335,7 +336,8 @@ th {
 }
 
 .selectedShipNumber {
-    font-weight: bold;
+    font-weight: 400;
+    font-style: italic;
     background-color: white;
     margin-bottom: 3px;
     padding: 8px 8px;
@@ -347,7 +349,8 @@ th {
 
 #addTopRight {
     float: right;
-    border-bottom: green solid 3px;
+    font-size: 22px;
+    font-style: italic;
 }
 
 .stillings-text {

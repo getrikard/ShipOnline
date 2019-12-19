@@ -1,8 +1,8 @@
-function showCategory() {
+﻿function showCategory() {
     let htmlShowCategory = `
     ${ getLeftBarHTML() }
     <div id="content">
-        <div class="topLineInContent"><div id="addTopRight">Add Category</div></div>
+        <div class="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span><div id="addTopRight">Add Category</div></div>
         <table>
         <tr>
             <th>${companyData.companies[model.data.currentCompanyID].name}<th>
@@ -17,7 +17,7 @@ function showCategory() {
                 categoryOfCompany.map((num) => {
                  htmlShowCategory += `${num}<br>`;
                 });
-    htmlShowCategory += `</tr></td></table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+    htmlShowCategory += `</table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
                 
 model.view.mainContentIsGrid = true;
 model.view.showTopNavigation = true;

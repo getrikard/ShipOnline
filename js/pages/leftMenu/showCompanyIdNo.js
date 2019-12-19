@@ -1,8 +1,8 @@
-function showCompanyIdNo() {
+﻿function showCompanyIdNo() {
     let htmlShowCompanyIdNo = `${getLeftBarHTML()
 }
 <div id="content">
-    <div class="topLineInContent">
+    <div class="topLineInContent"> <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
         <div id ="addTopRight"> Add Company ID </div>
     </div>
     <table>
@@ -23,14 +23,7 @@ function showCompanyIdNo() {
                     <tr>
                     </tr>`;
     });
-    htmlShowCompanyIdNo += ` </table>
-       <div class="changeAddNewBottomBar">
-        <span>Web</span>
-        <span>Change</span>
-        <span>Save</span>
-        <span onclick="showAddNewCompanyID()">Add New</span>
-        <span>Cancel</span>
-        </div> ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+    htmlShowCompanyIdNo += `</table> ${ getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter() }</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;

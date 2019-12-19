@@ -6,7 +6,7 @@
         <div id="content">
             <div class="topLineInContent">
                 <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-                <a href="javascript:showAddCommunication()">Add Communication</a>
+                <div id="addTopRight">Add Communication</div>
             </div>
             <table>
                 <tr>
@@ -40,17 +40,7 @@
         </tr>`
     }
 
-    showCommunicationHTML += `
-        </table>
-        <div class="changeAddNewBottomBar">
-            <span>Change</span>
-            <!--<span>Save</span>
-            <span>Add New</span>
-            <span>Cancel</span>-->
-        </div>
-
-        ${getInnerFooter()}
-    </div >`;
+    showCommunicationHTML += `</table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;

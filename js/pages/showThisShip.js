@@ -1,9 +1,9 @@
 ﻿function showThisShip(id) {
-    let thisCompanyNumber = model.data.fleet[id].shipIMO;
+    let thisCompanyNumber = model.data.fleet[id];
     let showSelectedHTML =
         ` 
     <div class="selectedShipName"><span>${model.data.fleet[id].name}</span></div>
-    <div class="selectedShipNumber"><span>${thisCompanyNumber}</span></div>
+    <div class="selectedShipNumber"><span>${thisCompanyNumber.shipIMO}, Callsign ${thisCompanyNumber.callsign}, Role ${thisCompanyNumber.role}</span></div>
     <div id="content"> <div class="topLineInContent">
         ${getShipButton()}
         ${getShipsTable()}

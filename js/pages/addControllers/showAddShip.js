@@ -1,4 +1,4 @@
-function showAddShip() {
+﻿function showAddShip() {
     let htmlAddNewShip = ` <div id="content">
         <table>
             <tr>
@@ -6,10 +6,10 @@ function showAddShip() {
                     Ship Name:
                 </td>
                 <td>
-                    <input type="text" id="addNameInput">
+                    <input type="text" id="addNameInput">  
                 </td>
             </tr>
-            <tr>
+            <tr> <input type="checkbox" id="checkboxFavorite" onclick="checkFunction()" name="favoriteIt" value="isFavorite">⭐ Favorite Ship? ⭐
                 <td>
                     MDWT:
                 </td>
@@ -64,6 +64,11 @@ function showAddShip() {
     show();
 }
 
+function checkFunction() {
+    checkIt = document.getElementById("checkboxFavorite").checked;
+    return checkIt;
+}
+
 function addShipToModel() {
     const name = document.getElementById('addNameInput').value;
     const MDWT = document.getElementById('addMdwtInput').value.split(',');
@@ -76,13 +81,14 @@ function addShipToModel() {
 
     const ship = {
         name: name,
-        isFavorite: false,
+        isFavorite: checkIt ? true : false, 
         MDWT: MDWT,
         GT: GT,
         built: built,
         callsign: callSign,
         fishID: fishId,
         flag: flag,
+
     };
     if (ship.name !== '' && ship.built !== '' && ship.callsign !== '') {
         model.data.fleet.push(ship);

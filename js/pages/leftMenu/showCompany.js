@@ -5,6 +5,10 @@ function showCompany() {
 			${getLeftBarHTML()}
 			
             <div id="content">
+            <div class="topLineInContent">
+                <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
+                <div id="addTopRight">Add Company</div>
+            </div>
 				<table>
 					<tr>
 						<th colspan="2">${companyData.companies[element].name}</th>
@@ -37,23 +41,9 @@ function showCompany() {
 					<td> Email </td>
 					<td> e </td>
 					</tr>
-				</table>
-				        <div class="changeAddNewBottomBar">
-            <span>Change</span>
-            <!--<span>Save</span>
-            <span>Add New</span>
-            <span>Cancel</span>-->
+                    </table> ${ getInnerChangeOrSave() } ${ getInnerAddOrSave() } ${ getInnerFooter() }</div>
         </div>
-				${getInnerFooter()}
-            <div>
-
-
-
-
-
-
-
-          	`;
+            <div>`;
 
 
 	model.view.mainContentIsGrid = true;

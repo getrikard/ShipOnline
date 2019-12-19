@@ -1,7 +1,7 @@
 ﻿function showContactsList() {
   let htmlContacts =
     ` <div id="content"> <div class="topLineInContent">
-        <span id="companyButton"><b>SP</b>SHIPBASE Company ➡ </span>
+        <span id="companyButton"><b>SP</b>SHIPBASE Contacts ➡ </span>
         <a href="javascript:showAddContacts()">Add Contacts</a>
         </div>
     <table>
