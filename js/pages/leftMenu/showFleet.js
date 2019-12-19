@@ -16,7 +16,7 @@
     htmlShowFleet += `${getShipsTable()}<th>Role</th> <th class ="myCompanyTab centerTdFavorite" onclick="showShipsFav()">My Ship</th>`;
 
     function getRandomNum() {
-        var desiredMaxLength = 7
+        var desiredMaxLength = 4
         var randomNumber = '';
         for (var i = 0; i < desiredMaxLength; i++) {
             randomNumber += Math.floor(Math.random() * 10);
