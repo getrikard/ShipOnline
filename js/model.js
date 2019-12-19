@@ -295,7 +295,7 @@ let model = {
                     },
                 ],
                 relation: "Boss",
-                email: "Adams_William@outlook.com",
+                email: "Adams_William@aol.com",
                 groups: "Seafolks",
                 stilling: ["Captain"],
                 department: "",
