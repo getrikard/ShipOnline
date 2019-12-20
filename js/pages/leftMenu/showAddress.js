@@ -24,7 +24,10 @@
                         <td><b>Postal Code</b>: ${num.postal}</td>
                     </tr>`;
     });
-        htmlShowAddress += `</table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+    htmlShowAddress += `</table> <div class="changeAddNewBottomBar">
+                <span>Change</span>
+                <span onclick="showAddNewAddress()">Add New</span>
+            </div> ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
 
         model.view.mainContentIsGrid = true;
         model.view.showTopNavigation = true;
