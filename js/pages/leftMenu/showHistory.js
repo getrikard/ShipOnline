@@ -14,6 +14,7 @@
 					</tr>
                 </table>
                 <table>
+                    ${addSpacer()}
                     <tr style="font-weight: bold";><td>Document Name:</td><td>Date:</td></tr>
                     <tr style="font-weight: bold";><td>Subject:</td><td>Project:</td></tr>
                     <tr><td>Type:</td><td>Person:</td>

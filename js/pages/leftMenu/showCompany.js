@@ -3,12 +3,11 @@ function showCompany() {
 	let element = model.data.currentCompanyID;
 	let htmlShowCompany = `
 			${getLeftBarHTML()}
-			
             <div id="content">
             <div class="topLineInContent">
                 <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
                 <div id="addTopRight">Add Company</div> 
-            </div> ${getInnerAddOrSave()}
+            </div>
 				<table>
 					<tr>
 						<th colspan="2">${companyData.companies[element].name}</th>
@@ -16,7 +15,9 @@ function showCompany() {
 					<tr>
 						<th colspan="2">${companyData.companies[element].country} </th>
 					</tr>
-
+                    </table>
+                    ${getInnerAddOrSave()}
+                    <table>
 					<tr>
 					<td> visit adress </td>
 					<td>

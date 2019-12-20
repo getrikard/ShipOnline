@@ -9,7 +9,7 @@
                 <th>${companyData.companies[model.data.currentCompanyID].country} <span id="tempStyle">${companyData.companies[model.data.currentCompanyID].categories.join(' ')}</span><th>
 					</tr>
                     <table>
-                        <div class="addressType" >Fleet</div>`;
+                        <div class="addressType">Fleet</div>${addSpacer()}`;
 
     htmlShowFleet += `${getShipsTable()}<th>Role</th> <th class ="myCompanyTab centerTdFavorite" onclick="showShipsFav()">My Ship</th>`;
 

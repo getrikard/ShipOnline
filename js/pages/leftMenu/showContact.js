@@ -16,6 +16,7 @@
                 </tr>
             </table>
             <table>
+                ${addSpacer()}
                 <tr><td>Martin Andersen</td>
                 <td>Company:</td></tr>
                 <tr><td>Communication:</td></tr>

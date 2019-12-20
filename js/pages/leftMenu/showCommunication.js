@@ -18,8 +18,8 @@
                     <th>${companyData.companies[model.data.currentCompanyID].country}<th>
                 </tr>
             </table>
-
             <table>
+            ${addSpacer()}
                 <tr>
                     <th>Department</th>
                     <th></th>
