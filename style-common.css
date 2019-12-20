@@ -270,22 +270,24 @@ th {
 }
 
 #saveCancelCompany {
-    float: right;
-    color: black;
+    float: left;
+    margin-left: 8px;
 }
-#saveCancelCompanyStar{
-    float: right;
-    color: black;
-    margin-right: 25px;
-    font-size: 32px;
+#saveCancelCompanyStar {
+    float: left;
+    margin-left: 8px;
 }
 
-    #saveCancelCompany span {
-        color: green;
-        border-bottom: 2px green solid;
-    }
-    #saveCancelCompanyStar span {
-    }
+#saveCancelCompany span {
+    color: black;
+    border-bottom: 2px green solid;
+    font-size: 14px;
+}
+#saveCancelCompanyStar span {
+    color: green;
+    border-bottom: 2px green solid;
+    font-size: 14px;
+}
 
 #saveCancelCompany span:hover {
     background-color: #6BAA86;
