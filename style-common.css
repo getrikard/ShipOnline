@@ -372,3 +372,8 @@ th {
     font-style: italic;
     font-weight:100;
 }
+
+.seperator {
+    border-bottom: #99BFC2 solid 3px;
+    height: 15px;
+}

@@ -20,8 +20,8 @@
                     <td><b>Place</b>: ${num.place}</td>
                     <td><b>Country</b>: ${num.country || ''}</td>          
                     <tr>
-                        <td><b>Address</b>: ${num.adress} </td>
-                        <td><b>Postal Code</b>: ${num.postal}</td>
+                        <td class="seperator"><b>Address</b>: ${num.adress} </td>
+                        <td class="seperator"><b>Postal Code</b>: ${num.postal}</td>
                     </tr>`;
     });
     htmlShowAddress += `</table> <div class="changeAddNewBottomBar">
