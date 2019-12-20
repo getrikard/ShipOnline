@@ -17,7 +17,7 @@ function showAddNewAddress() {
                     Address:
                 </td>
                 <td>
-                    <input type="text" id="inputAddress>
+                    <input type="text" id="inputAddress">
                 </td>
             </tr>
             <tr>
