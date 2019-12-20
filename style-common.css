@@ -271,14 +271,10 @@ th {
 
 #saveCancelCompany {
     float: right;
-    background-color: #99BFC2;
-    width: fit-content;
+    color: black;
 }
 
     #saveCancelCompany span {
-        border: black 1px solid;
-        border-radius: 15%;
-        padding: 0 5px;
     }
 
 #saveCancelCompany span:hover {

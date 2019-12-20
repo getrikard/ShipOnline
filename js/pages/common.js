@@ -67,7 +67,9 @@ function getShipsTable() {
 };
 
 function getInnerAddOrSave() {
-    return `<div id="saveCancelCompany"><span>Add to MY Company</span></div>`;
+    if (model.data.companies[model.data.currentCompanyID].isFavorite === false)
+        return `<div id="saveCancelCompany"><span>Add to MY Company</span></div>`;
+    else return `<div id="saveCancelCompany"><span>⭐</span></div>`;
 }
 function getInnerAddOrSaveShip() { //<span>Save</span> <span>Cancel</span> 
     return `<div id="saveCancelCompany"><span>Add to MY Ship</span></div>`;
