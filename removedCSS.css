@@ -1,0 +1,24 @@
+﻿.search {
+    margin-left: 5px;
+    height: 25px;
+    width: 230px;
+    background-color: #031e2f;
+    border: none;
+    border-bottom: 1px solid #152e3e;
+}
+
+    .search:focus {
+        color: white;
+        padding-left: 5px;
+        outline: none;
+    }
+
+    .search:not(:focus) {
+        color: white;
+        padding-left: 5px;
+    }
+
+.fa fa-search {
+    color: #576369;
+    margin-left: 10px;
+}
