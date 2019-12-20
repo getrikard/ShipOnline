@@ -117,7 +117,6 @@ body {
     text-align: center;
     padding: 10px;
     background-color: white;
-    /* min-height: 300px; */
 }
 
 #rightSide {
@@ -162,8 +161,6 @@ body {
 .topLineInContent a:hover {
     border-bottom: #6BAA86 solid 2px;
 }
-
-/* for tableview */
 
 #companyButton {
     font-size: 0.8em;
@@ -211,21 +208,6 @@ td, th {
 th {
     text-align: left;
 }
-
-/*.rightContact {
-    float: right;
-    background-color: red;
-    width: 150px;
-    height: 100px;
-}
-
-.leftContact {
-    float: right;
-    background-color: red;
-    width: 150px;
-    height: 100px;
-} */
-
 
 .landingbutton {
     background-color: #FFF;
