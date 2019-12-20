@@ -75,7 +75,7 @@ function addNewAddress() {
         country: addressCountry,
     };
     if (addressToPush.inputAddress !== '' && addressToPush.place !== '') {
-        model.data.companies[model.data.currentCompanyID].companyNo.push(addressToPush);
+        model.data.companies[model.data.currentCompanyID].adresses.push(addressToPush);
     } else return;
     showAddress();
 }
