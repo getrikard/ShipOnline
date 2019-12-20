@@ -5,8 +5,10 @@
         
         <div id="content">
             <div class="topLineInContent">
-                <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-                <div id="addTopRight">Add Communication</div>
+                <div id="addTopRight">
+                    <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
+                    <a href="javascript:showAddCommunication()">Add Communication</a>
+                </div>
             </div>
             <table>
                 <tr>
