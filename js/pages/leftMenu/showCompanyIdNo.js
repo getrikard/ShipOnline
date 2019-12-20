@@ -26,7 +26,7 @@
     htmlShowCompanyIdNo += `</table> <div class="changeAddNewBottomBar">
                 <span>Change</span>
                 <span onclick="showAddNewCompanyID()">Add New</span>
-            </div> ${getInnerAddOrSave()} ${getInnerFooter() }</div>`;
+            </div>${getInnerFooter() }</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;

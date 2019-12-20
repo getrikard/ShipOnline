@@ -40,7 +40,7 @@
         </tr>`
     }
 
-    showCommunicationHTML += `</table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+    showCommunicationHTML += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;

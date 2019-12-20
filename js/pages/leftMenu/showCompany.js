@@ -7,8 +7,8 @@ function showCompany() {
             <div id="content">
             <div class="topLineInContent">
                 <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-                <div id="addTopRight">Add Company</div>
-            </div>
+                <div id="addTopRight">Add Company</div> 
+            </div> ${getInnerAddOrSave()}
 				<table>
 					<tr>
 						<th colspan="2">${companyData.companies[element].name}</th>
@@ -41,7 +41,7 @@ function showCompany() {
 					<td> Email </td>
 					<td> e </td>
 					</tr>
-                    </table> ${ getInnerChangeOrSave() } ${ getInnerAddOrSave() } ${ getInnerFooter() }</div>
+                    </table> ${ getInnerChangeOrSave()}${ getInnerFooter() }</div>
         </div>
             <div>`;
 

@@ -26,7 +26,7 @@
                 </table>
                 `;
 
-    htmlShowHistory += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+    htmlShowHistory += ` </table> ${getInnerChangeOrSave()} ${getInnerFooter()}</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;

@@ -41,7 +41,7 @@
             Department Type:
             </div> -->
             
-            ${getInnerChangeOrSave()}`;
+            `;
 
     showContactHTML += `${getInnerFooter()} `;
 

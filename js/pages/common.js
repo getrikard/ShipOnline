@@ -68,8 +68,8 @@ function getShipsTable() {
 
 function getInnerAddOrSave() {
     if (model.data.companies[model.data.currentCompanyID].isFavorite === false)
-        return `<div id="saveCancelCompany"><span>Add to MY Company</span></div>`;
-    else return `<div id="saveCancelCompany"><span>⭐</span></div>`;
+        return `<div id="saveCancelCompany" onclick="addThisCompanyToFavorites()"><span>Add to MY Company</span></div>`;
+    else return `<div id="saveCancelCompanyStar"><span onclick="removeThisCompanyFavorite()">⭐</span></div>`;
 }
 function getInnerAddOrSaveShip() { //<span>Save</span> <span>Cancel</span> 
     return `<div id="saveCancelCompany"><span>Add to MY Ship</span></div>`;
@@ -88,4 +88,14 @@ function getCountryDropDownList() {
         <option>DNK</option>
         <option>GER</option>
     </select>`;
+}
+
+function addThisCompanyToFavorites() {
+    model.data.companies[model.data.currentCompanyID].isFavorite = true;
+    showCompany();
+}
+
+function removeThisCompanyFavorite() {
+    model.data.companies[model.data.currentCompanyID].isFavorite = false;
+    showCompany();
 }

@@ -273,8 +273,18 @@ th {
     float: right;
     color: black;
 }
+#saveCancelCompanyStar{
+    float: right;
+    color: black;
+    margin-right: 25px;
+    font-size: 32px;
+}
 
     #saveCancelCompany span {
+        color: green;
+        border-bottom: 2px green solid;
+    }
+    #saveCancelCompanyStar span {
     }
 
 #saveCancelCompany span:hover {

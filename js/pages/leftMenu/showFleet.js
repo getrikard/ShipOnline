@@ -37,7 +37,7 @@
     </tr>`;
     }
 
-    htmlShowFleet += `</table> ${getInnerChangeOrSave()} ${getInnerAddOrSaveShip()} ${getInnerFooter()}</div>`;
+    htmlShowFleet += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;

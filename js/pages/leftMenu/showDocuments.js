@@ -22,7 +22,7 @@
                 </table>
                 `;
 
-    htmlShowDocuments += ` </table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+    htmlShowDocuments += ` </table> ${getInnerChangeOrSave()} ${getInnerFooter()}</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;

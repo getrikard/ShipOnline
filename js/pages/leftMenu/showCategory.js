@@ -17,7 +17,7 @@
                 categoryOfCompany.map((num) => {
                  htmlShowCategory += `${num}<br>`;
                 });
-    htmlShowCategory += `</table> ${getInnerChangeOrSave()} ${getInnerAddOrSave()} ${getInnerFooter()}</div>`;
+    htmlShowCategory += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
                 
 model.view.mainContentIsGrid = true;
 model.view.showTopNavigation = true;
