@@ -180,6 +180,11 @@ body {
 .centerTdFavorite {
     text-align: center;
 }
+.centerTdFavoriteStar {
+    text-align: center;
+    font-size: 30px;
+    color: green;
+}
 
 .clickAble {
     font-weight: 600;

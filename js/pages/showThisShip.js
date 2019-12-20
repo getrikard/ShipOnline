@@ -7,7 +7,7 @@
     <div id="content"> <div class="topLineInContent">
         ${getShipButton()}
         ${getShipsTable()}
-    <th class ="myCompanyTab centerTdFavorite" onclick="showShipsFav()">My Ship</th>
+    <th class ="myCompanyTab" onclick="showShipsFav()">My Ship</th>
 <br><br>
   </tr>`;
 
@@ -21,7 +21,7 @@
             <td>${num.callsign}</td>
             <td>${num.type == 'fishing' ? num.callsign : ''}</td>
             <td>${num.flag}</td>
-            <td class="centerTdFavorite">${num.isFavorite ? '⭐' : ''}</td>
+            <td class="centerTdFavoriteStar">${num.isFavorite ? '*' : ''}</td>
             <td></td>
         </tr>`;
     });

@@ -9,7 +9,7 @@
                     <input type="text" id="addNameInput">  
                 </td>
             </tr>
-            <tr> <input type="checkbox" id="checkboxFavorite" onclick="checkFunction()" name="favoriteIt" value="isFavorite">⭐ Favorite Ship? ⭐
+            <tr> <input type="checkbox" id="checkboxFavorite" onclick="checkFunction()" name="favoriteIt" value="isFavorite"> <div class="centerTdFavoriteStar">*</div>
                 <td>
                     MDWT:
                 </td>

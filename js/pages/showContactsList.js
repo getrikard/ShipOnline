@@ -11,7 +11,7 @@
     <th>Number</th>
     <th>Email</th>
     <th>Companies</th>
-    <th class ="myCompanyTab" onclick="">VIP</th>
+    <th class ="myCompanyTab" onclick="">Favorite</th>
     <th>Groups</th>
   </tr>`;
   for (let i = 0; i < model.data.contacts.length; i++) {
@@ -33,7 +33,7 @@
           </span>`;
         }).join('<br>')}
         
-        <td>${contacts.isFavorite ? '⭐' : ''}</td>
+        <td class="centerTdFavoriteStar">${contacts.isFavorite ? '*' : ''}</td>
         <td>${contacts.groups}</td>
   </tr>`;
   };

@@ -23,7 +23,7 @@ function showFavCompanies() {
         <td>${company.categories}</td>
         <td>${company.place}</td>
         <td>${company.country}</td>
-        <td id="centerTdFavorite">${company.isFavorite ? '⭐' : ''}</td>
+        <td id="centerTdFavoriteStar">${company.isFavorite ? '*' : ''}</td>
         <td></td>
   </tr>`;
     };

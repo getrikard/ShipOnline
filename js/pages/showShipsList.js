@@ -17,7 +17,7 @@ ${getShipsTable()}
             <td>${num.callsign}</td>
             <td>${num.type == 'fishing' ? num.fishID : ''}</td>
             <td>${num.flag}</td>
-            <td class="centerTdFavorite">${num.isFavorite ? '⭐' : ''}</td>
+            <td class="centerTdFavoriteStar">${num.isFavorite ? '*' : ''}</td>
             <td></td>
         </tr>`;
     });

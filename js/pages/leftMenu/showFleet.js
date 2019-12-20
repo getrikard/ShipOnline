@@ -32,7 +32,7 @@
     <td>thisType</td>
     <td>ThisFlag</td>
     <td>ThisRole</td>
-    <td class="centerTdFavorite">⭐</td>
+    <td class="centerTdFavoriteStar">*</td>
     <td></td>
     </tr>`;
     }
