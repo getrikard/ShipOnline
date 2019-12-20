@@ -37,7 +37,6 @@ function showAddCompany() {
 
         <button onclick="showCompanies()">Cancel</button>
         <button onclick="addCompanyToModel()">Save</button>
-    <div id="content">
     `;
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;

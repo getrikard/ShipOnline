@@ -25,7 +25,6 @@ function showAddNewCompanyID() {
 
         <button onclick="showCompanyIdNo()">Cancel</button>
         <button onclick="addNewIdCompany()">Save</button>
-    <div id="content">
     `;
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;

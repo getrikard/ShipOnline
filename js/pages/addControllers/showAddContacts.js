@@ -1,5 +1,5 @@
 function showAddContacts() {
-    let htmlAddNewContact = ` <div id="content">
+    let htmlAddNewContact = `<div id="content">
         <table>
             <tr>
                 <td>
@@ -43,7 +43,6 @@ function showAddContacts() {
 
         <button onclick="showContactsList()">Cancel</button>
         <button onclick="addContactsToModel()">Save</button>
-    <div id="content">
     `;
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;

@@ -54,7 +54,6 @@
 
         <button onclick="showShipsList()">Cancel</button>
         <button onclick="addShipToModel()">Save</button>
-    <div id="content">
     `;
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;

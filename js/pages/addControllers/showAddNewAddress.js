@@ -50,7 +50,6 @@ function showAddNewAddress() {
 
         <button onclick="showAddress()">Cancel</button>
         <button onclick="addNewAddress()">Save</button>
-    <div id="content">
     `;
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;
