@@ -7,7 +7,7 @@
     <div id="content"> <div class="topLineInContent">
         ${getShipButton()}
         ${getShipsTable()}
-    <th class ="myCompanyTab" onclick="showShipsFav()">My Ship</th>
+    <th class ="myCompanyTab" style="text-align:center;" onclick="showShipsFav()">My Ship</th>
 <br><br>
   </tr>`;
 
