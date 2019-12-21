@@ -10,12 +10,12 @@
                 <tr>
                     <th>${companyData.companies[model.data.currentCompanyID].country}<th>
 					</tr></table>
-                        <table><br>
-                            <td><b>Category:</b></td></table><table><td>`;
+                        <table><br><br>
+                            <td class="seperator"><b>Category:</b></td>`;
 
     let categoryOfCompany = model.data.companies[model.data.currentCompanyID].categories;
                 categoryOfCompany.map((num) => {
-                 htmlShowCategory += `${num}<br>`;
+                    htmlShowCategory += `<td class="seperator">${num}</td>`;
                 });
     htmlShowCategory += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
                 

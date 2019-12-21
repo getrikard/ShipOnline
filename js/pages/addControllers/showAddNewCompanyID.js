@@ -1,5 +1,5 @@
 function showAddNewCompanyID() {
-    let htmlAddNewShip = ` <div id="content">
+    let htmlshowAddNewCompanyID = ` <div id="content">
         <table>
             <tr>
                 <td>
@@ -30,7 +30,7 @@ function showAddNewCompanyID() {
     model.view.showTopNavigation = true;
     model.view.topNavigationActive = 0; // 0 = companies
     model.view.showLeftNavigation = false;
-    model.view.mainContent = htmlAddNewShip;
+    model.view.mainContent = htmlshowAddNewCompanyID;
     show();
 }
 
