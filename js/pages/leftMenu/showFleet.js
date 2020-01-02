@@ -13,29 +13,29 @@
 
     htmlShowFleet += `${getShipsTable()}<th>Role</th> <th class ="myCompanyTab centerTdFavorite" onclick="showShipsFav()">My Ship</th>`;
 
-    function getRandomNum() {
+/*    function getRandomNum() {
         var desiredMaxLength = 4
         var randomNumber = '';
         for (var i = 0; i < desiredMaxLength; i++) {
             randomNumber += Math.floor(Math.random() * 10);
         }
         return randomNumber;
-    }
-    for (let i = 0; i < 3; i -= -1) {
-    htmlShowFleet +=
-    `<tr>
-    <td>This Ship</td>
-    <td>${getRandomNum()}</td>
-    <td>${getRandomNum()}</td>
-    <td>ThisBuilt</td>
-    <td>ThisCallsign</td>
-    <td>thisType</td>
-    <td>ThisFlag</td>
-    <td>ThisRole</td>
-    <td class="centerTdFavoriteStar">*</td>
-    <td></td>
-    </tr>`;
-    }
+    }*/
+
+    let showShipsFleet = model.data.fleet;
+        showShipsFleet.map((num, id) => {
+            htmlShowFleet += `<tr>
+            <td onclick="showThisShip(${id})" class="clickAble">${num.name}</td>
+            <td>${num.GT}</td>
+            <td>${num.MDWT}</td>
+            <td>${num.built}</td>
+            <td>${num.callsign}</td>
+            <td>${num.type == 'fishing' ? num.fishID : ''}</td>
+            <td>${num.flag}</td>
+            <td class="centerTdFavoriteStar">${num.isFavorite ? '*' : ''}</td>
+            <td></td>
+        </tr>`;
+        });
 
     htmlShowFleet += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
 

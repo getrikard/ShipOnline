@@ -57,7 +57,7 @@ function getShipsTable() {
     return `    
 <table>
     <tr>
-    <th>Ship Name:</th>
+    <th>Name:</th>
     <th>GT</th>
     <th>MDWT</th>
     <th>Built</th>
