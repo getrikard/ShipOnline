@@ -317,13 +317,13 @@ let model = {
                 fishID: "V-L205",
                 flag: "NOR",
                 role: "MO",
+                shipType: "Fishing",
                 companies: [
                     {
                         type: "",
                         companyID: 0,
                     }
                 ],
-                type: "fishing"
             },
             {
                 name: "Embla",
@@ -336,13 +336,13 @@ let model = {
                 fishID: "V-555",
                 flag: "NIS",
                 role: "MO",
+                shipType: "Gastanker",
                 companies: [
                     {
                         type: "",
                         companyID: 0,
                     }
                 ],
-                type: "typeOf"
             },
             {
                 name: "Froya",
@@ -355,13 +355,13 @@ let model = {
                 fishID: "",
                 flag: "NIS",
                 role: "MO",
+                shipType: "Gastanker",
                 companies: [
                     {
                         type: "",
                         companyID: 0,
                     }
                 ],
-                type: "typeOf"
             },
             {
                 name: "Gerda",
@@ -374,13 +374,13 @@ let model = {
                 fishID: "",
                 flag: "NIS",
                 role: "MO",
+                shipType: "Transport",
                 companies: [
                     {
                         type: "",
                         companyID: 0,
                     }
                 ],
-                type: "typeOf"
             },
             {
                 name: "Iduna",
@@ -393,13 +393,13 @@ let model = {
                 fishID: "",
                 flag: "NIS",
                 role: "MO",
+                shipType: "Gastanker",
                 companies: [
                     {
                         type: "",
                         companyID: 0,
                     }
                 ],
-                type: "typeOf"
             }
         ]
     }
