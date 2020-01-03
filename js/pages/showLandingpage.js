@@ -38,7 +38,7 @@ function showRealLandingPage() {
 function showLoginPage() {
     let html = `
         <div id="content">
-            <div class="LandingPage" style="padding:50px;">
+            <div class="LandingPage" style="padding:50px;" onkeydown="if (event.keyCode===13) { login(); }">
                 <label>Username: <input id="login-username" type="text"></label>
                 <label>Password: <input id="login-passwd" type="password"></label>
                 <button onclick="login()">Log in</button>
