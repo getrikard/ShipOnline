@@ -46,6 +46,13 @@ body {
     margin-right: 20px;
 }
 
+input, button {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid  grey;
+    margin-top: 5px;
+}
+
 .inputUser {
     color: white;
     text-align: center;

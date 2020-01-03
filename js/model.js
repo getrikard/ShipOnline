@@ -9,7 +9,7 @@ let model = {
         leftNavigationActive: 0,
     },
     data: {
-        username: "OleIversen",
+        username: undefined,
         currentUser: 0,
         users: [
             {
