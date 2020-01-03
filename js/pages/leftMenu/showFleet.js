@@ -11,31 +11,35 @@
                     <table>
                         <div class="addressType">Fleet</div>${addSpacer()}`;
 
-    htmlShowFleet += `${getShipsTable()}<th>Role</th> <th class ="myCompanyTab centerTdFavorite" onclick="showShipsFav()">My Ship</th>`;
+    htmlShowFleet += `${getShipTable()}<th>Role</th> <th class ="myCompanyTab centerTdFavorite" onclick="showShipsFav()">My Ship</th>`;
 
     /*    function getRandomNum() {
-            var desiredMaxLength = 4
-            var randomNumber = '';
-            for (var i = 0; i < desiredMaxLength; i++) {
+            let desiredMaxLength = 4
+            let randomNumber = '';
+            for (let i = 0; i < desiredMaxLength; i++) {
                 randomNumber += Math.floor(Math.random() * 10);
             }
             return randomNumber;
         }*/
+
+
     let showShipsFleet = model.data.fleet;
-    showShipsFleet.map((num, id) => {
+    showShipsFleet.map((val, id) => {
+        const type = showShipsFleet[id].shipType;
         htmlShowFleet += `<tr>
-            <td onclick="showThisShip(${id})"class="clickAble">${num.name}<div>${num.shipType}</div></td>
-            <td>${num.GT}</td>
-            <td>${num.MDWT}</td>
-            <td>${num.built}</td>
-            <td>${num.callsign}</td>
-            <td>${num.shipType == 'Fishing' ? num.fishID : ''}</td>
-            <td>${num.flag}</td>
-            <td>${num.role}</td>
-            <td class="centerTdFavoriteStar">${num.isFavorite ? '*' : ''}</td>
-            <td></td>
-        </tr>`;
-        })
+            <td>${type}</td>
+            <td onclick="showThisShip(${id})"class="clickAble">${val.name}</td>
+            <td>${val.GT}</td>
+            <td>${val.MDWT}</td>
+            <td>${val.built}</td>
+            <td>${val.callsign}</td>
+            <td>${val.shipType == 'Fishing' ? val.fishID : ''}</td>
+            <td>${val.flag}</td>
+            <td>${val.role}</td>
+            <td class="centerTdFavoriteStar">${val.isFavorite ? '*' : ''}</td>
+            </tr>`;
+    });
+
 
     htmlShowFleet += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
 

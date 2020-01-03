@@ -65,6 +65,19 @@ function getShipsTable() {
     <th>Fish ID</th>
     <th>Flag</th>`;
 };
+function getShipTable() {
+    return `    
+<table>
+    <tr>
+    <th><i>Type</i>:</th>
+    <th>Name:</th>
+    <th>GT</th>
+    <th>MDWT</th>
+    <th>Built</th>
+    <th>Callsign</th>
+    <th>Fish ID</th>
+    <th>Flag</th>`;
+};
 
 function getInnerAddOrSave() {
     if (model.data.companies[model.data.currentCompanyID].isFavorite === false)
