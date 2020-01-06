@@ -33,7 +33,7 @@
                 <tr><td><b>Images</b>:</td></tr>
                 <tr><td><b>Calender</b>:</td></tr>
                 <tr><td><b>History</b>:</td></tr>
-            </table>
+            </table>                 ${getInnerChangeOrSave()}
             
             <!-- <div class="rightContact">
             Stillings Type:

@@ -24,9 +24,7 @@
                         <td class="seperator"><b>Postal Code</b>: ${num.postal}</td>
                     </tr>`;
     });
-    htmlShowAddress += `</table> <div class="changeAddNewBottomBar">
-                <span>Change</span>
-                <span onclick="showAddNewAddress()">Add New</span>
+    htmlShowAddress += `</table> ${getInnerChangeOrSave()}
             </div>${getInnerFooter()}</div>`;
 
         model.view.mainContentIsGrid = true;

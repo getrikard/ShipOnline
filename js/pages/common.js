@@ -87,9 +87,8 @@ function getInnerAddOrSave() {
 function getInnerAddOrSaveShip() { //<span>Save</span> <span>Cancel</span> 
     return `<div id="saveCancelCompany"><span>Add to MY Ship</span></div>`;
 }
-function getInnerChangeOrSave() { //<span>Web</span>  <span>Save</span>  <span>Cancel</span>
+function getInnerChangeOrSave() { //<span>Web</span>  <span>Save</span>  <span>Cancel</span> <span>Change</span>
     return ` <div class="changeAddNewBottomBar">
-                <span>Change</span>
                 <span>Add New</span>
             </div>`;
 }
