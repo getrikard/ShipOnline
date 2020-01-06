@@ -52,6 +52,7 @@
 
 
 
+
     htmlShowFleet += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
 
     model.view.mainContentIsGrid = true;
