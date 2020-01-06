@@ -1,5 +1,5 @@
-﻿function showFleet() {
-    let htmlShowFleet = `${getLeftBarHTML()}
+﻿function showFavFleet() {
+    let htmlFleetFav = `${getLeftBarHTML()}
 <div id="content">
     <table> <div class="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span> <div id ="addTopRight"> Add Fleet </div> </div> 
     <tr>
@@ -11,31 +11,12 @@
                     <table>
                         <div class="addressType">Fleet</div>${addSpacer()}`;
 
-    htmlShowFleet += `${getShipTable()}<th>Role</th> <th class ="myCompanyTab centerTdFavorite" onclick="showFavFleet()">My Ship</th>`;
+    htmlFleetFav += `${getShipTable()}<th>Role</th> <th class ="myCompanyTab centerTdFavorite" onclick="showFleet()">My Ship</th>`;
 
-    /*    function getRandomNum() {
-            let desiredMaxLength = 4
-            let randomNumber = '';
-            for (let i = 0; i < desiredMaxLength; i++) {
-                randomNumber += Math.floor(Math.random() * 10);
-            }
-            return randomNumber;
-        }*/
-
-
-    //  let showShipType = model.data.fleet.shipType.map((val) => console.log(val));
-
-    let showShipsFleet = model.data.fleet;
-    const shipType = showShipsFleet.filter((ship) => {
-        if (ship.shipType === 'Fishing') {return ship.shipType}
-        if (ship.shipType === 'Gastanker') {return ship.shipType}
-        if (ship.shipType === 'Transport') {return ship.shipType}
-    });
-    console.log(shipType);
-    showShipsFleet.map((val, id) => {
-        const type = showShipsFleet[id].shipType;
-        //console.log(type);
-        htmlShowFleet += `<tr>
+    let showFavFleet = model.data.fleet;
+    showFavFleet.map((val, id) => {
+        const type = showFavFleet[id].shipType;
+        if (showFavFleet[id].isFavorite) htmlFleetFav += `<tr>
             <td>${type}</td>
             <td onclick="showThisShip(${id})"class="clickAble">${val.name}</td>
             <td>${val.GT}</td>
@@ -49,16 +30,13 @@
             </tr>`;
     });
 
-
-
-
-    htmlShowFleet += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
+    htmlFleetFav += `</table> </div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;
     model.view.topNavigationActive = 0; // 0 = companies
     model.view.showLeftNavigation = true;
     model.view.leftNavigationActive = 7; // 7 = fleet
-    model.view.mainContent = htmlShowFleet;
+    model.view.mainContent = htmlFleetFav;
     show();
-}
+};
