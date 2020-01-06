@@ -17,7 +17,7 @@
                 categoryOfCompany.map((num) => {
                     htmlShowCategory += `<td class="seperator">${num}</td>`;
                 });
-    htmlShowCategory += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
+    htmlShowCategory += `</table>${getInnerChangeOrSave()} ${getInnerFooter()}`;
                 
 model.view.mainContentIsGrid = true;
 model.view.showTopNavigation = true;

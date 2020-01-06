@@ -24,8 +24,7 @@
                         <td class="seperator"><b>Postal Code</b>: ${num.postal}</td>
                     </tr>`;
     });
-    htmlShowAddress += `</table> ${getInnerChangeOrSave()}
-            </div>${getInnerFooter()}</div>`;
+    htmlShowAddress += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}`;
 
         model.view.mainContentIsGrid = true;
         model.view.showTopNavigation = true;

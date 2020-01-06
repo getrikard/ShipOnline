@@ -23,7 +23,7 @@
                     <tr>
                     </tr>`;
     });
-    htmlShowCompanyIdNo += `</table> ${getInnerChangeOrSave()} ${getInnerFooter() }`;
+    htmlShowCompanyIdNo += `</table> ${getInnerChangeOrSave()} ${getInnerFooter()}`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;
