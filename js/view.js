@@ -30,4 +30,6 @@ function show() {
         }
         leftSideButtons[model.view.leftNavigationActive].classList.add("active-left");
     }
+
+    document.getElementById('usernameDisplay').value = model.data.username ? model.data.username : '';
 }
