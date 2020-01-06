@@ -18,21 +18,21 @@
             <table>
                 ${addSpacer()}
                 <tr><td>Martin Andersen</td>
-                <td>Company:</td></tr>
-                <tr><td>Communication:</td></tr>
-                <tr><td>Sharing:</td>
-                <td>Groups:</td></tr>
-                <tr><td>Private Adress:</td><td>Place:</td></tr>
-                <tr><td>Private Communication:</td></tr>
-                <tr><td>Education:</td></tr>
-                <tr><td>Sertificate:</td></tr>
-                <tr><td>Member:</td></tr>
-                <tr><td>Vessels:</td></tr>
-                <tr><td>Next of kind:</td></tr>
-                <tr><td>Notes / Documents:</td></tr>
-                <tr><td>Images:</td></tr>
-                <tr><td>Calender:</td></tr>
-                <tr><td>History:</td></tr>
+                <td><b>Company</b>:</td></tr>
+                <tr><td><b>Communication</b>:</td></tr>
+                <tr><td><b>Sharing</b>:</td>
+                <td><b>Groups</b>:</td></tr>
+                <tr><td><b>Private Adress</b>:</td><td><b>Place</b>:</td></tr>
+                <tr><td><b>Private Communication</b>:</td></tr>
+                <tr><td><b>Education</b>:</td></tr>
+                <tr><td><b>Sertificate</b>:</td></tr>
+                <tr><td><b>Member</b>:</td></tr>
+                <tr><td><b>Vessels</b>:</td></tr>
+                <tr><td><b>Next of kind</b>:</td></tr>
+                <tr><td><b>Notes / Documents</b>:</td></tr>
+                <tr><td><b>Images</b>:</td></tr>
+                <tr><td><b>Calender</b>:</td></tr>
+                <tr><td><b>History</b>:</td></tr>
             </table>
             
             <!-- <div class="rightContact">
