@@ -15,7 +15,7 @@
 
     let categoryOfCompany = model.data.companies[model.data.currentCompanyID].categories;
                 categoryOfCompany.map((num) => {
-                    htmlShowCategory += `<td class="seperator">${num}</td>`;
+                    htmlShowCategory += `<tr><td class="seperator">${num}</td></tr>`;
                 });
     htmlShowCategory += `</table>${getInnerChangeOrSave()} ${getInnerFooter()}`;
                 
