@@ -27,6 +27,7 @@
 
     let showShipsFleet = model.data.fleet;
     const shipType = showShipsFleet.filter((ship) => { if (ship.shipType === 'Fishing') return ship });
+    console.log(shipType);
     showShipsFleet.map((val, id) => {
         const type = showShipsFleet[id].shipType;
         console.log(type);
