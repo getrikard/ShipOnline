@@ -39,9 +39,26 @@ function showLoginPage() {
     let html = `
         <div id="content">
             <div class="LandingPage" style="padding:50px;" onkeydown="if (event.keyCode===13) { login(); }">
-                <label>Username: <input id="login-username" type="text"></label>
-                <label>Password: <input id="login-passwd" type="password"></label>
-                <button onclick="login()">Log in</button>
+                <table class="login-form">
+                    <tr>
+                        <td>
+                            <label>
+                                Username:<br>
+                                <input id="login-username" type="text">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                Password:<br>
+                                <input id="login-passwd" type="password">
+                            </label>
+                        </td>
+                        <td>
+                            &nbsp;<br>
+                            <button onclick="login()">Log in</button>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     `;

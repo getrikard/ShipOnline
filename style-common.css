@@ -362,3 +362,16 @@ th {
     border-bottom: #99BFC2 solid 3px;
     height: 15px;
 }
+
+.login-field {
+    float: left;
+}
+
+.login-form {
+    margin: auto;
+    max-width: 500px;
+}
+
+.login-form td {
+    border: 0;
+}
