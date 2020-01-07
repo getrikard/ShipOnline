@@ -1,20 +1,19 @@
 ﻿function showDocuments() {
     let htmlShowDocuments = `
 			${getLeftBarHTML()}
+        
+        <div>
+            <div>
+                <div class="topLineInContent">
+                    <div id="addTopRight">
+                        <span id="companyButton""><b>SP</b>SHIPBASE Documents ➡ </span>
+                        <a href="javascript:showAddDocument()">Add Documents</a>
+                    </div>
+                </div>
+            </div>
+            ${getCompanyAndCountryHTML()}
             <div id="content">
-    <div class="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-                <div id ="addTopRight"> Add Document</div>
-    </div>
-                <table>
-					<tr>
-						<th>${companyData.companies[model.data.currentCompanyID].name}<th>
-					</tr>
-					<tr>
-						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
-					</tr>
-                </table>
-                <table>
-                            ${addSpacer()}
+                <table> ${addSpacer()}
                     <tr><td>Document Name: Test</td><td>Date: 18/12/2019</td></tr>
                     <tr><td>Subject: Internal Test</td><td>Project: ShipOnline </td></tr>
                     <tr><td>Type: Plain text </td><td>Person: Creator</td></tr>

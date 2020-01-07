@@ -4,7 +4,7 @@
 <div id="content">
     <div class="topLineInContent"> <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
         <div id ="addTopRight"> Add Company ID </div>
-    </div>
+            </div>
     <table>
     <tr>
         <th>${companyData.companies[model.data.currentCompanyID].name}<th>
@@ -23,7 +23,7 @@
                     <tr>
                     </tr>`;
     });
-    htmlShowCompanyIdNo += `</table> </table> <div class="changeAddNewBottomBar"> <span onclick="showAddNewCompanyID()">Add New</span></div>${getInnerFooter()}</div>`;
+    htmlShowCompanyIdNo += `</table><div class="changeAddNewBottomBar"> <span onclick="showAddNewCompanyID()">Add New</span></div>${getInnerFooter()}</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;
