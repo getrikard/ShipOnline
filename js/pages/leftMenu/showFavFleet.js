@@ -1,13 +1,17 @@
 ﻿function showFavFleet() {
     let htmlFleetFav = `${getLeftBarHTML()}
-<div id="content">
-    <table> <div class="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span> <div id ="addTopRight"> Add Fleet </div> </div> 
-    <tr>
-        <th>${companyData.companies[model.data.currentCompanyID].name}<th>
-					</tr>
-            <tr>
-                <th>${companyData.companies[model.data.currentCompanyID].country} <span id="tempStyle">${companyData.companies[model.data.currentCompanyID].categories.join(' ')}</span><th>
-					</tr>
+        
+        <div>
+            <div>
+                <div class="topLineInContent">
+                    <div id="addTopRight">
+                        <span id="companyButton""><b>SP</b>SHIPBASE Fleet ➡ </span>
+                        <a href="javascript:showAddFleet()">Add Fleet</a>
+                    </div>
+                </div>
+            </div>
+            ${getCompanyAndCountryHTML()}
+            <div id="content">
                     <table>
                         <div class="addressType">Fleet</div>${addSpacer()}`;
 
