@@ -1,23 +1,27 @@
 ﻿function showCategory() {
     let htmlShowCategory = `
     ${ getLeftBarHTML() }
-    <div id="content">
-        <div class="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span><div id="addTopRight">Add Category</div></div>
-        <table>
-        <tr>
-            <th>${companyData.companies[model.data.currentCompanyID].name}<th>
-					</tr>
+    <div>
+        <div>
+            <div class="topLineInContent">
+                <div id="addTopRight">
+                    <span id="companyButton""><b>SP</b>SHIPBASE Category ➡ </span>
+                    <a href="javascript:showAddCategory()">Add Category</a>
+                </div>
+            </div>
+        </div>
+        ${getCompanyAndCountryHTML()}
+        <div id="content">
+            <table>
                 <tr>
-                    <th>${companyData.companies[model.data.currentCompanyID].country}<th>
-					</tr></table>
-                        <table><br><br>
-                            <td class="seperator"><b>Category:</b></td>`;
+                    <td><b>Category:</b></td>
+                </tr>`;
 
     let categoryOfCompany = model.data.companies[model.data.currentCompanyID].categories;
                 categoryOfCompany.map((num) => {
-                    htmlShowCategory += `<tr><td class="seperator">${num}</td></tr>`;
+                    htmlShowCategory += `<tr><td>${num}</td></tr>`;
                 });
-    htmlShowCategory += `</table>${getInnerChangeOrSave()} ${getInnerFooter()}`;
+    htmlShowCategory += `</table>${getInnerChangeOrSave()} ${getInnerFooter()}</div>`;
                 
 model.view.mainContentIsGrid = true;
 model.view.showTopNavigation = true;

@@ -149,7 +149,7 @@ input, button {
     margin-bottom: 3px;
     text-align: left;
     background-color: white;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bolder;
 }
 
@@ -341,7 +341,7 @@ th {
 
 #addTopRight {
     /* float: right; */
-    font-size: 22px;
+    font-size: 16px;
     font-style: italic;
 }
 
@@ -363,11 +363,6 @@ th {
 #tempStyle {
     font-style: italic;
     font-weight:100;
-}
-
-.seperator {
-    border-bottom: #99BFC2 solid 3px;
-    height: 15px;
 }
 
 .login-field {

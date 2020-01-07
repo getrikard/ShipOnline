@@ -1,50 +1,50 @@
 ﻿function showContact() {
     let showContactHTML = `
 			${getLeftBarHTML()}
-			
-            <div id="content">
-                <div class="topLineInContent">
-                    <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-                    <div id="addTopRight">Add Contacts</div>
+            
+            <div>
+                <div>
+                    <div class="topLineInContent">
+                        <div id="addTopRight">
+                            <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
+                            <a href="javascript:showAddCommunication()">Add Communication</a>
+                        </div>
+                    </div>
                 </div>
-            <table>
-                <tr>
-                    <th>${companyData.companies[model.data.currentCompanyID].name}<th>
-                </tr>
-                <tr>
-                    <th>${companyData.companies[model.data.currentCompanyID].country}<th>
-                </tr>
-            </table>
-            <table>
-                ${addSpacer()}
-                <tr><td>Martin Andersen</td>
-                <td><b>Company</b>:</td></tr>
-                <tr><td><b>Communication</b>:</td></tr>
-                <tr><td><b>Sharing</b>:</td>
-                <td><b>Groups</b>:</td></tr>
-                <tr><td><b>Private Adress</b>:</td><td><b>Place</b>:</td></tr>
-                <tr><td><b>Private Communication</b>:</td></tr>
-                <tr><td><b>Education</b>:</td></tr>
-                <tr><td><b>Sertificate</b>:</td></tr>
-                <tr><td><b>Member</b>:</td></tr>
-                <tr><td><b>Vessels</b>:</td></tr>
-                <tr><td><b>Next of kind</b>:</td></tr>
-                <tr><td><b>Notes / Documents</b>:</td></tr>
-                <tr><td><b>Images</b>:</td></tr>
-                <tr><td><b>Calender</b>:</td></tr>
-                <tr><td><b>History</b>:</td></tr>
-            </table>                 ${getInnerChangeOrSave()}
-            
-            <!-- <div class="rightContact">
-            Stillings Type:
-            </div>
-            <div class="leftContact">
-            Department Type:
-            </div> -->
-            
-            `;
+                ${getCompanyAndCountryHTML()}
+                <div id="content">
+                
+                <table>
+                    ${addSpacer()}
+                    <tr><td>Martin Andersen</td>
+                    <td><b>Company</b>:</td></tr>
+                    <tr><td><b>Communication</b>:</td></tr>
+                    <tr><td><b>Sharing</b>:</td>
+                    <td><b>Groups</b>:</td></tr>
+                    <tr><td><b>Private Adress</b>:</td><td><b>Place</b>:</td></tr>
+                    <tr><td><b>Private Communication</b>:</td></tr>
+                    <tr><td><b>Education</b>:</td></tr>
+                    <tr><td><b>Sertificate</b>:</td></tr>
+                    <tr><td><b>Member</b>:</td></tr>
+                    <tr><td><b>Vessels</b>:</td></tr>
+                    <tr><td><b>Next of kind</b>:</td></tr>
+                    <tr><td><b>Notes / Documents</b>:</td></tr>
+                    <tr><td><b>Images</b>:</td></tr>
+                    <tr><td><b>Calender</b>:</td></tr>
+                    <tr><td><b>History</b>:</td></tr>
+                </table>
+                ${getInnerChangeOrSave()}
+                
+                <!-- <div class="rightContact">
+                Stillings Type:
+                </div>
+                <div class="leftContact">
+                Department Type:
+                </div> -->
+                
+                `;
 
-    showContactHTML += `${getInnerFooter()} `;
+    showContactHTML += `${getInnerFooter()} </div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;

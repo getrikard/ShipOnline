@@ -1,18 +1,19 @@
 ﻿function showAddress() {
     let htmlShowAddress = `
-			${getLeftBarHTML()}
-            <div id="content">
-                <div class ="topLineInContent"><span id="companyButton""><b>SP</b>SHIPBASE Company ➡</span>
-                <div id="addTopRight" onclick="showAddAddress()">Add Address</div></div>
-                <table>
-					<tr>
-						<th>${companyData.companies[model.data.currentCompanyID].name}<th>
-					</tr>
-					<tr>
-						<th>${companyData.companies[model.data.currentCompanyID].country}<th>
-					</tr>
-                <table>
-                    <div class="addressType" > Visiting address</div> <br>`;
+            ${getLeftBarHTML()}
+            <div>
+                <div>
+                    <div class="topLineInContent">
+                        <div id="addTopRight">
+                            <span id="companyButton""><b>SP</b>SHIPBASE Address ➡ </span>
+                            <a href="javascript:showAddAddress()">Add Address</a>
+                        </div>
+                    </div>
+                </div>
+                ${getCompanyAndCountryHTML()}
+                <div id="content">
+                    <table>
+                        <div class="addressType"> Visiting address</div> <br>`;
 
     let addressOfCompany = model.data.companies[model.data.currentCompanyID].adresses
              addressOfCompany.map((num) => {
@@ -20,11 +21,11 @@
                     <td><b>Place</b>: ${num.place}</td>
                     <td><b>Country</b>: ${companyData.companies[model.data.currentCompanyID].country || ''}</td>          
                     <tr>
-                        <td class="seperator"><b>Address</b>: ${num.adress} </td>
-                        <td class="seperator"><b>Postal Code</b>: ${num.postal}</td>
+                        <td><b>Address</b>: ${num.adress} </td>
+                        <td><b>Postal Code</b>: ${num.postal}</td>
                     </tr>`;
     });
-    htmlShowAddress += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}`;
+    htmlShowAddress += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
 
         model.view.mainContentIsGrid = true;
         model.view.showTopNavigation = true;
