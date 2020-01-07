@@ -78,7 +78,7 @@ function login() {
     let passwd = document.getElementById('login-passwd').value;
     
     if (username == '' || username.length < 3 || passwd == '' || passwd.length < 3) {
-        return;
+        return alert("invalid username/password");
     }
     
     console.log(`Logged in as "${username}".`);

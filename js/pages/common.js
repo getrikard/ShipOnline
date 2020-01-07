@@ -80,8 +80,8 @@ function getShipTable() {
 
 function getInnerAddOrSave() {
     if (model.data.companies[model.data.currentCompanyID].isFavorite === false)
-        return `<div id="saveCancelCompany" class="addressTypeComp" onclick="addThisCompanyToFavorites()"><span>Add to MY Company?</span></div>`;
-    else return `<div id="saveCancelCompanyStar" class="addressTypeComp"><span onclick="removeThisCompanyFavorite()">My Company</span></div>`;
+        return `<div class="addressTypeComp" onclick="addThisCompanyToFavorites()"><span>Add to MY Company?</span></div>`;
+    else return `<div class="addressTypeComp"><span onclick="removeThisCompanyFavorite()">My Company</span></div>`;
 }
 function getInnerAddOrSaveShip() { //<span>Save</span> <span>Cancel</span> 
     return `<div id="saveCancelCompany"><span>Add to MY Ship</span></div>`;

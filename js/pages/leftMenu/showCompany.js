@@ -14,13 +14,6 @@ function showCompany() {
 				</div>
 				${getCompanyAndCountryHTML()}
 				<div id="content">
-					<table>
-						<tr>
-							<th colspan="2">${companyData.companies[element].name}</th>
-						</tr>
-						<tr>
-							<th colspan="2">${companyData.companies[element].country} </th>
-						</tr>
 						</table>
 						${getInnerAddOrSave()}
 						<table>

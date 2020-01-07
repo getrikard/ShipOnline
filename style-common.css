@@ -244,15 +244,20 @@ th {
     margin-top: 25px;
     margin-left: 5px;
     font-size: 16px;
-    color: green;
+    color: black;
     border-bottom: solid green 2px;
     width: fit-content;
 }
 .addressTypeComp {
-    margin-top: 25px;
-    margin-left: 90%;
+    border-left: 2px green solid;
+    border-right: 2px green solid;
+    border-radius: 2.5%;
+    padding: 1px 3px;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 85%;
     font-size: 16px;
-    color: green;
+    color: black;
     width: fit-content;
 }
 
