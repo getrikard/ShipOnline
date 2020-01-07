@@ -241,7 +241,15 @@ let model = {
                         number: "98 97 70 92",
                         department: 0,
                         notes: "",
-                    }
+                    },
+                    {
+                        type: "email",
+                        number: "jan@woller.no",
+                        department: 1,
+                        notes: "",
+                    },
+
+
                 ],
                 departments: [
                     ""
