@@ -27,20 +27,23 @@ function showCompany() {
 						</td>
 					</tr>
 					<tr>
-					<td> P.O BOX </td>
-					<td> b </td>
+					<td> ${companyData.companies[element].adresses[1].type} </td>
+					<td> 
+						${companyData.companies[element].adresses[1].adress}
+
+						</td>
 					</tr>
 					<tr>
 					<td> Invoice  </td> 
-					<td> c  </td>
+					<td>   </td>
 					</tr>
 					<tr>
-					<td> Phone </td>
-					<td> d </td>
+					<td> ${companyData.companies[element].communications[0].type} </td>
+					<td> ${companyData.companies[element].communications[0].number} </td>
 					</tr>
 					<tr>
-					<td> Email </td>
-					<td> e </td>
+					<td> ${companyData.companies[element].communications[1].type} </td>
+					<td> ${companyData.companies[element].communications[1].number} </td>
 					</tr>
                     </table> ${ getInnerChangeOrSave()}${ getInnerFooter() }</div>
         </div>
