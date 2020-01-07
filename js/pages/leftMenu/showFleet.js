@@ -1,5 +1,5 @@
 ﻿function showFleet() {
-    let htmlShowFleet = `        ${getLeftBarHTML()}
+    let htmlShowFleet = `${getLeftBarHTML()}
         
         <div>
             <div>
