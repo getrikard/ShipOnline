@@ -8,7 +8,7 @@ function showCompany() {
 					<div class="topLineInContent">
 						<div id="addTopRight">
 							<span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-							<a href="javascript:showAddCommunication()">Add Communication</a>
+							<a href="javascript:showAddCompany()">Add Company</a>
 						</div>
 					</div>
 				</div>
