@@ -1,25 +1,25 @@
 ﻿function showCompanyIdNo() {
-    let htmlShowCompanyIdNo = `${getLeftBarHTML()
-}
-<div id="content">
-    <div class="topLineInContent"> <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-        <div id ="addTopRight"> Add Company ID </div>
+    let htmlShowCompanyIdNo = `
+        ${getLeftBarHTML()}
+        <div>
+            <div>
+                <div class="topLineInContent">
+                    <div id="addTopRight">
+                        <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
+                        <a href="javascript:showAddCommunication()">Add Communication</a>
+                    </div>
+                </div>
             </div>
-    <table>
-    <tr>
-        <th>${companyData.companies[model.data.currentCompanyID].name}<th>
-					</tr>
-            <tr>
-                <th>${companyData.companies[model.data.currentCompanyID].country}<th>
-					</tr>
-                    <table>
-                        <div class="addressType" > Sales Manager</div> <br>`;
+            ${getCompanyAndCountryHTML()}
+            <div id="content">
+                <div class="addressType" > Sales Manager</div>
+                <table>`;
     
         let idOfCompany = model.data.companies[model.data.currentCompanyID].companyNo
         idOfCompany.map((num) => {
         htmlShowCompanyIdNo += `
                     <td><b>Type</b>: ${num.type}</td>
-                    <td><b>Number</b>: ${num.number}</td>          
+                    <td><b>Number</b>: ${num.number}</td>
                     <tr>
                     </tr>`;
     });
