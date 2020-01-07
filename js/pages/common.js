@@ -24,7 +24,6 @@ function getLeftBarHTML() {
         <div class="leftSideButtons" onclick="showCompanyIdNo()">Company ID no</div>
         <div class="leftSideButtons" onclick="showDocuments()">Documents/Notes</div>
         <div class="leftSideButtons" onclick="showFleet()">Fleet</div>
-        <div class="leftSideButtons" onclick="showHistory()">History</div>
     </div>`
 }
 
