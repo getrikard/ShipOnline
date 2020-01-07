@@ -19,7 +19,7 @@ function showCompany() {
                     ${getInnerAddOrSave()}
                     <table>
 					<tr>
-					<td> visit adress </td>
+					<td> <b>Visit adress</b> </td>
 					<td>
 						${companyData.companies[element].adresses[0].adress}  
 						${companyData.companies[element].adresses[0].postal}
@@ -27,31 +27,31 @@ function showCompany() {
 						</td>
 					</tr>
 					<tr>
-					<td> P.O BOX </td>
+					<td> <b>P.O BOX</b> </td>
 					<td> b </td>
 					</tr>
 					<tr>
-					<td> Invoice  </td> 
+					<td> <b>Invoice</b>  </td> 
 					<td> c  </td>
 					</tr>
 					<tr>
-					<td> Phone </td>
+					<td> <b>Phone</b> </td>
 					<td> d </td>
 					</tr>
 					<tr>
-					<td> Email </td>
+					<td> <b>Email</b> </td>
 					<td> e </td>
 					</tr>
-                    </table> ${ getInnerChangeOrSave()}${ getInnerFooter() }</div>
+                    </table> ${ getInnerChangeOrSave()}${getInnerFooter()}</div>
         </div>
             <div>`;
 
 
 	model.view.mainContentIsGrid = true;
 	model.view.showTopNavigation = true;
-    model.view.topNavigationActive = 0; // 0 = companies
-    model.view.showLeftNavigation = true;
-    model.view.leftNavigationActive = 0; // 0 = company
-    model.view.mainContent = htmlShowCompany;
+	model.view.topNavigationActive = 0; // 0 = companies
+	model.view.showLeftNavigation = true;
+	model.view.leftNavigationActive = 0; // 0 = company
+	model.view.mainContent = htmlShowCompany;
 	show();
 }

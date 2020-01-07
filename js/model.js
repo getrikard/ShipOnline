@@ -46,13 +46,13 @@ let model = {
                 phonePrefix: "47",
                 communications: [
                     {
-                        type: "phone",
+                        type: "Phone",
                         number: "55 08 40 00",
                         department: 0,
                         notes: "",
                     },
                     {
-                        type: "email",
+                        type: "Email",
                         number: "reno@halstensen.no",
                         department: 1,
                         notes: "",
@@ -104,7 +104,7 @@ let model = {
                 phonePrefix: "47",
                 communications: [
                     {
-                        type: "phone",
+                        type: "Phone",
                         number: "70 00 86 00",
                         department: 1,
                         notes: "",
@@ -166,25 +166,25 @@ let model = {
                 phonePrefix: "47",
                 communications: [
                     {
-                        type: "email",
+                        type: "Email",
                         number: "post@ostensjo.no",
                         department: 0,
                         notes: "",
                     },
                     {
-                        type: "phone",
+                        type: "Phone",
                         number: "44 33 22 88",
                         department: 0,
                         notes: "",
                     },
                     {
-                        type: "phone",
+                        type: "Phone",
                         number: "44 33 22 75",
                         department: 2,
                         notes: "",
                     },
                     {
-                        type: "fax",
+                        type: "Fax",
                         number: "44 33 22 76",
                         department: 1,
                         notes: "",
@@ -237,7 +237,7 @@ let model = {
                 phonePrefix: "47",
                 communications: [
                     {
-                        type: "phone",
+                        type: "Phone",
                         number: "98 97 70 92",
                         department: 0,
                         notes: "",
