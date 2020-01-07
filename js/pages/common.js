@@ -1,9 +1,9 @@
 ﻿function getCompanyAndCountryHTML() {
     let company = model.data.companies[model.data.currentCompanyID];
-    return `<div class="countryInfoDiv" style="margin-bottom: 30px">
+    return `<div class="countryInfoDiv">
         ${company.name}
     </div>
-    <div class="countryInfoDiv">
+    <div class="countryInfoDiv" style="margin-bottom: 30px">
         ${company.country}
     </div>`;
 }

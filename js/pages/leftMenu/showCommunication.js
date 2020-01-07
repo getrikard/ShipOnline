@@ -3,28 +3,24 @@
     let showCommunicationHTML = `
         ${getLeftBarHTML()}
         
-        <div id="content">
-            <div class="topLineInContent">
-                <div id="addTopRight">
-                    <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
-                    <a href="javascript:showAddCommunication()">Add Communication</a>
+        <div>
+            <div>
+                <div class="topLineInContent">
+                    <div id="addTopRight">
+                        <span id="companyButton""><b>SP</b>SHIPBASE Company ➡ </span>
+                        <a href="javascript:showAddCommunication()">Add Communication</a>
+                    </div>
                 </div>
             </div>
-            <table>
-                <tr>
-                    <th>${companyData.companies[model.data.currentCompanyID].name}<th>
-                </tr>
-                <tr>
-                    <th>${companyData.companies[model.data.currentCompanyID].country}<th>
-                </tr>
-            </table>
-            <table>
-            ${addSpacer()}
-                <tr>
-                    <th>Department</th>
-                    <th></th>
-                    <th>Notes</th>
-                </tr>`;
+            ${getCompanyAndCountryHTML()}
+            <div id="content">
+                <table>
+                ${addSpacer()}
+                    <tr>
+                        <th>Department</th>
+                        <th></th>
+                        <th>Notes</th>
+                    </tr>`;
 
     for (comm of company.communications) {
         showCommunicationHTML += `<tr>
@@ -42,7 +38,8 @@
         </tr>`
     }
 
-    showCommunicationHTML += `</table> <div class="changeAddNewBottomBar"> <span onclick="showAddCommunication()">Add New</span></div>${getInnerFooter()}</div>`;
+    showCommunicationHTML += `</table>
+        <div class="changeAddNewBottomBar"> <span onclick="showAddCommunication()">Add New</span></div>${getInnerFooter()}</div></div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;
