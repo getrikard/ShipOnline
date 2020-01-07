@@ -4,8 +4,7 @@ function showShipsFav() {
         ` <div id="content"> <div class="topLineInContent">
 ${getShipButton()}
 ${getShipsTable()}
-    <th class ="myCompanyTab centerTdFavorite" onclick="showShipsList()">My Ship</th>
-    <br><br>
+    <th class ="myCompanyTab centerTdFavorite" onclick="showShipsList()">Favorite</th>
   </tr>`;
 
     let showFavShips = model.data.fleet;

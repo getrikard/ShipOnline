@@ -11,8 +11,8 @@
     <th>Number</th>
     <th>Email</th>
     <th>Companies</th>
-    <th class ="myCompanyTab" onclick="">Favorite</th>
     <th>Groups</th>
+    <th class ="myCompanyTab" onclick="">Favorite</th>
   </tr>`;
   for (let i = 0; i < model.data.contacts.length; i++) {
     let contacts = model.data.contacts[i];
@@ -32,9 +32,8 @@
             (${comp.stilling})
           </span>`;
         }).join('<br>')}
-        
-        <td class="centerTdFavoriteStar">${contacts.isFavorite ? '*' : ''}</td>
         <td>${contacts.groups}</td>
+        <td class="centerTdFavoriteStar">${contacts.isFavorite ? '*' : ''}</td>
   </tr>`;
   };
 

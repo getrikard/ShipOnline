@@ -11,8 +11,8 @@ function showFavCompanies() {
     <th>Catagory</th>
     <th>Place</th>
     <th>Country</th>
-    <th class ="myCompanyTab centerTdFavorite" onclick="showCompanies()">My Company</th>
     <th>Groups</th>
+    <th class ="myCompanyTab centerTdFavorite" onclick="showCompanies()">Favorite</th>
   </tr>`;
   for (let i = 0; i < model.data.companies.length; i++) {
     let company = model.data.companies[i];
@@ -23,8 +23,8 @@ function showFavCompanies() {
         <td>${company.categories}</td>
         <td>${company.place}</td>
         <td>${company.country}</td>
-        <td class="centerTdFavoriteStar">${company.isFavorite ? '*' : ''}</td>
         <td></td>
+        <td class="centerTdFavoriteStar">${company.isFavorite ? '*' : ''}</td>
   </tr>`;
     };
 

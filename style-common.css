@@ -125,7 +125,7 @@ input, button {
 #content {
     grid-area: content;
     text-align: center;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     background-color: white;
 }
 
@@ -177,9 +177,8 @@ input, button {
 }
 
 .myCompanyTab {
-    border-bottom: 1px #6BAA86 solid;
+    color: green;
     font-style: italic;
-    border-radius: 25px;
 }
 
 .myCompanyTab:hover {

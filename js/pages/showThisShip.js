@@ -7,8 +7,7 @@
     <div id="content"> <div class="topLineInContent">
         ${getShipButton()}
         ${getShipsTable()}
-    <th class ="myCompanyTab" style="text-align:center;" onclick="showShipsFav()">My Ship</th>
-<br><br>
+    <th class ="myCompanyTab" style="text-align:center;" onclick="showShipsFav()">Favorite</th>
   </tr>`;
 
     let showShips = model.data.fleet;

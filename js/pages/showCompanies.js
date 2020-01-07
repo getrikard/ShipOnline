@@ -10,9 +10,10 @@
     <th>Catagory</th>
     <th>Place</th>
     <th>Country</th>
-    <th class ="myCompanyTab centerTdFavorite" onclick="showFavCompanies()">My Company</th>
     <th>Groups</th>
+    <th class="myCompanyTab centerTdFavorite" onclick="showFavCompanies()">Favorite</th>
   </tr>`;
+
   for (let i = 0; i < model.data.companies.length; i++) {
     let company = model.data.companies[i];
     model.data.currentCompanyID = i;
@@ -22,8 +23,8 @@
         <td>${company.categories.join(', ')}</td>
         <td>${company.place[0].toUpperCase() + company.place.substring(1).toLowerCase()}</td>
         <td>${company.country}</td>
-        <td class="centerTdFavoriteStar">${company.isFavorite ? '*' : ''}</td>
         <td></td>
+        <td class="centerTdFavoriteStar">${company.isFavorite ? '*' : ''}</td>
   </tr>`;
   };
 
