@@ -12,7 +12,7 @@
             </div>
             ${getCompanyAndCountryHTML()}
             <div id="content">
-                <div class="addressType" > Sales Manager</div>
+                <div class="addressType" > Sales Manager</div><br>
                 <table>`;
     
         let idOfCompany = model.data.companies[model.data.currentCompanyID].companyNo
