@@ -248,17 +248,26 @@ th {
     border-bottom: solid green 2px;
     width: fit-content;
 }
-.addressTypeComp {
-    border-left: 2px green solid;
-    border-right: 2px green solid;
+.myComp {
     border-radius: 2.5%;
     padding: 1px 3px;
     text-align: center;
     margin-top: 15px;
-    margin-left: 85%;
+    margin-left: 84%;
     font-size: 16px;
     color: black;
     width: fit-content;
+}
+.myComp:hover {
+    color: green;
+}
+.notMyComp {
+    border-left: 2px red solid;
+    border-right: 2px red solid;
+}
+.isMyComp {
+    border-left: 2px green solid;
+    border-right: 2px green solid;
 }
 
 .spacerTable {

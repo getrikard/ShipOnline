@@ -21,7 +21,6 @@
                     <input type="text" id="addGtinput">
                 </td>
             </tr>
-            <tr> <input type="checkbox" id="checkboxFavorite" onclick="checkFunction()" name="favoriteIt" value="isFavorite"> <div class="centerTdFavoriteStar">Favorite</div></tr>
             <tr>
                 <td>
                     Built:
@@ -41,9 +40,6 @@
                 <td>
                     <input type="text" id="addFishIdInput">
                 </td>
-                <td>
-                    Flag: ${getCountryDropDownList()}
-                </td>
                 <tr>
                 <td>
                     IMO NO:
@@ -57,10 +53,13 @@
                 <td>
                     <input type="text" id="addRoleInput">
                 </td>
+                <td>
+                    Flag: ${getCountryDropDownList()}
+                </td>
             </tr>
             </tr>
         </table>
-
+        <div>Add to my ship? <input type="checkbox" id="checkboxFavorite" onclick="checkFunction()" name="favoriteIt" value="isFavorite"></div>
         <button onclick="showShipsList()">Cancel</button>
         <button onclick="addShipToModel()">Save</button>
     `;
