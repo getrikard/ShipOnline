@@ -8,16 +8,12 @@
                 <td>
                     <input type="text" id="addNameInput">  
                 </td>
-            </tr>
-            <tr> <input type="checkbox" id="checkboxFavorite" onclick="checkFunction()" name="favoriteIt" value="isFavorite"> <div class="centerTdFavoriteStar">*</div>
                 <td>
                     MDWT:
                 </td>
                 <td>
                     <input type="text" id="addMdwtInput">
                 </td>
-            </tr>
-            <tr>
                 <td>
                     GT:
                 </td>
@@ -25,6 +21,7 @@
                     <input type="text" id="addGtinput">
                 </td>
             </tr>
+            <tr> <input type="checkbox" id="checkboxFavorite" onclick="checkFunction()" name="favoriteIt" value="isFavorite"> <div class="centerTdFavoriteStar">Favorite</div></tr>
             <tr>
                 <td>
                     Built:
@@ -47,8 +44,20 @@
                 <td>
                     Flag: ${getCountryDropDownList()}
                 </td>
+                <tr>
                 <td>
+                    IMO NO:
                 </td>
+                <td>
+                    <input type="text" id="addIMOIdInput">
+                </td>
+                <td>
+                    Role:
+                </td>
+                <td>
+                    <input type="text" id="addRoleInput">
+                </td>
+            </tr>
             </tr>
         </table>
 
@@ -76,6 +85,8 @@ function addShipToModel() {
     const callSign = document.getElementById('addCallsignInput').value;
     const fishId = document.getElementById('addFishIdInput').value
     const flag = document.getElementById('addCountryInput').value
+    const imo = document.getElementById('addIMOIdInput').value
+    const role = document.getElementById('addRoleInput').value
 
 
     const ship = {
@@ -87,6 +98,8 @@ function addShipToModel() {
         callsign: callSign,
         fishID: fishId,
         flag: flag,
+        shipIMO: imo,
+        role: role,
 
     };
     if (ship.name !== '' && ship.built !== '' && ship.callsign !== '') {
