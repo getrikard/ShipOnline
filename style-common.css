@@ -245,6 +245,13 @@ th {
     border-bottom: solid green 2px;
     width: fit-content;
 }
+.addressTypeComp {
+    margin-top: 25px;
+    margin-left: 90%;
+    font-size: 16px;
+    color: green;
+    width: fit-content;
+}
 
 .spacerTable {
     margin-top: 25px;
