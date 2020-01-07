@@ -34,7 +34,7 @@ body {
 }
 
 #logoText {
-    font-size: 36px;
+    font-size: 26px;
     color: #FFFFFF;
     float: right;
     padding-top: 100px;
@@ -59,7 +59,7 @@ input, button {
     margin-top: 110px;
     background-color: #1c3544;
     border: none;
-    height: 25px;
+    height: 18px;
     margin-left: 4px;
 }
 
@@ -98,6 +98,7 @@ input, button {
 
 #topMenu span:hover {
     background-color: #6BAA86;
+
 }
 
 #leftSide {
@@ -385,4 +386,5 @@ th {
 
 #usernameDisplay {
     cursor: text;
+    font-weight: bold;
 }
