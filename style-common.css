@@ -375,3 +375,7 @@ th {
 .login-form td {
     border: 0;
 }
+
+#usernameDisplay {
+    cursor: text;
+}
