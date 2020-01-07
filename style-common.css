@@ -104,6 +104,7 @@ input, button {
 
 #leftSide {
     grid-area: leftSide;
+    margin-top: 40px;
 }
 
 #leftSide div {
