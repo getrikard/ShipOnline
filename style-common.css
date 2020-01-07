@@ -383,3 +383,9 @@ th {
     cursor: text;
     font-weight: bold;
 }
+
+#imgContainerShip {
+    background-image: url(https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: auto;
+    opacity: 0.75;
+}
