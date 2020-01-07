@@ -23,7 +23,7 @@
                     <tr>
                     </tr>`;
     });
-    htmlShowCompanyIdNo += `</table> ${getInnerChangeOrSave()} ${getInnerFooter()}`;
+    htmlShowCompanyIdNo += `</table> </table> <div class="changeAddNewBottomBar"> <span onclick="showAddNewCompanyID()">Add New</span></div>${getInnerFooter()}</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;

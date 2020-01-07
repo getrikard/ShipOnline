@@ -42,7 +42,7 @@
         </tr>`
     }
 
-    showCommunicationHTML += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
+    showCommunicationHTML += `</table> <div class="changeAddNewBottomBar"> <span onclick="showAddCommunication()">Add New</span></div>${getInnerFooter()}</div>`;
 
     model.view.mainContentIsGrid = true;
     model.view.showTopNavigation = true;
