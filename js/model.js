@@ -34,7 +34,7 @@ let model = {
                         postal: "5398"
                     },
                     {
-                        type: "postbox",
+                        type: "Postbox",
                         adress: "P.O.Box 103",
                         place: "Bekjarvik",
                         postal: "5399"
