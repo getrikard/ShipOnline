@@ -154,8 +154,7 @@ button {
 }
 
 .countryInfoDiv {
-    padding: 10px;
-    padding-left: 40px;
+    padding: 10px 10px 10px 20px;
     border-radius: 3px;
     margin-bottom: 3px;
     text-align: left;
