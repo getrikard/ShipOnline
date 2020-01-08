@@ -40,24 +40,16 @@ function showLoginPage() {
         <div id="contentL">
             <div class="LandingPage ABC" style="padding:50px;" onkeydown="if (event.keyCode===13) { login(); }">
                 <table class="login-form">
-                    <tr>
-                        <td>
-                            <label>
-                                Username:<br>
-                                <input id="login-username" type="text">
-                            </label>
-                        </td>
-                        <td>
-                            <label>
-                                Password:<br>
-                                <input id="login-passwd" type="password">
-                            </label>
-                        </td>
-                        <td>
-                            &nbsp;<br>
-                            <button onclick="login()" style="background-color: white; border-color: white">Sign in</button>
-                        </td>
-                    </tr>
+                <h2>Sign In</h2>
+
+                <input type="text" id="login-username" placeholder="Username" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Username'">
+        
+        
+                <input type="password" id="login-passwd" placeholder="Password" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Password'">
+        
+                <button id="login" onclick="login()">Login</button>
                 </table>
         </div>
         </div>
@@ -75,11 +67,11 @@ function showLoginPage() {
 function login() {
     let username = document.getElementById('login-username').value;
     let passwd = document.getElementById('login-passwd').value;
-    
+
     if (username == '' || username.length < 3 || passwd == '' || passwd.length < 3) {
         return;
     }
-    
+
     console.log(`Logged in as "${username}".`);
 
     model.data.username = username;
