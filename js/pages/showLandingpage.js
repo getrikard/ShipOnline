@@ -37,8 +37,8 @@ function showRealLandingPage() {
 
 function showLoginPage() {
     let html = `
-        <div id="content"><div id="imgContainerShip">
-            <div class="LandingPage" style="padding:50px;" onkeydown="if (event.keyCode===13) { login(); }">
+        <div id="content">
+            <div class="LandingPage ABC" style="padding:50px;" onkeydown="if (event.keyCode===13) { login(); }">
                 <table class="login-form">
                     <tr>
                         <td>
@@ -59,7 +59,6 @@ function showLoginPage() {
                         </td>
                     </tr>
                 </table>
-            </div>
         </div>
         </div>
     `;
