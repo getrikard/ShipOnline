@@ -13,6 +13,7 @@
         ${getCompanyAndCountryHTML()}
         <div id="content">
             <table>
+              ${addSpacer()}
                 <tr>
                     <td><b>Category:</b></td>
                 </tr>`;
