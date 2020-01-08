@@ -473,9 +473,7 @@ th {
     background-color: #284658;
 }
 
-::placeholder {
-    color: black;
-}
+
 
 button:focus {
     outline:0;
@@ -485,13 +483,12 @@ input:focus {
     outline:0;
 }
 
-div.container {
+.ABC {
     margin-left:10%;
     width: 30%;
     border-radius: 5px;
     color: #1c3544;
     font-weight: bold;
     padding: 20px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
     background:inherit;
 }
