@@ -14,11 +14,11 @@
             ${getCompanyAndCountryHTML()}
             <div id="content">
                 <table> ${addSpacer()}
-                    <tr><td>Document Name: Test</td><td>Date: 18/12/2019</td></tr>
-                    <tr><td>Subject: Internal Test</td><td>Project: ShipOnline </td></tr>
-                    <tr><td>Type: Plain text </td><td>Person: Creator</td></tr>
-                    <tr><td>Updated by: Creator</td><td>Sharing: Null</td></tr>
-                    <tr><td>Groups: Internal</td><td>Link to document: Null </td></tr>
+                    <tr><td><b>Document Name</b>: Test</td><td><b>Date</b>: 18/12/2019</td></tr>
+                    <tr><td><b>Subject</b>: Internal Test</td><td><b>Project</b>: ShipOnline </td></tr>
+                    <tr><td><b>Type<b>: Plain text </td><td><b>Person</b>: Creator</td></tr>
+                    <tr><td><b>Updated by<b>: Creator</td><td><b>Sharing</b>: Null</td></tr>
+                    <tr><td><b>Groups</b>: Internal</td><td><b>Link to document</b>: Null </td></tr>
                 </table>
                 `;
 
