@@ -18,8 +18,12 @@
         let idOfCompany = model.data.companies[model.data.currentCompanyID].companyNo
         idOfCompany.map((num) => {
         htmlShowCompanyIdNo += `
-                    <td><b>Type</b>: ${num.type}</td>
-                    <td><b>Number</b>: ${num.number}</td>
+                    <td>
+                        <b>Type</b>: ${num.type}
+                    </td>
+                    <td>
+                        <b>Number</b>: ${num.number}
+                    </td>
                     <tr>
                     </tr>`;
     });
