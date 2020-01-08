@@ -55,7 +55,7 @@ function showLoginPage() {
                         </td>
                         <td>
                             &nbsp;<br>
-                            <button onclick="login()" style="background-color: white; border-color: white">Sign in</button>
+                            <button onclick="login()" style="background-color: white; border-color: white">Log in</button>
                         </td>
                     </tr>
                 </table>
