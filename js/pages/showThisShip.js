@@ -1,18 +1,19 @@
 ﻿function showThisShip(id) {
     let thisCompanyNumber = model.data.fleet[id];
     let showSelectedHTML =
-        ` 
-    <div class="selectedShipName"><span>${model.data.fleet[id].name}</span></div>
-    <div class="selectedShipNumber"><span>${thisCompanyNumber.shipIMO}, Callsign ${thisCompanyNumber.callsign}, Role ${thisCompanyNumber.role}</span></div>
-    <div id="content"> <div class="topLineInContent">
-        ${getShipButton()}
-        ${getShipsTable()}
-    <th class ="myCompanyTab" style="text-align:center;" onclick="showShipsFav()">Favorite</th>
-  </tr>`;
+
+        `<div class="selectedShipName"><span>${model.data.fleet[id].name}</span></div>
+         <div class="selectedShipNumber"><span>${thisCompanyNumber.shipIMO}, Callsign ${thisCompanyNumber.callsign}, Role ${thisCompanyNumber.role}</span></div>
+         <div id="content"> <div class="topLineInContent">
+            ${getShipButton()}
+            ${getShipsTable()}
+            <th class ="myCompanyTab" style="text-align:center;" onclick="showShipsFav()">Favorite</th>
+        </tr>`;
 
     let showShips = model.data.fleet;
     showShips.map((num, id) => {
-        showSelectedHTML += `<tr>
+        showSelectedHTML += 
+        `<tr>
             <td onclick="showThisShip(${id})" class="clickAble">${num.name}</td>
             <td>${num.GT}</td>
             <td>${num.MDWT}</td>
@@ -25,7 +26,7 @@
         </tr>`;
     });
 
-    showSelectedHTML += `</table> </div>`;
+    showSelectedHTML += `</table></div>`;
 
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;

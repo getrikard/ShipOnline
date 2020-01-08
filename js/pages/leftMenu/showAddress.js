@@ -13,16 +13,20 @@
                 ${getCompanyAndCountryHTML()}
                 <div id="content">
                     <table>
-                        <div class="addressType"> Visiting address</div> <br>`;
+                        <div class="addressType"> Visiting address</div><br>`;
 
     let addressOfCompany = model.data.companies[model.data.currentCompanyID].adresses
              addressOfCompany.map((num) => {
                  htmlShowAddress += `
-                    <td><b>Place</b>: ${num.place}</td>
-                    <td><b>Country</b>: ${companyData.companies[model.data.currentCompanyID].country || ''}</td>          
+                    <td>
+                        <b>Place</b>: ${num.place}
+                    </td>
+                    <td>
+                        <b>Country</b>: ${companyData.companies[model.data.currentCompanyID].country || ''}
+                    </td>          
                     <tr>
                         <td><b>Address</b>: ${num.adress} </td>
-                        <td><b>Postal Code</b>: ${num.postal}</td>
+                        <td><b>Postal Code</b>:${num.postal}</td>
                     </tr>`;
     });
     htmlShowAddress += `</table> ${getInnerChangeOrSave()}${getInnerFooter()}</div>`;
