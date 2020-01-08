@@ -19,7 +19,7 @@
     let contacts = model.data.contacts[i];
     htmlContacts += `
         <tr>
-        <td class ="clickAble">${contacts.name}</td>
+        <td>${contacts.name}</td>
         <td>${contacts.relation}</td>
         <td>${contacts.number}</td>
         <td>${contacts.email}</td>
