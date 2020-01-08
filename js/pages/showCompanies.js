@@ -5,27 +5,27 @@
         <a href="javascript:showAddCompany()">Add Company</a>
         </div>
     <table>
-  <tr>
-    <th>Name</th>
-    <th>Catagory</th>
-    <th>Place</th>
-    <th>Country</th>
-    <th>Groups</th>
-    <th class="myCompanyTab centerTdFavorite" onclick="showFavCompanies()">Favorite</th>
-  </tr>`;
+        <tr>
+            <th>Name</th>
+            <th>Catagory</th>
+            <th>Place</th>
+            <th>Country</th>
+            <th>Groups</th>
+            <th class="myCompanyTab centerTdFavorite" onclick="showFavCompanies()">Favorite</th>
+        </tr>`;
 
   for (let i = 0; i < model.data.companies.length; i++) {
     let company = model.data.companies[i];
     model.data.currentCompanyID = i;
     htmlCompanies += `
-        <tr>
-        <td onclick="model.data.currentCompanyID = ${i};showCompany()" class ="clickAble">${company.name}</td>
-        <td>${company.categories.join(', ')}</td>
-        <td>${company.place[0].toUpperCase() + company.place.substring(1).toLowerCase()}</td>
-        <td>${company.country}</td>
-        <td></td>
-        <td class="centerTdFavoriteStar">${company.isFavorite ? '*' : ''}</td>
-  </tr>`;
+            <tr>
+                <td onclick="model.data.currentCompanyID = ${i};showCompany()" class ="clickAble">${company.name}</td>
+                <td>${company.categories.join(', ')}</td>
+                <td>${company.place[0].toUpperCase() + company.place.substring(1).toLowerCase()}</td>
+                <td>${company.country}</td>
+                <td></td>
+                <td class="centerTdFavoriteStar">${company.isFavorite ? '*' : ''}</td>
+           </tr>`;
   };
 
   htmlCompanies += `</table> </div>`;
