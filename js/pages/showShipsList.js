@@ -1,9 +1,9 @@
 ﻿function showShipsList() {
   let htmlShips =
-    ` <div id="content"> <div class="topLineInContent">
+    `<div id="content"> <div class="topLineInContent">
         ${getShipButton()}
         ${getShipsTable()}
-    <th class="myCompanyTab centerTdFavorite" onclick="showShipsFav()">Favorite</th>
+    <th class="myCompanyTab centerTdFavorite" onclick="showShipsFav()">Favorite</th><th></th>
   </tr>`;
 
     let showShips = model.data.fleet;
@@ -21,7 +21,7 @@
         </tr>`;
     });
 
-  htmlShips += `</table> </div>`;
+  htmlShips += `</table></div>`;
 
   model.view.mainContentIsGrid = false;
   model.view.showTopNavigation = true;
