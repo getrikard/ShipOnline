@@ -13,9 +13,11 @@
             ${getCompanyAndCountryHTML()}
             <div id="content">
                     <table>
-                        <div class="addressType">Fleet</div>${addSpacer()}`;
-
-    htmlShowFleet += `${getShipTable()}<th>Role</th> <th class ="myCompanyTab centerTdFavorite" onclick="showFavFleet()">My Ship</th>`;
+                        <div class="addressType">Fleet</div>
+                        ${addSpacer()}
+                        ${getShipTable()}
+                        <th>Role</th>
+                        <th class ="myCompanyTab centerTdFavorite" onclick="showFavFleet()">My Ship</th>`;
 
     /*    function getRandomNum() {
             let desiredMaxLength = 4
@@ -35,17 +37,18 @@
     showShipsFleet.map((val, id) => {
         const type = showShipsFleet[id].shipType;
         //console.log(type);
-        htmlShowFleet += `<tr>
-            <td>${type}</td>
-            <td onclick="showThisShip(${id})"class="clickAble">${val.name}</td>
-            <td>${val.GT}</td>
-            <td>${val.MDWT}</td>
-            <td>${val.built}</td>
-            <td>${val.callsign}</td>
-            <td>${val.shipType == 'Fishing' ? val.fishID : ''}</td>
-            <td>${val.flag}</td>
-            <td>${val.role}</td>
-            <td class="centerTdFavoriteStar">${val.isFavorite ? '*' : ''}</td>
+        htmlShowFleet += 
+            `<tr>
+                <td>${type}</td>
+                <td onclick="showThisShip(${id})"class="clickAble">${val.name}</td>
+                <td>${val.GT}</td>
+                <td>${val.MDWT}</td>
+                <td>${val.built}</td>
+                <td>${val.callsign}</td>
+                <td>${val.shipType == 'Fishing' ? val.fishID : ''}</td>
+                <td>${val.flag}</td>
+                <td>${val.role}</td>
+                <td class="centerTdFavoriteStar">${val.isFavorite ? '*' : ''}</td>
             </tr>`;
     });
 
