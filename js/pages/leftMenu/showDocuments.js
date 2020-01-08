@@ -1,7 +1,5 @@
 ﻿function showDocuments() {
-    let htmlShowDocuments = `
-			${getLeftBarHTML()}
-        
+    let htmlShowDocuments = `${getLeftBarHTML()}
         <div>
             <div>
                 <div class="topLineInContent">

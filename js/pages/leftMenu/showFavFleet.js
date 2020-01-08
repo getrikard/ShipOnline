@@ -1,6 +1,5 @@
 ﻿function showFavFleet() {
-    let htmlFleetFav = `${getLeftBarHTML()}
-        
+    let htmlFleetFav = `${getLeftBarHTML()} 
         <div>
             <div>
                 <div class="topLineInContent">

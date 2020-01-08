@@ -19,10 +19,10 @@
         idOfCompany.map((num) => {
         htmlShowCompanyIdNo += `
                     <td>
-                        <b>Type</b>: ${num.type}
+                        <b>Type</b>:${num.type}
                     </td>
                     <td>
-                        <b>Number</b>: ${num.number}
+                        <b>Number</b>:${num.number}
                     </td>
                     <tr>
                     </tr>`;

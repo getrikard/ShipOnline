@@ -83,6 +83,5 @@ function login() {
     console.log(`Logged in as "${username}".`);
 
     model.data.username = username;
-
     showRealLandingPage();
 }

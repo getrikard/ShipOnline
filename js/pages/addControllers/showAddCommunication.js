@@ -14,7 +14,7 @@ function showAddCommunication() {
 
         <table>
             <tr>
-                <td>Heklo</td>
+                <td>Hello</td>
             </tr>
         </table>
     </div>`;
