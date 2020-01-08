@@ -15,7 +15,8 @@ function getShipButton() {
 }
 
 function getLeftBarHTML() {
-    return `<div id="leftSide">
+    return `
+    <div id="leftSide">
         <div class="leftSideButtons" onclick="showCompany()">Company</div>
         <div class="leftSideButtons" onclick="showAddress()">Address</div>
         <div class="leftSideButtons" onclick="showCommunication()">Communication</div>
@@ -44,7 +45,8 @@ function getInnerFooter() {
         }
     }
 
-    return `<div class="blueDiv">
+    return `
+    <div class="blueDiv">
         <span id="bottomBarCompanySpan">${company.name}</span>
         <span>${number !== undefined ? '+' + company.phonePrefix + ' ' + number : ''}</span>
         <span>${email !== undefined ? email : ''}</span>

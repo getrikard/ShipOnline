@@ -1,5 +1,5 @@
 function showAddNewCompanyID() {
-    let htmlshowAddNewCompanyID = ` <div id="content">
+    let htmlshowAddNewCompanyID = `<div id="content">
         <table>
             <tr>
                 <td>
@@ -22,10 +22,9 @@ function showAddNewCompanyID() {
                 </td>
             </tr>
         </table>
-
         <button onclick="showCompanyIdNo()">Cancel</button>
-        <button onclick="addNewIdCompany()">Save</button>
-    `;
+        <button onclick="addNewIdCompany()">Save</button>`;
+
     model.view.mainContentIsGrid = false;
     model.view.showTopNavigation = true;
     model.view.topNavigationActive = 0; // 0 = companies
