@@ -5,15 +5,16 @@
         <a href="javascript:showAddContacts()">Add Contacts</a>
         </div>
     <table>
-  <tr>
-    <th>Name</th>
-    <th>Relation</th>
-    <th>Number</th>
-    <th>Email</th>
-    <th>Companies</th>
-    <th>Groups</th>
-    <th class ="myCompanyTab" onclick="">Favorite</th>
-  </tr>`;
+        <tr>
+            <th>Name</th>
+            <th>Relation</th>
+            <th>Number</th>
+            <th>Email</th>
+            <th>Companies</th>
+            <th>Groups</th>
+            <th class ="myCompanyTab" onclick="">Favorite</th>
+        </tr>`;
+
   for (let i = 0; i < model.data.contacts.length; i++) {
     let contacts = model.data.contacts[i];
     htmlContacts += `
