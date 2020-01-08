@@ -54,6 +54,10 @@ input, button {
     margin-top: 5px;
 }
 
+button {
+    cursor: pointer;
+}
+
 .inputUser {
     color: white;
     text-align: center;
