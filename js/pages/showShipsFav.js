@@ -1,11 +1,11 @@
 ﻿// JavaScript source code
 function showShipsFav() {
     let htmlShipsFav =
-        ` <div id="content"> <div class="topLineInContent">
-${getShipButton()}
-${getShipsTable()}
-    <th class ="myCompanyTab centerTdFavorite" onclick="showShipsList()">Favorite</th>
-  </tr>`;
+        `<div id="content"> <div class="topLineInContent">
+            ${getShipButton()}
+            ${getShipsTable()}
+            <th class ="myCompanyTab centerTdFavorite" onclick="showShipsList()">Favorite</th>
+         </tr>`;
 
     let showFavShips = model.data.fleet;
     showFavShips.map((num, id) => {
