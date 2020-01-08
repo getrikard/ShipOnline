@@ -18,7 +18,7 @@ function showCompany() {
 						${getInnerAddOrSave()}
 						<table>
 							<tr>
-								<td> <b>Visit adress</b> </td>
+								<td> <b>Visit address</b>: </td>
 							<td>
 								${companyData.companies[element].adresses[0].adress}  
 								${companyData.companies[element].adresses[0].postal}
@@ -26,22 +26,22 @@ function showCompany() {
 							</td>
 						</tr>
 						<tr>
-							<td> ${companyData.companies[element].adresses[1].type} </td>
+							<td> <b>${companyData.companies[element].adresses[1].type}</b>: </td>
 							<td> 
-								${companyData.companies[element].adresses[1].adress}
+								 ${companyData.companies[element].adresses[1].adress}
 
 							</td>
 						</tr>
 						<tr>
-							<td> Invoice  </td> 
+							<td> <b>Invoice</b>:  </td> 
 							<td>   </td>
 						</tr>
 						<tr>
-							<td> ${companyData.companies[element].communications[0].type} </td>
+							<td> <b>${companyData.companies[element].communications[0].type}</b>: </td>
 							<td> ${companyData.companies[element].communications[0].number} </td>
 						</tr>
 						<tr>
-							<td> ${companyData.companies[element].communications[1].type} </td>
+							<td> <b>${companyData.companies[element].communications[1].type}</b>: </td>
 							<td> ${companyData.companies[element].communications[1].number} </td>
 						</tr>
 					</table> ${ getInnerChangeOrSave()}${getInnerFooter()}</div>
