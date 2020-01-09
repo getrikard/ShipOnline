@@ -237,9 +237,10 @@ th {
     width: 120px;
 }
 
-.landingbutton img:hover {
-    background-color: rgba(235, 233, 233, 0.5);
-}
+    .landingbutton img:hover {
+        background-color: rgba(24, 0, 124, 0.13);
+        border-radius: 20px;
+    }
 
 .addressType {
     text-align: left;
