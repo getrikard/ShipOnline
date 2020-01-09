@@ -479,6 +479,7 @@ button:focus, input:focus {
 
 .ABC {
     margin: auto;
+    margin-top: 8%;
     width: 50%;
     border-radius: 5px;
     color: #1c3544;
