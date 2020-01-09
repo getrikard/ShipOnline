@@ -40,7 +40,7 @@ function showLoginPage() {
         <div id="contentL">
             <div class="LandingPage ABC" style="padding:50px;" onkeydown="if (event.keyCode===13) { login(); }">
                 <div class="login-form">
-                <h2 class="sign-in">Sign In</h2>
+                <!--<h2 class="sign-in">Sign In</h2>-->
 
                 <input type="text" id="login-username" placeholder="Username" onfocus="this.placeholder = ''"
                     onblur="this.placeholder = 'Username'">
