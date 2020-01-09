@@ -453,7 +453,6 @@ th {
     color: black;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: inherit;
 }
 
 #login {
@@ -479,7 +478,7 @@ button:focus, input:focus {
 
 
 .ABC {
-    margin-left:10%;
+    margin: auto;
     width: 50%;
     border-radius: 5px;
     color: #1c3544;
