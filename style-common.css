@@ -455,6 +455,12 @@ th {
     box-sizing: border-box;
 }
 
+#login-passwd::placeholder,
+#login-username::placeholder {
+    color: black;
+    text-align: left;
+}
+
 #login {
     width: 100%;
     background-color: #1c3544;
