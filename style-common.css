@@ -231,16 +231,19 @@ th {
     margin: 40px;
     display: inline-block;
     cursor: pointer;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.landingbutton:hover {
+    background-color: rgba(24, 24, 24, 0.13);
+    border-radius: 20px;
 }
 
 .landingbutton img {
     width: 120px;
 }
-
-    .landingbutton img:hover {
-        background-color: rgba(24, 0, 124, 0.13);
-        border-radius: 20px;
-    }
 
 .addressType {
     text-align: left;
